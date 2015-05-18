@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{E09CB1CC-7F68-78C9-7B59-45DE1D844FD8}</ProjectGuid>
+	<ProjectGuid>{7D442A51-3FB4-C1A7-A176-7D8AF674D12D}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,6 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AIScripts\BasicEnemyAI.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\State.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\StateMachine.cs" />
      <Compile Include="Assets\Scripts\AnimationTree\GraysonSpriteAnimation.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
      <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
