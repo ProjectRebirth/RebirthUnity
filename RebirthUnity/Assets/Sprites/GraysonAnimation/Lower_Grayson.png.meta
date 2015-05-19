@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: f8f32e8ea2f9dae4d847d5744da17962
+timeCreated: 1432017075
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Lower_Grayson_0
+    21300002: Lower_Grayson_1
+    21300004: Lower_Grayson_2
+    21300006: Idle_
+    21300008: Lower_Grayson_4
+    21300010: Lower_Grayson_5
+    21300012: Lower_Grayson_6
+    21300014: Lower_Grayson_7
+    21300016: Lower_Grayson_8
+    21300018: Lower_Grayson_9
+    21300020: Lower_Grayson_10
+    21300022: Lower_Grayson_11
+    21300024: Lower_Grayson_12
+    21300026: Lower_Grayson_13
+    21300028: Lower_Grayson_14
+    21300030: Lower_Grayson_15
+    21300032: Lower_Grayson_16
+    21300034: Lower_Grayson_17
+    21300036: Walk_00
+    21300038: Walk_01
+    21300040: Walk_02
+    21300042: Walk_03
+    21300044: Walk_04
+    21300046: Walk_05
+    21300048: Walk_06
+    21300050: Walk_07
+    21300052: Walk_08
+    21300054: Walk_09
+    21300056: Walk_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Lower_Grayson_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 199
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 199
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 199
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 117
+        width: 40
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 117
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_5
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 117
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_6
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 117
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_7
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 117
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_8
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 117
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_9
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 117
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_10
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 117
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_11
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 117
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_12
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 117
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_13
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 117
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_14
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 117
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_15
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 117
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_16
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 117
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lower_Grayson_17
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 117
+        width: 13
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_00
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 51
+        width: 40
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_01
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 51
+        width: 40
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_02
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 51
+        width: 40
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_03
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 51
+        width: 40
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_04
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 51
+        width: 40
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_05
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 50
+        width: 40
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_06
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 50
+        width: 40
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_07
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 50
+        width: 40
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_08
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 51
+        width: 40
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_09
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 51
+        width: 40
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_10
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 51
+        width: 40
+        height: 8
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

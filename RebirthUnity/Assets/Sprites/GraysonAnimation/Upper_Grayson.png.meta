@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: 9d43742ad6d69684cae54692273e52f1
+timeCreated: 1432014187
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Upper_Grayson_0
+    21300002: Upper_Grayson_1
+    21300004: Upper_Grayson_2
+    21300006: Upper_Grayson_3
+    21300008: Upper_Grayson_4
+    21300010: Upper_Grayson_5
+    21300012: Upper_Grayson_6
+    21300014: Reload_0
+    21300016: Reload_1
+    21300018: Reload_2
+    21300020: Reload_3
+    21300022: Reload_4
+    21300024: Reload_5
+    21300026: Reload_6
+    21300028: Reload_7
+    21300030: Reload_8
+    21300032: Upper_Grayson_16
+    21300034: Reload_Cock_Gun
+    21300036: Upper_Grayson_18
+    21300038: Upper_Grayson_19
+    21300040: Upper_Grayson_20
+    21300042: Upper_Grayson_21
+    21300044: Upper_Grayson_22
+    21300046: Upper_Grayson_23
+    21300048: Upper_Grayson_24
+    21300050: Upper_Grayson_25
+    21300052: Upper_Grayson_26
+    21300054: Upper_Grayson_27
+    21300056: Upper_Grayson_28
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Upper_Grayson_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 207
+        width: 52
+        height: 25
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 207
+        width: 47
+        height: 25
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 207
+        width: 56
+        height: 25
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_5
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_6
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Reload_0
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Reload_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Reload_2
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Reload_3
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Reload_4
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Reload_5
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Reload_6
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Reload_7
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Reload_8
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_16
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Reload_Cock_Gun
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 125
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_18
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 58
+        width: 38
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_19
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 48
+        width: 38
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_20
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 49
+        width: 38
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_21
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 49
+        width: 38
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_22
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 49
+        width: 38
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_23
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 48
+        width: 38
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_24
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 48
+        width: 38
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_25
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 48
+        width: 38
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_26
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 49
+        width: 38
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_27
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 49
+        width: 38
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_28
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 49
+        width: 38
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
