@@ -8,8 +8,10 @@ using System.Collections;
  * generic Animator in the furure to apply to multiple sprites with similar animations
  */ 
 public class GraysonSpriteAnimation : MonoBehaviour {
-	public Animator legAnimator;//The animator that we will be manipulating
-	public Animator torsoAnimator;
+	public Animator legAnimator;//The animator that controls the leg animation
+	public Animator torsoAnimator;//The animator that controls the torsanimation
+	public float bobbingIntensity;//How much our character will move up and down
+
 	/**
 	 * Updates all animation parameters for the Animator
 	 * This currently checks if Grayson is moving
@@ -23,6 +25,14 @@ public class GraysonSpriteAnimation : MonoBehaviour {
 		if (Input.GetKey(KeyCode.R)){
 
 			torsoAnimator.SetTrigger("reloadTrigger");
+		}
+		bobSprite ();
+	}
+
+
+	private void bobSprite() {
+		if (!legAnimator.GetBool ("inAir") && legAnimator.GetBool ("isRunning")) {
+
 		}
 	}
 
