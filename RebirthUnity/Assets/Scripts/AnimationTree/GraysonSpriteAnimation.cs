@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 
@@ -12,6 +12,16 @@ public class GraysonSpriteAnimation : MonoBehaviour {
 	public Animator torsoAnimator;//The animator that controls the torsanimation
 	public float bobbingIntensity;//How much our character will move up and down
 
+
+	//The variables below are for the bobbing animation
+	public Transform torso;
+	private Vector2 torsoOrigin;
+	
+
+	void Start() {
+		torsoOrigin = new Vector2 (torso.localPosition.x, torso.localPosition.y);
+	}
+
 	/**
 	 * Updates all animation parameters for the Animator
 	 * This currently checks if Grayson is moving
@@ -19,21 +29,55 @@ public class GraysonSpriteAnimation : MonoBehaviour {
 	 * go here.
 	 */ 
 	void Update() {
-		legAnimator.SetBool("inAir", checkInAir());
-		legAnimator.SetBool ("isRunning", checkIsRunning());
+		AnimatorStateInfo animationInfo = torsoAnimator.GetCurrentAnimatorStateInfo (0);
 
-		if (Input.GetKey(KeyCode.R)){
 
-			torsoAnimator.SetTrigger("reloadTrigger");
-		}
+		bool inAir = checkInAir ();
+		bool isRunning = checkIsRunning ();
+
+		legAnimator.SetBool("inAir", inAir);
+		legAnimator.SetBool ("isRunning", isRunning);
+		torsoAnimator.SetBool("inAir",inAir );
+		torsoAnimator.SetBool("isRunning", isRunning);
+		//print (Input.GetButtonDown ("fire 1"));
+
+		torsoAnimator.SetBool ("isReloading", Input.GetKeyDown (KeyCode.R));
+		torsoAnimator.SetBool ("isFiring", checkIsFiring (torsoAnimator.GetBool("isReloading")));
+
 		bobSprite ();
 	}
 
 
 	private void bobSprite() {
-		if (!legAnimator.GetBool ("inAir") && legAnimator.GetBool ("isRunning")) {
+		AnimatorStateInfo anim = legAnimator.GetCurrentAnimatorStateInfo(0);
+		if (anim.IsName ("Walk_Legs")) {
+			float x = torsoOrigin.x;
+			float y = torsoOrigin.y;
+			float time = anim.normalizedTime;
+			y -= 0.01f;
+			if (checkBob (time)) {
+				y -= .01f;
+			}
+			Vector2 vec = new Vector2 (x, y);
 
+			torso.localPosition = vec;
+
+
+		} else {
+			torso.localPosition = torsoOrigin;
 		}
+
+	}
+			        
+	bool checkBob(float time) {
+		int temp = (int)time;
+		time -= temp;
+		print (time);
+		return (time > 1f/11 && time < 2f/11) || (time > 5f/11 && time < 7f/11);
+	}
+
+	private bool checkIsFiring(bool isReloading) {
+		return !isReloading && Input.GetKeyDown (KeyCode.F);
 	}
 
 

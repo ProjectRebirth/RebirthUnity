@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9d43742ad6d69684cae54692273e52f1
-timeCreated: 1432014187
+timeCreated: 1432078765
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -22,17 +22,18 @@ TextureImporter:
     21300030: Reload_8
     21300032: Upper_Grayson_16
     21300034: Reload_Cock_Gun
-    21300036: Upper_Grayson_18
-    21300038: Upper_Grayson_19
-    21300040: Upper_Grayson_20
-    21300042: Upper_Grayson_21
-    21300044: Upper_Grayson_22
-    21300046: Upper_Grayson_23
-    21300048: Upper_Grayson_24
-    21300050: Upper_Grayson_25
-    21300052: Upper_Grayson_26
-    21300054: Upper_Grayson_27
-    21300056: Upper_Grayson_28
+    21300036: Walk_00
+    21300038: Walk_01
+    21300040: Walk_02
+    21300042: Walk_03
+    21300044: Walk_04
+    21300046: Walk_05
+    21300048: Walk_6
+    21300050: Walk_07
+    21300052: Walk_08
+    21300054: Walk_09
+    21300056: Walk_10
+    21300058: Walk_06
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -81,19 +82,19 @@ TextureImporter:
     - name: Upper_Grayson_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 0
         y: 207
-        width: 52
+        width: 64
         height: 25
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .469999999, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Upper_Grayson_1
       rect:
         serializedVersion: 2
-        x: 83
+        x: 76
         y: 207
-        width: 47
+        width: 54
         height: 25
       alignment: 7
       pivot: {x: .5, y: 0}
@@ -101,9 +102,9 @@ TextureImporter:
     - name: Upper_Grayson_2
       rect:
         serializedVersion: 2
-        x: 152
+        x: 144
         y: 207
-        width: 56
+        width: 64
         height: 25
       alignment: 7
       pivot: {x: .5, y: 0}
@@ -121,7 +122,7 @@ TextureImporter:
     - name: Upper_Grayson_4
       rect:
         serializedVersion: 2
-        x: 70
+        x: 69
         y: 125
         width: 40
         height: 34
@@ -258,115 +259,115 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Upper_Grayson_18
+    - name: Walk_00
       rect:
         serializedVersion: 2
         x: 18
         y: 58
-        width: 38
+        width: 40
         height: 34
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .0299999993}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Upper_Grayson_19
+    - name: Walk_01
       rect:
         serializedVersion: 2
-        x: 77
-        y: 48
-        width: 38
-        height: 35
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 76
+        y: 57
+        width: 40
+        height: 34
+      alignment: 9
+      pivot: {x: .5, y: .0599999987}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Upper_Grayson_20
+    - name: Walk_02
       rect:
         serializedVersion: 2
-        x: 138
-        y: 49
-        width: 38
-        height: 35
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 137
+        y: 58
+        width: 40
+        height: 34
+      alignment: 9
+      pivot: {x: .5, y: .0299999993}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Upper_Grayson_21
+    - name: Walk_03
       rect:
         serializedVersion: 2
-        x: 201
-        y: 49
-        width: 38
-        height: 35
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 200
+        y: 58
+        width: 40
+        height: 34
+      alignment: 9
+      pivot: {x: .5, y: .0299999993}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Upper_Grayson_22
+    - name: Walk_04
       rect:
         serializedVersion: 2
-        x: 264
-        y: 49
-        width: 38
-        height: 35
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 262
+        y: 58
+        width: 40
+        height: 34
+      alignment: 9
+      pivot: {x: .5, y: .0299999993}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Upper_Grayson_23
+    - name: Walk_05
       rect:
         serializedVersion: 2
-        x: 325
-        y: 48
-        width: 38
-        height: 35
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 323
+        y: 57
+        width: 40
+        height: 34
+      alignment: 9
+      pivot: {x: .5, y: .0599999987}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Upper_Grayson_24
+    - name: Walk_06
       rect:
         serializedVersion: 2
-        x: 382
-        y: 48
-        width: 38
-        height: 35
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 380
+        y: 57
+        width: 40
+        height: 34
+      alignment: 9
+      pivot: {x: .5, y: .0599999987}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Upper_Grayson_25
+    - name: Walk_07
       rect:
         serializedVersion: 2
-        x: 444
-        y: 48
-        width: 38
-        height: 35
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 443
+        y: 57
+        width: 40
+        height: 34
+      alignment: 9
+      pivot: {x: .5, y: .0599999987}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Upper_Grayson_26
+    - name: Walk_08
       rect:
         serializedVersion: 2
-        x: 501
-        y: 49
-        width: 38
-        height: 35
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 500
+        y: 58
+        width: 40
+        height: 34
+      alignment: 9
+      pivot: {x: .5, y: .0299999993}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Upper_Grayson_27
+    - name: Walk_09
       rect:
         serializedVersion: 2
-        x: 562
-        y: 49
-        width: 38
-        height: 35
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 560
+        y: 58
+        width: 40
+        height: 34
+      alignment: 9
+      pivot: {x: .5, y: .0299999993}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Upper_Grayson_28
+    - name: Walk_10
       rect:
         serializedVersion: 2
-        x: 614
-        y: 49
-        width: 38
-        height: 35
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 612
+        y: 58
+        width: 40
+        height: 34
+      alignment: 9
+      pivot: {x: .5, y: .0299999993}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

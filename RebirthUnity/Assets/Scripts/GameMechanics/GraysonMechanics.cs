@@ -10,6 +10,11 @@ public class GraysonMechanics : MonoBehaviour {
 	public float speed;//The speed that Grayson will be moving from side to side
 	public float jumpSpeed;//The height of that Grayson will jump
 
+	private bool inAir;
+	private bool isRunning;
+	private bool isReloading;
+	private bool isFiring;
+
 
 	/*
 	 * Logic for moving forward based on inputs from the player
