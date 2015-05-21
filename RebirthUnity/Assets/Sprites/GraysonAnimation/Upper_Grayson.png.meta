@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9d43742ad6d69684cae54692273e52f1
-timeCreated: 1432078765
+timeCreated: 1432172471
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -86,15 +86,15 @@ TextureImporter:
         y: 207
         width: 64
         height: 25
-      alignment: 9
-      pivot: {x: .469999999, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Upper_Grayson_1
       rect:
         serializedVersion: 2
-        x: 76
+        x: 74
         y: 207
-        width: 54
+        width: 61
         height: 25
       alignment: 7
       pivot: {x: .5, y: 0}
