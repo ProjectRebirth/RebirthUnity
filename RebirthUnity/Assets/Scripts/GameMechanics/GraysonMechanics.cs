@@ -93,7 +93,7 @@ public class GraysonMechanics : MonoBehaviour {
 	}
 
 	private bool checkIsReloading() {
-		Animator torsoAnimator = legs.GetComponent<Animator> ();
+		Animator torsoAnimator = torso.GetComponent<Animator> ();
 		AnimatorStateInfo currentClip = torsoAnimator.GetCurrentAnimatorStateInfo (0);
 		if (currentClip.IsName("Reload_Torso")) {
 			return true;
