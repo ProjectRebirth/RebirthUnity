@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour {
 
 		player.moveHorizontal (horizontalInput);
 		player.jump (Input.GetButtonDown ("Jump"));
+		player.fireWeapon (Input.GetKey(KeyCode.F));
+		player.reloadWeapon (Input.GetKeyDown (KeyCode.R));
 		checkFlipTexture ();
 	}
 

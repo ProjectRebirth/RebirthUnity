@@ -29,20 +29,16 @@ public class GraysonSpriteAnimation : MonoBehaviour {
 	 * go here.
 	 */ 
 	void Update() {
-		AnimatorStateInfo animationInfo = torsoAnimator.GetCurrentAnimatorStateInfo (0);
+		GraysonMechanics grayson = GetComponent<GraysonMechanics> ();
 
+		torsoAnimator.SetBool ("isRunning", grayson.getIsRunning ());
+		torsoAnimator.SetBool ("inAir", grayson.getInAir ());
+	//	print (grayson.getCanFire ());
+		torsoAnimator.SetBool ("canFire", grayson.getCanFire());
+		torsoAnimator.SetBool("canReload", grayson.getCanReload());
 
-		bool inAir = checkInAir ();
-		bool isRunning = checkIsRunning ();
-
-		legAnimator.SetBool("inAir", inAir);
-		legAnimator.SetBool ("isRunning", isRunning);
-		torsoAnimator.SetBool("inAir",inAir );
-		torsoAnimator.SetBool("isRunning", isRunning);
-		//print (Input.GetButtonDown ("fire 1"));
-
-		torsoAnimator.SetBool ("isReloading", Input.GetKeyDown (KeyCode.R));
-		torsoAnimator.SetBool ("isFiring", checkIsFiring (torsoAnimator.GetBool("isReloading")));
+		legAnimator.SetBool ("isRunning", grayson.getIsRunning ());
+		legAnimator.SetBool ("inAir", grayson.getInAir ());
 
 		bobSprite ();
 	}
@@ -68,30 +64,22 @@ public class GraysonSpriteAnimation : MonoBehaviour {
 		}
 
 	}
-			        
+
+	/**
+	 * This method moanipulates the image to bob up and down. Currently this is only used if the
+	 * sprite is waling. May be needed for other animations that may come in the future;
+	 */ 
 	bool checkBob(float time) {
 		int temp = (int)time;
 		time -= temp;
-		print (time);
+		//print (time);
 		return (time > 1f/11 && time < 2f/11) || (time > 5f/11 && time < 7f/11);
 	}
 
-	private bool checkIsFiring(bool isReloading) {
-		return !isReloading && Input.GetKeyDown (KeyCode.F);
-	}
 
 
 
 
-	/*
-	 *Quick check to see if the player is moving on across the screen based 
-	 *on his horizontal movement.
-	 */
-	private bool checkIsRunning() {
-		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
-		float x = rigid.velocity.x;
-		return Mathf.Abs (x) > 0f;
-	}
 
 	/*
 	 * Quick check to see if the player is in the air based on his vertical
