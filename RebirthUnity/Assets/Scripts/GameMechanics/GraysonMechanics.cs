@@ -13,12 +13,14 @@ public class GraysonMechanics : MonoBehaviour {
 	public Transform legs;
 
 
+
 	private bool inAir;
 	private bool isRunning;
 	private bool canFire;
 	private bool canReload;
 	private bool isReloading;
 	private bool isFiring;
+	private bool isLookingUp;
 
 
 
@@ -40,6 +42,14 @@ public class GraysonMechanics : MonoBehaviour {
 		Rigidbody2D rigid = GetComponent<Rigidbody2D>();
 		Vector2 vec = new Vector2 (speed * horizontalInput, rigid.velocity.y);
 		rigid.velocity = vec;
+	}
+
+	public void moveVertical(float verticalInput) {
+		if (verticalInput > 0.001f) {
+			isLookingUp = true;
+		} else {
+			isLookingUp = false;
+		}
 	}
 
 	/*
@@ -96,6 +106,8 @@ public class GraysonMechanics : MonoBehaviour {
 		Animator torsoAnimator = torso.GetComponent<Animator> ();
 		AnimatorStateInfo currentClip = torsoAnimator.GetCurrentAnimatorStateInfo (0);
 		if (currentClip.IsName("Reload_Torso")) {
+
+
 			return true;
 		}
 		return false;
@@ -108,6 +120,10 @@ public class GraysonMechanics : MonoBehaviour {
 			return true;
 		}
 		return false;
+	}
+
+	public bool getIsLookingUp() {
+		return isLookingUp;
 	}
 
 	public bool getCanReload() {

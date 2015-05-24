@@ -15,7 +15,7 @@ public class GraysonSpriteAnimation : MonoBehaviour {
 
 	//The variables below are for the bobbing animation
 	public Transform torso;
-	private Vector2 torsoOrigin;
+	private Vector2 torsoOrigin;//The origin of the torsoLocation relative to Grayson
 	
 
 	void Start() {
@@ -36,6 +36,7 @@ public class GraysonSpriteAnimation : MonoBehaviour {
 	//	print (grayson.getCanFire ());
 		torsoAnimator.SetBool ("canFire", grayson.getCanFire());
 		torsoAnimator.SetBool("canReload", grayson.getCanReload());
+		torsoAnimator.SetBool ("isLookingUp", grayson.getIsLookingUp ());
 
 		legAnimator.SetBool ("isRunning", grayson.getIsRunning ());
 		legAnimator.SetBool ("inAir", grayson.getInAir ());
@@ -43,7 +44,10 @@ public class GraysonSpriteAnimation : MonoBehaviour {
 		bobSprite ();
 	}
 
-
+    /**
+     * Helper method to move Grayson's body up and down according to the offset of his current animation
+     * At the moment the only animation that requires this is the walk animation.
+     */ 
 	private void bobSprite() {
 		AnimatorStateInfo anim = legAnimator.GetCurrentAnimatorStateInfo(0);
 		if (anim.IsName ("Walk_Legs")) {

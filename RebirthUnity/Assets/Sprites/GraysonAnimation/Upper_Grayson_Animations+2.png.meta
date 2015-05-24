@@ -1,0 +1,264 @@
+fileFormatVersion: 2
+guid: f4528b47cb6a3a547b0c28299b81bd9c
+timeCreated: 1432470570
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Climb_Ladder_00
+    21300002: Climb_Ladder_01
+    21300004: Fire_Up_00
+    21300006: Fire_Up_01
+    21300008: Fire_Up_02
+    21300010: Upper_Grayson_Animations+2_5
+    21300012: Upper_Grayson_Animations+2_6
+    21300014: Upper_Grayson_Animations+2_7
+    21300016: Upper_Grayson_Animations+2_8
+    21300018: Upper_Grayson_Animations+2_9
+    21300020: Upper_Grayson_Animations+2_10
+    21300022: Jetpack_Active_00
+    21300024: Jetpack_Active_01
+    21300026: Jetpack_Active_02
+    21300028: Jetpack_Animation_03
+    21300030: Upper_Grayson_Animations+2_15
+    21300032: Upper_Grayson_Animations+2_16
+    21300034: Jump_Legs
+    21300036: Upper_Grayson_Animations+2_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: .5, y: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Climb_Ladder_00
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 734
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Climb_Ladder_01
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 734
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Fire_Up_00
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 670
+        width: 41
+        height: 47
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Fire_Up_01
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 670
+        width: 47
+        height: 43
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Fire_Up_02
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 667
+        width: 50
+        height: 47
+      alignment: 9
+      pivot: {x: .5, y: .0680000037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_Animations+2_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 597
+        width: 52
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_Animations+2_6
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 597
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_Animations+2_7
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 597
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_Animations+2_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 351
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_Animations+2_9
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 361
+        width: 38
+        height: 26
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_Animations+2_10
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 361
+        width: 38
+        height: 26
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jetpack_Active_00
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 361
+        width: 41
+        height: 26
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jetpack_Active_01
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 361
+        width: 41
+        height: 26
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jetpack_Active_02
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 361
+        width: 41
+        height: 28
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jetpack_Animation_03
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 361
+        width: 41
+        height: 29
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_Animations+2_15
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 361
+        width: 38
+        height: 26
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_Animations+2_16
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 293
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jump_Legs
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 283
+        width: 40
+        height: 10
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Upper_Grayson_Animations+2_0
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 670
+        width: 43
+        height: 35
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

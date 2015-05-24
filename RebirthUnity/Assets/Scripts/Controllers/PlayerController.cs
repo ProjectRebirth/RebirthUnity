@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour {
 	public bool isRight;//The direction of the character sprite
 
 
+
 	void Start() {
 		if (!isRight) {
 			this.transform.localScale = new Vector2 (-1, 1);
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour {
 		float verticalInput = Input.GetAxis ("Vertical");
 
 		player.moveHorizontal (horizontalInput);
+		player.moveVertical (verticalInput);
 		player.jump (Input.GetButtonDown ("Jump"));
 		player.fireWeapon (Input.GetKey(KeyCode.F));
 		player.reloadWeapon (Input.GetKeyDown (KeyCode.R));
