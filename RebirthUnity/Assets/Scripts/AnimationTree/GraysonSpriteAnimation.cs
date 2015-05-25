@@ -38,9 +38,11 @@ public class GraysonSpriteAnimation : MonoBehaviour {
 		torsoAnimator.SetBool("canReload", grayson.getCanReload());
 		torsoAnimator.SetBool ("isLookingUp", grayson.getIsLookingUp ());
 		torsoAnimator.SetBool ("canStrafe", grayson.getCanStrafe ());
+		torsoAnimator.SetBool ("isClimbing", grayson.getIsClimbing ());
 
 		legAnimator.SetBool ("isRunning", grayson.getIsRunning ());
 		legAnimator.SetBool ("inAir", grayson.getInAir ());
+		legAnimator.SetBool ("isClimbing", grayson.getIsClimbing ());
 
 		bobSprite ();
 	}

@@ -11,6 +11,7 @@ public class GraysonMechanics : MonoBehaviour {
 	public float jumpSpeed;//The height of that Grayson will jump
 	public float strafeSideSpeed;
 	public float strafeUpSpeed;
+	public float climbSpeed;
 	public Transform torso;
 	public Transform legs;
 
@@ -24,8 +25,8 @@ public class GraysonMechanics : MonoBehaviour {
 	private bool isReloading;
 	private bool isFiring;
 	private bool isLookingUp;
-	private bool ladderAvailable;
-	private bool isClimbingLadder;
+	private int canClimb;
+	private bool isClimbing;
 
 	public bool isRight;//The direction of the character sprite
 	
@@ -53,6 +54,15 @@ public class GraysonMechanics : MonoBehaviour {
 		
 	}
 
+	void gravityLogic() {
+		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
+		if (isClimbing) {
+			rigid.gravityScale = 0;
+		} else {
+			rigid.gravityScale = 1;
+		}
+	}
+
 
 	void Update() {
 		strafeLogic ();
@@ -67,8 +77,22 @@ public class GraysonMechanics : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-
+		gravityLogic ();
 	}
+
+	private void climbLogic(float verticalInput) {
+		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
+		Vector2 vec = rigid.velocity;
+		vec.y = 0;
+
+		if (verticalInput > 0.001f) {
+			vec.y = climbSpeed;
+		} else if (verticalInput < -0.001f) {
+			vec.y = -climbSpeed;
+		}
+		rigid.velocity = vec;
+	}
+
 
 
 	/*
@@ -76,10 +100,13 @@ public class GraysonMechanics : MonoBehaviour {
 	 */ 
 	public void moveHorizontal(float horizontalInput) {
 		checkFlipTexture (horizontalInput);
-
 		Rigidbody2D rigid = GetComponent<Rigidbody2D>();
 		Vector2 vec = new Vector2 (speed * horizontalInput, rigid.velocity.y);
 		rigid.velocity = vec;
+	}
+
+	private bool checkCanClimb() {
+		return canClimb > 0 && !isStrafing && !isReloading;
 	}
 
 	/**
@@ -87,10 +114,21 @@ public class GraysonMechanics : MonoBehaviour {
 	 * This is where the logic for looking up and climbing ladders will go
 	 */ 
 	public void moveVertical(float verticalInput) {
-		if (verticalInput > 0.001f) {
-			isLookingUp = true;
+		if (checkCanClimb ()) {
+			print("I made it this far");
+			if (verticalInput > .001f) {
+				isClimbing = true;
+			}
+			if (isClimbing) {
+				climbLogic(verticalInput);
+			}
 		} else {
-			isLookingUp = false;
+			if (verticalInput > 0.001f) {
+				isLookingUp = true;
+			} else {
+				isLookingUp = false;
+			}
+			isClimbing = false;
 		}
 	}
 
@@ -134,7 +172,7 @@ public class GraysonMechanics : MonoBehaviour {
 	
 
 	public bool checkCanStrafe() {
-		return !isStrafing;
+		return !isStrafing && !isClimbing;
 	}
 
 	/**
@@ -192,7 +230,7 @@ public class GraysonMechanics : MonoBehaviour {
 	 * Verifies that a player is allowed to reload his weapon when the reload input is down
 	 */ 
 	private bool checkCanReload() {
-		return !isReloading && !isStrafing;
+		return !isReloading && !isStrafing && !isClimbing;
 	}
 
 
@@ -214,7 +252,7 @@ public class GraysonMechanics : MonoBehaviour {
 	 * weapon, currently firing, and whether he is strafing
 	 */ 
 	private bool checkCanFire() {
-		return !isReloading && !isFiring && !isStrafing;
+		return !isReloading && !isFiring && !isStrafing && !isClimbing;
 	}
 
 	/**
@@ -281,5 +319,21 @@ public class GraysonMechanics : MonoBehaviour {
 	//Variable that lets the program know that the character is strafing
 	public bool getIsStrafing() {
 		return isStrafing;
+	}
+
+	public bool getIsClimbing() {
+		return isClimbing;
+	}
+
+	void OnTriggerEnter2D(Collider2D collider) {
+		if (collider.tag == "Climbable") {
+			canClimb += 1;
+		}
+	}
+
+	void OnTriggerExit2D(Collider2D collider) {
+		if (collider.tag == "Climbable") {
+			canClimb -=1 ; 
+		}
 	}
 }

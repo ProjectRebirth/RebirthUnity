@@ -18,16 +18,21 @@ public class PlayerController : MonoBehaviour {
 	 */ 
 	void Update () {
 		float horizontalInput = Input.GetAxis ("Horizontal");
-		float verticalInput = Input.GetAxis ("Vertical");
+
 
 		player.moveHorizontal (horizontalInput);
-		player.moveVertical (verticalInput);
+
 		player.strafe (Input.GetKeyDown(KeyCode.LeftControl));
 		player.jump (Input.GetButtonDown ("Jump"));
 
 		player.fireWeapon (Input.GetKey(KeyCode.F));
 		player.reloadWeapon (Input.GetKeyDown (KeyCode.R));
 
+	}
+
+	void FixedUpdate() {
+		float verticalInput = Input.GetAxis ("Vertical");
+		player.moveVertical (verticalInput);
 	}
 
 
