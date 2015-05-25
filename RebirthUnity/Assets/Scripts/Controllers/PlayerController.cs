@@ -22,7 +22,9 @@ public class PlayerController : MonoBehaviour {
 
 		player.moveHorizontal (horizontalInput);
 		player.moveVertical (verticalInput);
+		player.strafe (Input.GetKeyDown(KeyCode.LeftControl));
 		player.jump (Input.GetButtonDown ("Jump"));
+
 		player.fireWeapon (Input.GetKey(KeyCode.F));
 		player.reloadWeapon (Input.GetKeyDown (KeyCode.R));
 

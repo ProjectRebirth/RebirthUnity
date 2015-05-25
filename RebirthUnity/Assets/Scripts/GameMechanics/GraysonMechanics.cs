@@ -9,7 +9,8 @@ using System.Collections;
 public class GraysonMechanics : MonoBehaviour {
 	public float speed;//The speed that Grayson will be moving from side to side
 	public float jumpSpeed;//The height of that Grayson will jump
-	public float strafeSpeed;
+	public float strafeSideSpeed;
+	public float strafeUpSpeed;
 	public Transform torso;
 	public Transform legs;
 
@@ -23,6 +24,9 @@ public class GraysonMechanics : MonoBehaviour {
 	private bool isReloading;
 	private bool isFiring;
 	private bool isLookingUp;
+	private bool ladderAvailable;
+	private bool isClimbingLadder;
+
 	public bool isRight;//The direction of the character sprite
 	
 	
@@ -51,6 +55,7 @@ public class GraysonMechanics : MonoBehaviour {
 
 
 	void Update() {
+		strafeLogic ();
 		inAir = checkInAir ();
 		isRunning = checkISRunning ();
 		isStrafing = checkIsStrafing ();
@@ -62,11 +67,7 @@ public class GraysonMechanics : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		if (isStrafing) {
-			Rigidbody2D rigid = GetComponent<Rigidbody2D>();
-			Vector2 vec = rigid.velocity;
-			vec.x = strafeSpeed;
-		}
+
 	}
 
 
@@ -98,7 +99,10 @@ public class GraysonMechanics : MonoBehaviour {
 	 * is possible at this moment
 	 */ 
 	public void strafe(bool strafeKey) {
-
+		if (checkCanStrafe ()) {
+			canStrafe = strafeKey;
+		} else
+			canStrafe = false;
 	}
 
 	/*
@@ -124,6 +128,13 @@ public class GraysonMechanics : MonoBehaviour {
 		} else {
 			canFire = false;
 		}
+	}
+
+
+	
+
+	public bool checkCanStrafe() {
+		return !isStrafing;
 	}
 
 	/**
@@ -159,6 +170,22 @@ public class GraysonMechanics : MonoBehaviour {
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
 		float x = rigid.velocity.x;
 		return Mathf.Abs (x) > 0f;
+	}
+
+	public void strafeLogic() {
+		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
+		Vector2 vec = rigid.velocity;
+		if (canStrafe) {
+			vec.y = strafeUpSpeed;
+			if (strafeSideSpeed > 0 && !isRight) strafeSideSpeed *= -1;
+			else if(strafeSideSpeed < 0 && isRight) strafeSideSpeed *= -1;
+
+		}
+		if (isStrafing) {
+			vec.x = strafeSideSpeed;
+		}
+
+		rigid.velocity = vec;
 	}
 
 	/**
