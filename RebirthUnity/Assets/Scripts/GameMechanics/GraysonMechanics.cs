@@ -12,10 +12,11 @@ public class GraysonMechanics : MonoBehaviour {
 	public float strafeSideSpeed;
 	public float strafeUpSpeed;
 	public float climbSpeed;
+	public float stamina;
 	public Transform torso;
 	public Transform legs;
 
-
+	private bool madeJump;
 	private bool canStrafe;
 	private bool isStrafing;
 	private bool inAir;
@@ -42,14 +43,15 @@ public class GraysonMechanics : MonoBehaviour {
 	 * orientation horizontally
 	 */ 
 	private void checkFlipTexture(float horizontalInput) {
-
-		if (isRight && horizontalInput < 0) {
-			isRight = false;
-			transform.localScale = new Vector2 (-1, 1);
-		}
-		if (!isRight && horizontalInput > 0) {
-			transform.localScale = new Vector2 (1, 1);
-			isRight = true;
+		if (!madeJump && !Input.GetKey(KeyCode.F)) {
+			if (isRight && horizontalInput < 0) {
+				isRight = false;
+				transform.localScale = new Vector2 (-1, 1);
+			}
+			if (!isRight && horizontalInput > 0) {
+				transform.localScale = new Vector2 (1, 1);
+				isRight = true;
+			}
 		}
 		
 	}
@@ -148,11 +150,15 @@ public class GraysonMechanics : MonoBehaviour {
 	 */ 
 	public void jump(bool jumpKey) {
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
-
-		if (Mathf.Abs(rigid.velocity.y) == 0 && jumpKey) {
+		if (!inAir) {
+			madeJump = false;
+		}
+		if (!inAir && jumpKey) {
 			Vector2 vec = new Vector2 (rigid.velocity.x, jumpSpeed);
 			rigid.velocity = vec;
+			madeJump = true;
 		}
+
 	}
 
 	/**
@@ -196,7 +202,7 @@ public class GraysonMechanics : MonoBehaviour {
 	private bool checkInAir() {
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
 
-		return Mathf.Abs (rigid.velocity.y) > 0f; 
+		return (Mathf.Abs (rigid.velocity.y) > 0.0001f && madeJump) || Mathf.Abs (rigid.velocity.y) > .5; 
 	}
 
 	/**

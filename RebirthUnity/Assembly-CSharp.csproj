@@ -52,7 +52,7 @@
      <Compile Include="Assets\Scripts\AnimationTree\GraysonSpriteAnimation.cs" />
      <Compile Include="Assets\Scripts\Controllers\AdjustZAxis.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
-     <Compile Include="Assets\Scripts\Controllers\LadderController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\ObjectSpawnController.cs" />
      <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\GraysonMechanics.cs" />
  <Reference Include="UnityEngine.UI">

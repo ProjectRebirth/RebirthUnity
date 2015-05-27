@@ -19,8 +19,9 @@ public class CameraController : MonoBehaviour {
 	void Update() {
 		float x = followPlayer.localPosition.x;
 		float y = followPlayer.localPosition.y;
+		float z = transform.localPosition.z;
 
-		Vector2 newPosition = new Vector2 (x + offsetX, y + offsetY);
+		Vector3 newPosition = new Vector3 (x + offsetX, y + offsetY, z);
 		this.transform.localPosition = newPosition;
 
 	}

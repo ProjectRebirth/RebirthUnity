@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: cb470ce3dfc57704781f2950380341c2
-timeCreated: 1432175773
+timeCreated: 1432692319
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -54,9 +54,9 @@ TextureImporter:
     - name: New-grass_0
       rect:
         serializedVersion: 2
-        x: 450
+        x: 445
         y: 318
-        width: 48
+        width: 53
         height: 101
       alignment: 0
       pivot: {x: .5, y: .5}
