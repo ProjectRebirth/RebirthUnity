@@ -15,6 +15,7 @@ public class GraysonMechanics : MonoBehaviour {
 	public float stamina;
 	public Transform torso;
 	public Transform legs;
+	public Weapon currentWeapon;
 
 	private bool madeJump;
 	private bool canStrafe;
@@ -117,7 +118,6 @@ public class GraysonMechanics : MonoBehaviour {
 	 */ 
 	public void moveVertical(float verticalInput) {
 		if (checkCanClimb ()) {
-			print("I made it this far");
 			if (verticalInput > .001f) {
 				isClimbing = true;
 			}
@@ -167,14 +167,27 @@ public class GraysonMechanics : MonoBehaviour {
 	 * where to implement this feature
 	 */ 
 	public void fireWeapon(bool fireButton) {
+		if (fireButton) {
+			Vector2 dir = getFiringDirection();
+			currentWeapon.fireWeapon(dir);
+		}
 		if (checkCanFire ()) {
 			canFire = fireButton;
+
 		} else {
 			canFire = false;
 		}
 	}
 
-
+	private Vector2 getFiringDirection() {
+		if (isLookingUp) {
+			return new Vector2(0, 1);
+		}
+		if (isRight) {
+			return new Vector2(1, 0);
+		}
+		return new Vector2(-1, 0);
+	}
 	
 
 	public bool checkCanStrafe() {
