@@ -340,16 +340,27 @@ public class GraysonMechanics : MonoBehaviour {
 		return isStrafing;
 	}
 
+	//Returns whether the player is current clmbing
 	public bool getIsClimbing() {
 		return isClimbing;
 	}
 
+	/**
+	 * Built in Unity mnChecks if a collider has interacted with a trigger.
+	 * 
+	 * To carry out this method I have given all  Climable objects a tag named "Climable"
+	 */ 
 	void OnTriggerEnter2D(Collider2D collider) {
 		if (collider.tag == "Climbable") {
 			canClimb += 1;
 		}
 	}
 
+	/**
+	 * Built in Unity function. Checks when a collider has exited a trigger object
+	 * 
+	 * 
+	 */ 
 	void OnTriggerExit2D(Collider2D collider) {
 		if (collider.tag == "Climbable") {
 			canClimb -=1 ; 
