@@ -201,6 +201,9 @@ public class GraysonMechanics : MonoBehaviour {
 	public void reloadWeapon(bool reloadButton) {
 		if (checkCanReload ()) {
 			canReload = reloadButton;
+			if (canReload) {
+				currentWeapon.reloadWeapon();
+			}
 
 			//print (reloadButton);
 		} else {
@@ -249,7 +252,7 @@ public class GraysonMechanics : MonoBehaviour {
 	 * Verifies that a player is allowed to reload his weapon when the reload input is down
 	 */ 
 	private bool checkCanReload() {
-		return !isReloading && !isStrafing && !isClimbing;
+		return !isReloading && !isStrafing && !isClimbing && !currentWeapon.getWeaponIsFull();
 	}
 
 
@@ -271,7 +274,7 @@ public class GraysonMechanics : MonoBehaviour {
 	 * weapon, currently firing, and whether he is strafing
 	 */ 
 	private bool checkCanFire() {
-		return !isReloading && !isFiring && !isStrafing && !isClimbing;
+		return !isReloading && !isFiring && !isStrafing && !isClimbing && !currentWeapon.isEmpty();
 	}
 
 	/**
@@ -314,6 +317,10 @@ public class GraysonMechanics : MonoBehaviour {
 	//Use this to carry out any task needed before firing the weapon
 	public bool getCanFire() {
 		return canFire;
+	}
+
+	public bool getIsReloading() {
+		return isReloading;
 	}
 
 	//Variable that lets you know that the player is moving horizontally.
@@ -366,4 +373,6 @@ public class GraysonMechanics : MonoBehaviour {
 			canClimb -=1 ; 
 		}
 	}
+
+
 }
