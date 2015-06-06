@@ -3,12 +3,14 @@ using System.Collections;
 
 public class Weapon : MonoBehaviour {
 
-	public GameObject ammo;
+	public BulletMechanics ammo;
 	public GraysonMechanics grayson;
+	public Vector3 upLocalPosition;
 	public int maxAmmo;
 	private int currentAmmo;
 	public float refreshRate;
 	private float refreshTimer;
+	private bool waitingReload;
 
 	private int ammoCarried;
 
@@ -21,17 +23,25 @@ public class Weapon : MonoBehaviour {
 		ammoCarried = 200; //This will change later on
 	}
 
+
+
+
+
 	/**
 	 * Checks if the weapon has a proper cool down and then fires the bullet
 	 * associated with the weapon if the player is pushing down the fire button
 	 */ 
 	public void fireWeapon(Vector2 dir) {
 		if (refreshTimer <= 0 && currentAmmo > 0 && !grayson.getIsReloading()) {
-			GameObject obj = (GameObject)Instantiate (ammo, transform.position, new Quaternion ());
+			BulletMechanics obj = null;
+			if (grayson.getIsLookingUp()){
+				obj = (BulletMechanics)Instantiate (ammo, upLocalPosition + grayson.transform.localPosition, new Quaternion ());
+			}else {
+				obj = (BulletMechanics)Instantiate (ammo, transform.position, new Quaternion ());
+			}
 
-			BulletMechanics bullet = obj.GetComponent<BulletMechanics> ();
 
-			bullet.setDirection (dir);
+			obj.setDirection (dir);
 			refreshTimer = refreshRate;
 			currentAmmo--;
 
@@ -45,8 +55,10 @@ public class Weapon : MonoBehaviour {
 	public void reloadWeapon() {
 		if (ammoCarried > maxAmmo) {
 			currentAmmo = maxAmmo;
+			ammoCarried-=maxAmmo;
 		} else {
 			currentAmmo = ammoCarried;
+			ammoCarried-=ammoCarried;
 		}
 	}
 
@@ -64,11 +76,28 @@ public class Weapon : MonoBehaviour {
 	 * updates the cooldown timer for the gun
 	 */ 
 	void Update() {
-		refreshTimer-=Time.deltaTime;
+
+		refreshTime (Time.deltaTime);
+		checkReloading ();
+	}
+
+	void checkReloading() {
+		if (grayson.getIsReloading ()) {
+			waitingReload = true;
+			
+		}else if (waitingReload && !grayson.getIsReloading ()) {
+			reloadWeapon ();
+			waitingReload = false;
+		} else {
+			waitingReload = false;
+		}
+	}
+
+	void refreshTime(float deltaTime) {
+		refreshTimer-=deltaTime;
 		if (refreshTimer < 0) {
 			refreshTimer = 0;
 		}
 	}
-
 
 }

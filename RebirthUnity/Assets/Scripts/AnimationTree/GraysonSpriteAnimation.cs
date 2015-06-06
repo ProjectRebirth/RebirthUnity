@@ -10,16 +10,17 @@ using System.Collections;
 public class GraysonSpriteAnimation : MonoBehaviour {
 	public Animator legAnimator;//The animator that controls the leg animation
 	public Animator torsoAnimator;//The animator that controls the torsanimation
-	public float bobbingIntensity;//How much our character will move up and down
 
 
 	//The variables below are for the bobbing animation
 	public Transform torso;
+	private GraysonMechanics grayson;
 	private Vector2 torsoOrigin;//The origin of the torsoLocation relative to Grayson
 	
 
 	void Start() {
 		torsoOrigin = new Vector2 (torso.localPosition.x, torso.localPosition.y);
+		grayson = GetComponent<GraysonMechanics> ();
 	}
 
 	/**
@@ -29,7 +30,7 @@ public class GraysonSpriteAnimation : MonoBehaviour {
 	 * go here.
 	 */ 
 	void Update() {
-		GraysonMechanics grayson = GetComponent<GraysonMechanics> ();
+		//GraysonMechanics grayson = GetComponent<GraysonMechanics> ();
 
 		torsoAnimator.SetBool ("isRunning", grayson.getIsRunning ());
 		torsoAnimator.SetBool ("inAir", grayson.getInAir ());

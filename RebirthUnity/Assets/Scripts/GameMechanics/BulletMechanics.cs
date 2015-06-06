@@ -4,6 +4,7 @@ using System.Collections;
 public class BulletMechanics : MonoBehaviour {
 
 	public float speed;
+	public Weapon weapon;
 	private Vector2 unitVector;
 	private Vector3 origin;
 
@@ -66,7 +67,11 @@ public class BulletMechanics : MonoBehaviour {
 	 * Use this method to do something when a bullet enters an area
 	 */ 
 	void OnTriggerEnter2D(Collider2D collider) {
+		//print (weapon.transform.parent);
+		if (false) {
 
+			Destroy (gameObject);
+		}
 	}
 
 	/**
@@ -86,6 +91,8 @@ public class BulletMechanics : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collider) {
 		//Destroy (gameObject);
+
+
 	}
 
 }

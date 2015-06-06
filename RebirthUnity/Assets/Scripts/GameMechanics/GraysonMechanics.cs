@@ -6,7 +6,7 @@ using System.Collections;
  * This script is used for all of Grayson's mechanics
  * 
  */ 
-public class GraysonMechanics : MonoBehaviour {
+public class GraysonMechanics : SpriteMechanics {
 	public float speed;//The speed that Grayson will be moving from side to side
 	public float jumpSpeed;//The height of that Grayson will jump
 	public float strafeSideSpeed;
@@ -201,9 +201,7 @@ public class GraysonMechanics : MonoBehaviour {
 	public void reloadWeapon(bool reloadButton) {
 		if (checkCanReload ()) {
 			canReload = reloadButton;
-			if (canReload) {
-				currentWeapon.reloadWeapon();
-			}
+
 
 			//print (reloadButton);
 		} else {

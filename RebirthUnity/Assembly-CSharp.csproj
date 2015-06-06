@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\BulletMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\GraysonMechanics.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\SpriteMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\Weapon.cs" />
      <Compile Include="Assets\ShipTriggerLogic.cs" />
  <Reference Include="UnityEngine.UI">
