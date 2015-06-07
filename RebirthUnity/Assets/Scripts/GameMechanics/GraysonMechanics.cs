@@ -246,11 +246,16 @@ public class GraysonMechanics : SpriteMechanics {
 		rigid.velocity = vec;
 	}
 
+	public Weapon getCurrentWeapon() {
+		return currentWeapon;
+	}
+
 	/**
 	 * Verifies that a player is allowed to reload his weapon when the reload input is down
 	 */ 
 	private bool checkCanReload() {
-		return !isReloading && !isStrafing && !isClimbing && !currentWeapon.getWeaponIsFull();
+		return !isReloading && !isStrafing && !isClimbing && !currentWeapon.getWeaponIsFull() &&
+			currentWeapon.hasSpareAmmo();
 	}
 
 
@@ -272,7 +277,7 @@ public class GraysonMechanics : SpriteMechanics {
 	 * weapon, currently firing, and whether he is strafing
 	 */ 
 	private bool checkCanFire() {
-		return !isReloading && !isFiring && !isStrafing && !isClimbing && !currentWeapon.isEmpty();
+		return !isReloading && !isFiring && !isStrafing && !isClimbing && !currentWeapon.isMagazineEmpty();
 	}
 
 	/**

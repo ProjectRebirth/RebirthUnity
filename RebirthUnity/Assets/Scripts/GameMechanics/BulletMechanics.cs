@@ -68,10 +68,7 @@ public class BulletMechanics : MonoBehaviour {
 	 */ 
 	void OnTriggerEnter2D(Collider2D collider) {
 		//print (weapon.transform.parent);
-		if (false) {
-
-			Destroy (gameObject);
-		}
+		//COME BACK TO THIS LATER
 	}
 
 	/**

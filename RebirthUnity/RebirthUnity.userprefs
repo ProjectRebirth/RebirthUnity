@@ -1,13 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameMechanics\Weapon.cs">
     <Files>
-      <File FileName="Assets\Scripts\AIScripts\StateMachine.cs" Line="7" Column="37" />
-      <File FileName="Assets\Scripts\GameMechanics\Weapon.cs" Line="46" Column="18" />
-      <File FileName="Assets\Scripts\GameMechanics\BulletMechanics.cs" Line="74" Column="4" />
-      <File FileName="Assets\Scripts\AnimationTree\GraysonSpriteAnimation.cs" Line="23" Column="47" />
-      <File FileName="Assets\Scripts\GameMechanics\GraysonMechanics.cs" Line="248" Column="2" />
-      <File FileName="Assets\ShipTriggerLogic.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TriggerScripts\AmmoPickupTrigger.cs" Line="11" Column="34" />
+      <File FileName="Assets\Scripts\TriggerScripts\ActionTrigger.cs" Line="23" Column="19" />
+      <File FileName="Assets\Scripts\GameMechanics\BulletMechanics.cs" Line="71" Column="28" />
+      <File FileName="Assets\Scripts\GameMechanics\GraysonMechanics.cs" Line="256" Column="33" />
+      <File FileName="Assets\Scripts\GameMechanics\Weapon.cs" Line="109" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

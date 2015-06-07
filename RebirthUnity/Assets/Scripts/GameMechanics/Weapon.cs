@@ -11,6 +11,7 @@ public class Weapon : MonoBehaviour {
 	public float refreshRate;
 	private float refreshTimer;
 	private bool waitingReload;
+	public int maxAmmoCarried;
 
 	private int ammoCarried;
 
@@ -20,7 +21,7 @@ public class Weapon : MonoBehaviour {
 	 */ 
 	void Start() {
 		currentAmmo = (int)Random.Range(0, maxAmmo);
-		ammoCarried = 200; //This will change later on
+		ammoCarried = 0; //This will change later on
 	}
 
 
@@ -48,7 +49,11 @@ public class Weapon : MonoBehaviour {
 		}
 	}
 
-	public bool isEmpty() {
+	public bool hasSpareAmmo() {
+		return ammoCarried > 0;
+	}
+
+	public bool isMagazineEmpty() {
 		return currentAmmo <= 0;
 	}
 

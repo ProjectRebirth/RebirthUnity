@@ -57,6 +57,8 @@
      <Compile Include="Assets\Scripts\GameMechanics\GraysonMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\SpriteMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\Weapon.cs" />
+     <Compile Include="Assets\Scripts\TriggerScripts\ActionTrigger.cs" />
+     <Compile Include="Assets\Scripts\TriggerScripts\AmmoPickupTrigger.cs" />
      <Compile Include="Assets\ShipTriggerLogic.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
