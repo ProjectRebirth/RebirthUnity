@@ -75,6 +75,9 @@ public class Weapon : MonoBehaviour {
 		ammoCarried += addedAmmo;
 	}
 
+	public int getCurrentAmmo(){
+		return currentAmmo;
+	}
 
 
 	/**
