@@ -16,8 +16,13 @@ public class GraysonMechanics : SpriteMechanics {
 	public Transform torso;
 	public Transform legs;
 	public Weapon currentWeapon;
-	public float health;
+
+	public float curShield;
+	public float maxShield;
+	public float curHealth;
 	public float maxHealth;
+	public float curStamina;
+	public float maxStamina;
 
 	private bool madeJump;
 	private bool canStrafe;
@@ -37,8 +42,6 @@ public class GraysonMechanics : SpriteMechanics {
 	
 	
 	void Start() {
-		health = 100f;
-		maxHealth = 100f;
 		if (!isRight) {
 			this.transform.localScale = new Vector2 (-1, 1);
 		}
@@ -358,13 +361,35 @@ public class GraysonMechanics : SpriteMechanics {
 	public bool getIsClimbing() {
 		return isClimbing;
 	}
-	//Returns Grayson's current health
-	public float getHealth(){
-		return health;
+	//Returns Player's current health
+	public float getCurHealth ()
+	{
+		return curHealth;
 	}
-	//Returns Grayson's Max health
-	public float getMaxHealth(){
+	//Returns Player's Max health
+	public float getMaxHealth ()
+	{
 		return maxHealth;
+	}
+	//Returns Player's current shield
+	public float getCurShield ()
+	{
+		return curShield;
+	}
+	//Returns Player's Max shield
+	public float getMaxShield ()
+	{
+		return maxShield;
+	}
+	//Returns Player's current stamina
+	public float getCurStamina ()
+	{
+		return curStamina;
+	}
+	//Returns Player's Max health
+	public float getMaxStamina ()
+	{
+		return maxStamina;
 	}
 	/**
 	 * Built in Unity mnChecks if a collider has interacted with a trigger.
