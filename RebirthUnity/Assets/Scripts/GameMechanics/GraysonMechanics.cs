@@ -4,10 +4,9 @@ using System.Collections;
 
 /*
  * This script is used for all of Grayson's mechanics
- * 
  */ 
 public class GraysonMechanics : SpriteMechanics {
-	public float speed;//The speed that Grayson will be moving from side to side
+
 	public float jumpSpeed;//The height of that Grayson will jump
 	public float strafeSideSpeed;
 	public float strafeUpSpeed;
@@ -16,19 +15,12 @@ public class GraysonMechanics : SpriteMechanics {
 	public Transform torso;
 	public Transform legs;
 	public Weapon currentWeapon;
-
-	public float curShield;
 	public float maxShield;
-	public float curHealth;
-	public float maxHealth;
-	public float curStamina;
 	public float maxStamina;
 
-	private bool madeJump;
+
 	private bool canStrafe;
 	private bool isStrafing;
-	private bool inAir;
-	private bool isRunning;
 	private bool canFire;
 	private bool canReload;
 	private bool isReloading;
@@ -36,33 +28,19 @@ public class GraysonMechanics : SpriteMechanics {
 	private bool isLookingUp;
 	private int canClimb;
 	private bool isClimbing;
+	private float curStamina;
 
-	public bool isRight;//The direction of the character sprite
-	
+
 	
 	
 	void Start() {
-		if (!isRight) {
+		if (!isRight) {//This if statement flips the texture of the sprite upon creation if the 
+			//designer so chooses to start a character in the left position
 			this.transform.localScale = new Vector2 (-1, 1);
 		}
+		health = maxHealth;
 	}
-	/**
-	 * Method that helps to see if the character should flip
-	 * orientation horizontally
-	 */ 
-	private void checkFlipTexture(float horizontalInput) {
-		if (!madeJump && !Input.GetKey(KeyCode.F)) {
-			if (isRight && horizontalInput < 0) {
-				isRight = false;
-				transform.localScale = new Vector2 (-1, 1);
-			}
-			if (!isRight && horizontalInput > 0) {
-				transform.localScale = new Vector2 (1, 1);
-				isRight = true;
-			}
-		}
-		
-	}
+
 
 	void gravityLogic() {
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
@@ -75,9 +53,10 @@ public class GraysonMechanics : SpriteMechanics {
 
 
 	void Update() {
+
 		strafeLogic ();
-		inAir = checkInAir ();
-		isRunning = checkISRunning ();
+		setInAir(checkInAir ());
+		setIsRunning(checkIsRunning ());
 		isStrafing = checkIsStrafing ();
 
 		isFiring = checkIsFiring();
@@ -102,18 +81,7 @@ public class GraysonMechanics : SpriteMechanics {
 		}
 		rigid.velocity = vec;
 	}
-
-
-
-	/*
-	 * Logic for moving forward based on inputs from the player
-	 */ 
-	public void moveHorizontal(float horizontalInput) {
-		checkFlipTexture (horizontalInput);
-		Rigidbody2D rigid = GetComponent<Rigidbody2D>();
-		Vector2 vec = new Vector2 (speed * horizontalInput, rigid.velocity.y);
-		rigid.velocity = vec;
-	}
+	
 
 	private bool checkCanClimb() {
 		return canClimb > 0 && !isStrafing && !isReloading;
@@ -157,13 +125,13 @@ public class GraysonMechanics : SpriteMechanics {
 	 */ 
 	public void jump(bool jumpKey) {
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
-		if (!inAir) {
-			madeJump = false;
+		if (!getInAir()) {
+			setMadeJump(false);
 		}
-		if (!inAir && jumpKey) {
+		if (!getInAir() && jumpKey) {
 			Vector2 vec = new Vector2 (rigid.velocity.x, jumpSpeed);
 			rigid.velocity = vec;
-			madeJump = true;
+			setMadeJump (true);
 		}
 
 	}
@@ -216,26 +184,8 @@ public class GraysonMechanics : SpriteMechanics {
 		}
 	}
 
-	/**
-	 * If the player is moving vertically then the player is considered in the air.
-	 * May not be the best implementation, but its worked so far, so.... yeah...
-	 */
-	private bool checkInAir() {
-		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
 
-		return (Mathf.Abs (rigid.velocity.y) > 0.0001f && madeJump) || Mathf.Abs (rigid.velocity.y) > .5; 
-	}
 
-	/**
-	 * If the player is moving horizontally, then they are considered to be
-	 * running according to this logic. Could use a better implementation,
-	 * but for what is needed it seems to be working fine
-	 */ 
-	private bool checkISRunning() {
-		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
-		float x = rigid.velocity.x;
-		return Mathf.Abs (x) > 0f;
-	}
 
 	public void strafeLogic() {
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
@@ -333,18 +283,7 @@ public class GraysonMechanics : SpriteMechanics {
 		return isReloading;
 	}
 
-	//Variable that lets you know that the player is moving horizontally.
-	//......Maybe the name should be changed in a future update.
-	public bool getIsRunning() {
-		return isRunning;
-	}
 
-	//Variable that lets you know that the player is moving vertically
-	//....The name for this seems fine, but I can see it being a problem with ropes
-	//and shit
-	public bool getInAir() {
-		return inAir;
-	}
 
 	//This variable will be true one frame before the strafe animation carries out.
 	//Use it where needed.
@@ -361,36 +300,20 @@ public class GraysonMechanics : SpriteMechanics {
 	public bool getIsClimbing() {
 		return isClimbing;
 	}
-	//Returns Player's current health
-	public float getCurHealth ()
-	{
-		return curHealth;
-	}
-	//Returns Player's Max health
-	public float getMaxHealth ()
-	{
-		return maxHealth;
-	}
-	//Returns Player's current shield
-	public float getCurShield ()
-	{
-		return curShield;
-	}
-	//Returns Player's Max shield
-	public float getMaxShield ()
-	{
-		return maxShield;
-	}
-	//Returns Player's current stamina
-	public float getCurStamina ()
-	{
-		return curStamina;
-	}
-	//Returns Player's Max health
-	public float getMaxStamina ()
-	{
+
+	public float getMaxStamina() {
 		return maxStamina;
 	}
+
+	public float getCurStamina() {
+		return maxStamina;
+	}
+
+	public float getMaxShield () {
+		return maxShield;
+	}
+
+
 	/**
 	 * Built in Unity mnChecks if a collider has interacted with a trigger.
 	 * 
