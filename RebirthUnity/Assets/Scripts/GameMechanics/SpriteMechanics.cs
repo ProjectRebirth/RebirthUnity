@@ -14,6 +14,18 @@ public class SpriteMechanics : MonoBehaviour {
 	public float curShield;
 
 
+	protected virtual void Update() {
+		inAir = checkInAir ();
+		isRunning = checkIsRunning ();
+	}
+
+	protected virtual void Start() {
+		if (!isRight) {//This if statement flips the texture of the sprite upon creation if the 
+			//designer so chooses to start a character in the left position
+			this.transform.localScale = new Vector2 (-1, 1);
+		}
+		health = maxHealth;
+	}
 
 	/**
 	 * If the player is moving horizontally, then they are considered to be
@@ -143,6 +155,10 @@ public class SpriteMechanics : MonoBehaviour {
 			this.health = maxHealth;
 		}
 		this.health = health;
+	}
+
+	public bool getIsDead() {
+		return health <= 0;
 	}
 
 

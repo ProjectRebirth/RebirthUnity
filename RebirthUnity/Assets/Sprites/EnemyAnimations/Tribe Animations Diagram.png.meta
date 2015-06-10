@@ -1,9 +1,47 @@
 fileFormatVersion: 2
 guid: 96ca86792af89544280057d99166d729
-timeCreated: 1433724874
+timeCreated: 1433885585
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Basic_Idle_01
+    21300002: Basic_Attack_00
+    21300004: Basic_Attack_01
+    21300006: Basic_Attack_02
+    21300008: Basic_Attack_03
+    21300010: Basic_Walk_00
+    21300012: Basis_Walk_01
+    21300014: Basic_Walk_02
+    21300016: Basic_Death_00
+    21300018: Basic_Death_01
+    21300020: Basic_Death_02
+    21300022: Melee_Idle_00
+    21300024: Melee_Defend_00
+    21300026: Melee_Attack_01
+    21300028: Melee_Attack_00
+    21300030: Melee_Attack_02
+    21300032: Melee_Walk_00
+    21300034: Melee_Walk_01
+    21300036: Melee_Walk_02
+    21300038: Melee_Walk_03
+    21300040: Melee_Death_00
+    21300042: Melee_Death_01
+    21300044: Melee_Death_02
+    21300046: Melee_Death_03
+    21300048: Range_Idle_00
+    21300050: Range_Attack_00
+    21300052: Range_Attack_01
+    21300054: Range_Attack_02
+    21300056: Range_Attack_03
+    21300058: Range_Walk_00
+    21300060: Tribe Animations Diagram_30
+    21300062: Range_Walk_02
+    21300064: Range_Walk_03
+    21300066: Range_Death_00
+    21300068: Range_Death_01
+    21300070: Range_Death_02
+    21300072: Range_Death_03
+    21300074: Range_Walk_01
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,26 +67,396 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: .5, y: .5}
+  alignment: 7
+  spritePivot: {x: .5, y: 0}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Basic_Idle_01
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1394
+        width: 64
+        height: 86
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Basic_Attack_00
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1396
+        width: 79
+        height: 65
+      alignment: 9
+      pivot: {x: .405174553, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Basic_Attack_01
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1392
+        width: 86
+        height: 65
+      alignment: 9
+      pivot: {x: .44066602, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Basic_Attack_02
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1315
+        width: 86
+        height: 65
+      alignment: 9
+      pivot: {x: .353123248, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Basic_Attack_03
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1315
+        width: 95
+        height: 61
+      alignment: 9
+      pivot: {x: .309810609, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Basic_Walk_00
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1234
+        width: 86
+        height: 65
+      alignment: 9
+      pivot: {x: .440953732, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Basis_Walk_01
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1234
+        width: 86
+        height: 65
+      alignment: 9
+      pivot: {x: .424418598, y: .00153808598}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Basic_Walk_02
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1234
+        width: 86
+        height: 62
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Basic_Death_00
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1155
+        width: 86
+        height: 65
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Basic_Death_01
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1157
+        width: 86
+        height: 55
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Basic_Death_02
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1157
+        width: 86
+        height: 14
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Melee_Idle_00
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1010
+        width: 105
+        height: 102
+      alignment: 9
+      pivot: {x: .279481798, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Melee_Defend_00
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 899
+        width: 100
+        height: 102
+      alignment: 9
+      pivot: {x: .247551426, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Melee_Attack_01
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 772
+        width: 73
+        height: 136
+      alignment: 9
+      pivot: {x: .346428245, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Melee_Attack_00
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 772
+        width: 95
+        height: 116
+      alignment: 9
+      pivot: {x: .257213622, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Melee_Attack_02
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 772
+        width: 92
+        height: 114
+      alignment: 9
+      pivot: {x: .267062962, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Melee_Walk_00
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 664
+        width: 94
+        height: 102
+      alignment: 9
+      pivot: {x: .322654307, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Melee_Walk_01
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 664
+        width: 79
+        height: 102
+      alignment: 9
+      pivot: {x: .38969478, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Melee_Walk_02
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 663
+        width: 74
+        height: 103
+      alignment: 9
+      pivot: {x: .339575678, y: .0109999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Melee_Walk_03
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 664
+        width: 100
+        height: 102
+      alignment: 9
+      pivot: {x: .361079395, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Melee_Death_00
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 553
+        width: 90
+        height: 102
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Melee_Death_01
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 553
+        width: 93
+        height: 102
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Melee_Death_02
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 553
+        width: 77
+        height: 93
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Melee_Death_03
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 553
+        width: 99
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Range_Idle_00
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 406
+        width: 85
+        height: 102
+      alignment: 9
+      pivot: {x: .366068125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Range_Attack_00
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 292
+        width: 88
+        height: 102
+      alignment: 9
+      pivot: {x: .353065759, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Range_Attack_01
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 292
+        width: 87
+        height: 103
+      alignment: 9
+      pivot: {x: .357838601, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Range_Attack_02
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 292
+        width: 87
+        height: 103
+      alignment: 9
+      pivot: {x: .365915924, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Range_Attack_03
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 292
+        width: 98
+        height: 103
+      alignment: 9
+      pivot: {x: .326468945, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Range_Walk_00
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 154
+        width: 85
+        height: 102
+      alignment: 9
+      pivot: {x: .36823532, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Range_Walk_02
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 152
+        width: 82
+        height: 103
+      alignment: 9
+      pivot: {x: .444170326, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Range_Walk_03
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 153
+        width: 92
+        height: 102
+      alignment: 9
+      pivot: {x: .396745443, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Range_Death_00
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 32
+        width: 86
+        height: 102
+      alignment: 9
+      pivot: {x: .374418646, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Range_Death_01
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 32
+        width: 92
+        height: 102
+      alignment: 9
+      pivot: {x: .431521863, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Range_Death_02
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 31
+        width: 82
+        height: 91
+      alignment: 9
+      pivot: {x: .291463345, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Range_Death_03
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 32
+        width: 99
+        height: 29
+      alignment: 9
+      pivot: {x: .0863043293, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Range_Walk_01
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 153
+        width: 83
+        height: 103
+      alignment: 9
+      pivot: {x: .453116536, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

@@ -34,11 +34,7 @@ public class GraysonMechanics : SpriteMechanics {
 	
 	
 	void Start() {
-		if (!isRight) {//This if statement flips the texture of the sprite upon creation if the 
-			//designer so chooses to start a character in the left position
-			this.transform.localScale = new Vector2 (-1, 1);
-		}
-		health = maxHealth;
+		base.Start ();
 	}
 
 
@@ -55,8 +51,7 @@ public class GraysonMechanics : SpriteMechanics {
 	void Update() {
 
 		strafeLogic ();
-		setInAir(checkInAir ());
-		setIsRunning(checkIsRunning ());
+		base.Update ();
 		isStrafing = checkIsStrafing ();
 
 		isFiring = checkIsFiring();
