@@ -27,12 +27,12 @@ public class statsDisplay : MonoBehaviour {
 			playerStats.damagePlayer(8f);
 		}
 		
-		//shieldBar.fillAmount = playerStats.curShield / playerStats.maxShield;
-		//impactBar.fillAmount = Mathf.MoveTowards ((initShield / playerStats.maxShield), 0, Time.deltaTime * .005f);
-		//.fillAmount = playerStats.curHealth / playerStats.maxHealth;
-		//.fillAmount = Mathf.MoveTowards (initHealth / playerStats.maxHealth, playerStats.curHealth / playerStats.maxHealth, Time.deltaTime * .005f);
+		shieldBar.fillAmount = playerStats.curShield / playerStats.maxShield;
+		impactBar.fillAmount = Mathf.MoveTowards ((initShield / playerStats.maxShield), (playerStats.curShield/ playerStats.maxShield), Time.deltaTime * .000001f);
+		healthBar.fillAmount = playerStats.curHealth / playerStats.maxHealth;
+		damageBar.fillAmount = Mathf.MoveTowards (initHealth / playerStats.maxHealth, playerStats.curHealth / playerStats.maxHealth, Time.deltaTime * .005f);
 		
-		shieldBar.fillAmount = Mathf.MoveTowards ((playerStats.curShield / playerStats.maxShield), 0, Time.smoothDeltaTime * .5f);
+		//shieldBar.fillAmount = Mathf.MoveTowards ((playerStats.curShield / playerStats.maxShield), 0, Time.smoothDeltaTime * .5f);
 		
 		initHealth = playerStats.curHealth;
 		initShield = playerStats.curShield;
