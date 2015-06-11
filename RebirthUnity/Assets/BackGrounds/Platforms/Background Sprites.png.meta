@@ -1,9 +1,34 @@
 fileFormatVersion: 2
 guid: a6c1c00d03e1c1f4e828ed954ef10542
-timeCreated: 1433724875
+timeCreated: 1434049923
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: BushPile
+    21300002: Ground0
+    21300004: Ground1
+    21300006: Ground2
+    21300008: Grass0
+    21300010: Bush0
+    21300012: Bush4
+    21300014: Bush5
+    21300016: bush7
+    21300018: Bush8
+    21300020: Bush9
+    21300022: Grass1
+    21300024: Bush1
+    21300026: Bush2
+    21300028: Bush3
+    21300030: Bush6
+    21300032: Tree0
+    21300034: Tree1
+    21300036: Trees3
+    21300038: Tree3
+    21300040: Tree4
+    21300042: Tree5
+    21300044: Tree6
+    21300046: Tree7
+    21300048: Tree8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,15 +54,15 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +73,257 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: BushPile
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 789
+        width: 747
+        height: 162
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ground0
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 701
+        width: 47
+        height: 93
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ground1
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 638
+        width: 47
+        height: 155
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ground2
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 582
+        width: 47
+        height: 217
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Grass0
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 757
+        width: 51
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bush0
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 674
+        width: 65
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bush4
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 674
+        width: 65
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bush5
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 674
+        width: 65
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bush7
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 676
+        width: 65
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bush8
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 676
+        width: 65
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bush9
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 675
+        width: 65
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Grass1
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 720
+        width: 50
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bush1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 673
+        width: 65
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bush2
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 673
+        width: 65
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bush3
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 672
+        width: 65
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bush6
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 673
+        width: 65
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 74
+        width: 182
+        height: 445
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree1
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 87
+        width: 182
+        height: 445
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Trees3
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 85
+        width: 182
+        height: 445
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree3
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 82
+        width: 182
+        height: 445
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree4
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 85
+        width: 182
+        height: 445
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree5
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 83
+        width: 182
+        height: 445
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree6
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 80
+        width: 182
+        height: 445
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree7
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 83
+        width: 182
+        height: 445
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree8
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 81
+        width: 182
+        height: 445
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
