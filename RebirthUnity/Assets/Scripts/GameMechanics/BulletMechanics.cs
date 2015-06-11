@@ -67,8 +67,11 @@ public class BulletMechanics : MonoBehaviour {
 	 * Use this method to do something when a bullet enters an area
 	 */ 
 	void OnTriggerEnter2D(Collider2D collider) {
-		//print (weapon.transform.parent);
-		//COME BACK TO THIS LATER
+		if (collider.tag == "Sprite") {
+			SpriteMechanics sprite = collider.GetComponent<SpriteMechanics>();
+			sprite.setHealth (0);
+			Destroy(this.gameObject);
+		}
 	}
 
 	/**

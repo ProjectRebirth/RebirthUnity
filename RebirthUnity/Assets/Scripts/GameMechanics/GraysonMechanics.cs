@@ -33,7 +33,7 @@ public class GraysonMechanics : SpriteMechanics {
 
 	
 	
-	void Start() {
+	protected override void Start() {
 		base.Start ();
 	}
 
@@ -48,7 +48,7 @@ public class GraysonMechanics : SpriteMechanics {
 	}
 
 
-	void Update() {
+	protected override void Update() {
 
 		strafeLogic ();
 		base.Update ();

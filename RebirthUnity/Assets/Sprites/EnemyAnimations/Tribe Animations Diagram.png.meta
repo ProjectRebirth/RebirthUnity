@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 96ca86792af89544280057d99166d729
-timeCreated: 1433885585
+timeCreated: 1433946876
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -294,8 +294,8 @@ TextureImporter:
         y: 553
         width: 90
         height: 102
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .325494975, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Melee_Death_01
       rect:
@@ -304,8 +304,8 @@ TextureImporter:
         y: 553
         width: 93
         height: 102
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .352617502, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Melee_Death_02
       rect:
@@ -314,8 +314,8 @@ TextureImporter:
         y: 553
         width: 77
         height: 93
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .272047162, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Melee_Death_03
       rect:
@@ -324,8 +324,8 @@ TextureImporter:
         y: 553
         width: 99
         height: 34
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .0474964492, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Range_Idle_00
       rect:

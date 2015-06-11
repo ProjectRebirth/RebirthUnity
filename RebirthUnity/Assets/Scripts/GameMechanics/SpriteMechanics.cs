@@ -15,6 +15,7 @@ public class SpriteMechanics : MonoBehaviour {
 
 
 	protected virtual void Update() {
+		isDeadCleanup ();
 		inAir = checkInAir ();
 		isRunning = checkIsRunning ();
 	}
@@ -156,6 +157,19 @@ public class SpriteMechanics : MonoBehaviour {
 		}
 		this.health = health;
 	}
+
+	void isDeadCleanup() {
+		if (getIsDead ()) {
+			Collider2D collider = GetComponent<Collider2D> ();
+			Rigidbody2D rigid = GetComponent<Rigidbody2D>();
+			rigid.gravityScale = 0;
+			Destroy (collider);
+		}
+
+
+	}
+	
+
 
 	public bool getIsDead() {
 		return health <= 0;
