@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\TriggerScripts\ActionTrigger.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\AmmoPickupTrigger.cs" />
      <Compile Include="Assets\Scripts\UIScripts\playerStats.cs" />
+     <Compile Include="Assets\Scripts\UIScripts\statsDisplay.cs" />
      <Compile Include="Assets\ShipTriggerLogic.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
