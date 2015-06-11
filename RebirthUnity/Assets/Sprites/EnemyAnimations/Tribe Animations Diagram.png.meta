@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 96ca86792af89544280057d99166d729
-timeCreated: 1433946876
+timeCreated: 1433990611
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -94,8 +94,8 @@ TextureImporter:
         y: 1394
         width: 64
         height: 86
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .327508926, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Basic_Attack_00
       rect:
@@ -105,7 +105,7 @@ TextureImporter:
         width: 79
         height: 65
       alignment: 9
-      pivot: {x: .405174553, y: 0}
+      pivot: {x: .256701112, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Basic_Attack_01
       rect:
@@ -115,7 +115,7 @@ TextureImporter:
         width: 86
         height: 65
       alignment: 9
-      pivot: {x: .44066602, y: 0}
+      pivot: {x: .320323318, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Basic_Attack_02
       rect:
@@ -125,7 +125,7 @@ TextureImporter:
         width: 86
         height: 65
       alignment: 9
-      pivot: {x: .353123248, y: 0}
+      pivot: {x: .178626478, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Basic_Attack_03
       rect:
@@ -135,7 +135,7 @@ TextureImporter:
         width: 95
         height: 61
       alignment: 9
-      pivot: {x: .309810609, y: 0}
+      pivot: {x: .248076916, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Basic_Walk_00
       rect:
@@ -145,7 +145,7 @@ TextureImporter:
         width: 86
         height: 65
       alignment: 9
-      pivot: {x: .440953732, y: 0}
+      pivot: {x: .310582548, y: -.00796274003}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Basis_Walk_01
       rect:
@@ -155,7 +155,7 @@ TextureImporter:
         width: 86
         height: 65
       alignment: 9
-      pivot: {x: .424418598, y: .00153808598}
+      pivot: {x: .338172913, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Basic_Walk_02
       rect:
@@ -164,8 +164,8 @@ TextureImporter:
         y: 1234
         width: 86
         height: 62
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .323497325, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Basic_Death_00
       rect:
@@ -174,8 +174,8 @@ TextureImporter:
         y: 1155
         width: 86
         height: 65
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .400000006, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Basic_Death_01
       rect:
@@ -184,8 +184,8 @@ TextureImporter:
         y: 1157
         width: 86
         height: 55
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .400000006, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Basic_Death_02
       rect:
@@ -194,8 +194,8 @@ TextureImporter:
         y: 1157
         width: 86
         height: 14
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: .400000006, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Melee_Idle_00
       rect:
