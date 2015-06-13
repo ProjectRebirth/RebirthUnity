@@ -18,6 +18,7 @@ public class SpriteMechanics : MonoBehaviour {
 		isDeadCleanup ();
 		inAir = checkInAir ();
 		isRunning = checkIsRunning ();
+
 	}
 
 	protected virtual void Start() {
@@ -162,6 +163,7 @@ public class SpriteMechanics : MonoBehaviour {
 		if (getIsDead ()) {
 			Collider2D collider = GetComponent<Collider2D> ();
 			Rigidbody2D rigid = GetComponent<Rigidbody2D>();
+			rigid.velocity = new Vector2();
 			rigid.gravityScale = 0;
 			Destroy (collider);
 		}
@@ -185,7 +187,7 @@ public class SpriteMechanics : MonoBehaviour {
 	public bool checkInAir() {
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
 		
-		return (Mathf.Abs (rigid.velocity.y) > 0.0001f && madeJump); 
+		return (Mathf.Abs (rigid.velocity.y) > 0.0001f && madeJump) || Mathf.Abs (rigid.velocity.y) > .05; 
 	}
 
 }

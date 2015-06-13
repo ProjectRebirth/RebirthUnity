@@ -9,8 +9,7 @@ public class MeleeEnemyAnimations : MonoBehaviour {
 	
 	void Update() {
 		checkIsDead ();
-		animator.SetBool ("isRunning", meleeMechanics.getIsRunning ());
-		//animator.SetBool ("isAttacking", meleeMechanics.getIsAttacking ());
+		animator.SetBool ("isRunning", meleeMechanics.getIsRunning ());//animator.SetBool ("isAttacking", meleeMechanics.getIsAttacking ());
 		animator.SetBool ("inAir", meleeMechanics.getInAir ());
 		animator.SetBool ("isDead", meleeMechanics.getIsDead ());
 
