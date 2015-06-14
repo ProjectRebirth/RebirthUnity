@@ -49,6 +49,10 @@ public class SpriteMechanics : MonoBehaviour {
 
 	}
 
+	public virtual void moveVertical(float verticalInput) {
+
+	}
+
 	private float smoothMovement(float currentVelocity, float goalVelocity) {
 		float newVelocity = goalVelocity;
 		if (goalVelocity < currentVelocity) {
@@ -159,7 +163,7 @@ public class SpriteMechanics : MonoBehaviour {
 		this.health = health;
 	}
 
-	void isDeadCleanup() {
+	protected virtual void isDeadCleanup() {
 		if (getIsDead ()) {
 			Collider2D collider = GetComponent<Collider2D> ();
 			Rigidbody2D rigid = GetComponent<Rigidbody2D>();

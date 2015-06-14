@@ -86,7 +86,7 @@ public class GraysonMechanics : SpriteMechanics {
 	 * Takes in vertical direction input from the player.
 	 * This is where the logic for looking up and climbing ladders will go
 	 */ 
-	public void moveVertical(float verticalInput) {
+	public override void moveVertical(float verticalInput) {
 		if (checkCanClimb ()) {
 			if (verticalInput > .001f) {
 				isClimbing = true;

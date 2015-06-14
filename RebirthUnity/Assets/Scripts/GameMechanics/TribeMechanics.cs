@@ -15,7 +15,6 @@ public class TribeMechanics : SpriteMechanics {
 	protected override void Update() {
 		base.Update ();
 		isAttacking = checkIsAttacking ();
-		print (getIsRunning ());
 	}
 
 	protected override void Start() {
@@ -35,8 +34,13 @@ public class TribeMechanics : SpriteMechanics {
 	}
 
 	void OnTriggerEnter2D (Collider2D collider) {
-		if (collider.tag == "Grayson") {
 
+		if (collider.tag == "Grayson") {
+			//GraysonMechanics grayson = collider.GetComponent<GraysonMechanics>();
+			Rigidbody2D rigid = collider.GetComponent<Rigidbody2D>();
+			if (getIsRight ()) {
+				rigid.AddForce(new Vector2 ());
+			}
 		}
 	}
 
