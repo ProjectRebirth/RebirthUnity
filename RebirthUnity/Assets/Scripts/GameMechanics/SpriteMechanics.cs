@@ -12,14 +12,17 @@ public class SpriteMechanics : MonoBehaviour {
 	public float horiztonalMomentum;//The higher the number, the faster the sprite will come to a stop
 	public float curHealth;
 	public float curShield;
-
+	private bool isHit;
 
 	protected virtual void Update() {
+		checkIsHit ();
 		isDeadCleanup ();
 		inAir = checkInAir ();
 		isRunning = checkIsRunning ();
 
 	}
+
+
 
 	protected virtual void Start() {
 		if (!isRight) {//This if statement flips the texture of the sprite upon creation if the 
@@ -40,10 +43,19 @@ public class SpriteMechanics : MonoBehaviour {
 		return Mathf.Abs (x) > 0f;
 	}
 
+	public void checkIsHit () {
+		if (!inAir && isHit) {
+			isHit = false;
+		}
+	}
+
 	public void moveHorizontal(float horizontalInput) {
 		checkFlipTexture (horizontalInput);
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
 		float x = speed * horizontalInput;
+		if (inAir || isHit) {
+			x = rigid.velocity.x;
+		}
 		Vector3 vec = new Vector3 (x, rigid.velocity.y, 0);
 		rigid.velocity = vec;
 
@@ -136,6 +148,7 @@ public class SpriteMechanics : MonoBehaviour {
 
 
 
+
 	/******Setters Go Here***************/
 	public void setIsRunning(bool isRunning) {
 		this.isRunning = isRunning;
@@ -163,6 +176,10 @@ public class SpriteMechanics : MonoBehaviour {
 		this.health = health;
 	}
 
+	public void setIsHit(bool isHit) {
+		this.isHit = isHit;
+	}
+
 	protected virtual void isDeadCleanup() {
 		if (getIsDead ()) {
 			Collider2D collider = GetComponent<Collider2D> ();
@@ -175,7 +192,9 @@ public class SpriteMechanics : MonoBehaviour {
 
 	}
 	
-
+	public bool getIsHit() {
+		return isHit;
+	}
 
 	public bool getIsDead() {
 		return health <= 0;

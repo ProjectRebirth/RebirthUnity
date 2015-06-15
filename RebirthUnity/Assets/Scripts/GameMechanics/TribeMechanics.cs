@@ -6,6 +6,7 @@ public class TribeMechanics : SpriteMechanics {
 	private bool canAttack;
 	private bool isAggressive;
 	private bool graysonInView;
+
 	private float aggressiveCoolDown;
 
 	public Animator animator;
@@ -29,8 +30,22 @@ public class TribeMechanics : SpriteMechanics {
 
 	public void attack(bool attackButton) {
 		if (attackButton) {
-
+			canAttack = checkCanAttack ();
+		} else {
+			canAttack = false;
 		}
+	}
+
+	public bool getCanAttack() {
+		return canAttack;
+	}
+
+	private bool checkCanAttack () {
+		return !getIsRunning () && !getInAir () && !isAttacking;
+	}
+
+	public bool getIsAttacking() {
+		return isAttacking;
 	}
 
 	void OnTriggerEnter2D (Collider2D collider) {

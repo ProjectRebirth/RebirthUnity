@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class MeleeEnemyAnimations : MonoBehaviour {
-	public SpriteMechanics meleeMechanics;
+	public TribeMechanics meleeMechanics;
 	public Animator animator;
 	private bool deathAnimationStarted;
 	public string deathAnimationName;
@@ -10,6 +10,7 @@ public class MeleeEnemyAnimations : MonoBehaviour {
 	void Update() {
 		checkIsDead ();
 		animator.SetBool ("isRunning", meleeMechanics.getIsRunning ());//animator.SetBool ("isAttacking", meleeMechanics.getIsAttacking ());
+		animator.SetBool ("isAttacking", meleeMechanics.getCanAttack ());
 		animator.SetBool ("inAir", meleeMechanics.getInAir ());
 		animator.SetBool ("isDead", meleeMechanics.getIsDead ());
 

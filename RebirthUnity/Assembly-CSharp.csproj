@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\GameMechanics\SpriteMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\TribeMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\Weapon.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\AxeMechanics.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\ActionTrigger.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\AmmoPickupTrigger.cs" />
      <Compile Include="Assets\Scripts\UIScripts\playerStats.cs" />

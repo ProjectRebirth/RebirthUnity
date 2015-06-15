@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class NPCController : MonoBehaviour {
-	public SpriteMechanics npc;
+	public TribeMechanics npc;
 
 	
 	// Update is called once per frame
@@ -11,6 +11,7 @@ public class NPCController : MonoBehaviour {
 		float verticalInput = Input.GetAxis ("Vertical");
 		bool isAttacking = Input.GetKey (KeyCode.B);
 
+		npc.attack (Input.GetKey(KeyCode.G));
 		npc.moveHorizontal (horiztonalInput);
 		npc.moveVertical (verticalInput);
 
