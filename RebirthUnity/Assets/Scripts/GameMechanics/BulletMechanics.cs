@@ -7,6 +7,7 @@ public class BulletMechanics : MonoBehaviour {
 	public Weapon weapon;
 	private Vector2 unitVector;
 	private Vector3 origin;
+	public string enemyTag;
 
 	/**
 	 * Bullets are triggers. Use O
@@ -67,7 +68,7 @@ public class BulletMechanics : MonoBehaviour {
 	 * Use this method to do something when a bullet enters an area
 	 */ 
 	void OnTriggerEnter2D(Collider2D collider) {
-		if (collider.tag == "Sprite") {
+		if (collider.tag == enemyTag) {
 			SpriteMechanics sprite = collider.GetComponent<SpriteMechanics>();
 			sprite.setHealth (0);
 			Destroy(this.gameObject);

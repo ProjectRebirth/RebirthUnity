@@ -29,7 +29,7 @@ public class SpriteMechanics : MonoBehaviour {
 			//designer so chooses to start a character in the left position
 			this.transform.localScale = new Vector2 (-1, 1);
 		}
-		health = maxHealth;
+		//health = maxHealth;
 	}
 
 	/**
@@ -53,7 +53,7 @@ public class SpriteMechanics : MonoBehaviour {
 		checkFlipTexture (horizontalInput);
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
 		float x = speed * horizontalInput;
-		if (inAir || isHit) {
+		if (isHit) {
 			x = rigid.velocity.x;
 		}
 		Vector3 vec = new Vector3 (x, rigid.velocity.y, 0);
