@@ -18,7 +18,7 @@ public class MeleeEnemyAnimations : MonoBehaviour {
 
 	void checkIsDead() {
 		AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo (0);
-		if (deathAnimationStarted && info.normalizedTime > .6) {
+		if (deathAnimationStarted && info.normalizedTime > .8) {
 			Destroy(this.gameObject);
 		}
 		if (info.IsName (deathAnimationName)) {

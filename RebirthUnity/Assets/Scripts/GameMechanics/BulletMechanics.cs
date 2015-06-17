@@ -7,6 +7,7 @@ public class BulletMechanics : MonoBehaviour {
 	public Weapon weapon;
 	private Vector2 unitVector;
 	private Vector3 origin;
+	public string enemyTag;
 
 	/**
 	 * Bullets are triggers. Use O
@@ -20,11 +21,8 @@ public class BulletMechanics : MonoBehaviour {
 	/**
 	*The bulllet will update its location here
 	*/
-	void Update() {
-		if (getMagnitudeFromOrigin() > 10) {
-			Destroy(gameObject);		
-		}
-
+	protected virtual void Update() {
+		checkOutOfRange ();
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
 		rigid.velocity = speed * unitVector;
 
@@ -32,11 +30,18 @@ public class BulletMechanics : MonoBehaviour {
 
 	}
 
+	protected void checkOutOfRange() {
+		if (getMagnitudeFromOrigin() > 10) {
+			Destroy(gameObject);		
+		}
+
+	}
+
 	/**
 	 * Sets the direction that the projectile will follow in 2d space.
 	 * 
 	 */
-	public void setDirection(Vector2 direction) {
+	public virtual void setDirection(Vector2 direction) {
 
 		unitVector = normalizeVector(direction);
 	} 
@@ -67,7 +72,7 @@ public class BulletMechanics : MonoBehaviour {
 	 * Use this method to do something when a bullet enters an area
 	 */ 
 	void OnTriggerEnter2D(Collider2D collider) {
-		if (collider.tag == "Sprite") {
+		if (collider.tag == enemyTag) {
 			SpriteMechanics sprite = collider.GetComponent<SpriteMechanics>();
 			sprite.setHealth (0);
 			Destroy(this.gameObject);

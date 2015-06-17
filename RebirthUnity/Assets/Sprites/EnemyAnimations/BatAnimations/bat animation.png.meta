@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0a42acc37460aa245a14ec6cfd652baf
-timeCreated: 1434263482
+timeCreated: 1434436565
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -13,10 +13,10 @@ TextureImporter:
     21300012: Hover_02
     21300014: Hover_01
     21300016: Hover_00
-    21300018: bat animation_9
-    21300020: bat animation_10
-    21300022: bat animation_11
-    21300024: bat animation_12
+    21300018: Bat_Attack_03
+    21300020: Bat_Attack_02
+    21300022: Bat_Attack_01
+    21300024: Bat_Attack_00
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -152,7 +152,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bat animation_9
+    - name: Bat_Attack_03
       rect:
         serializedVersion: 2
         x: 56
@@ -162,7 +162,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bat animation_10
+    - name: Bat_Attack_02
       rect:
         serializedVersion: 2
         x: 117
@@ -172,7 +172,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bat animation_11
+    - name: Bat_Attack_01
       rect:
         serializedVersion: 2
         x: 179
@@ -182,7 +182,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bat animation_12
+    - name: Bat_Attack_00
       rect:
         serializedVersion: 2
         x: 238
