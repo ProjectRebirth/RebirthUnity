@@ -21,11 +21,8 @@ public class BulletMechanics : MonoBehaviour {
 	/**
 	*The bulllet will update its location here
 	*/
-	void Update() {
-		if (getMagnitudeFromOrigin() > 10) {
-			Destroy(gameObject);		
-		}
-
+	protected virtual void Update() {
+		checkOutOfRange ();
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
 		rigid.velocity = speed * unitVector;
 
@@ -33,11 +30,18 @@ public class BulletMechanics : MonoBehaviour {
 
 	}
 
+	protected void checkOutOfRange() {
+		if (getMagnitudeFromOrigin() > 10) {
+			Destroy(gameObject);		
+		}
+
+	}
+
 	/**
 	 * Sets the direction that the projectile will follow in 2d space.
 	 * 
 	 */
-	public void setDirection(Vector2 direction) {
+	public virtual void setDirection(Vector2 direction) {
 
 		unitVector = normalizeVector(direction);
 	} 

@@ -36,8 +36,8 @@ public class TribeMechanics : SpriteMechanics {
 	}
 	
 	public virtual void attack(bool attackButton) {
-		if (attackButton) {
-			canAttack = checkCanAttack ();
+		if (checkCanAttack()) {
+			canAttack = attackButton;
 		} else {
 			canAttack = false;
 		}

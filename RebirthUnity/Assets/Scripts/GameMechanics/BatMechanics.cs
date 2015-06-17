@@ -52,7 +52,7 @@ public class BatMechanics : TribeMechanics {
 
 
 	protected override bool checkCanAttack() {
-		return !getIsAttacking () && coolDownTimer <= 0;
+		return !getIsAttacking () && coolDownTimer <= 0 && !getCanAttack ();
 	}
 
 	public override void moveVertical(float verticalInput) {
