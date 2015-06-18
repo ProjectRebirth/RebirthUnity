@@ -8,6 +8,7 @@ public class BulletMechanics : MonoBehaviour {
 	private Vector2 unitVector;
 	private Vector3 origin;
 	public string enemyTag;
+	public float damage;
 
 	/**
 	 * Bullets are triggers. Use O
