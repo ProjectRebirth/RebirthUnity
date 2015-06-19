@@ -26,18 +26,15 @@ public class statsDisplay : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.O)) {
 			playerStats.damagePlayer(11f);
 		}
-		float displacement1 = moveTowards ((initShield / playerStats.maxShield), (playerStats.curShield/ playerStats.maxShield), Time.deltaTime * .4f );
-		float displacement2 = moveTowards (initHealth / playerStats.maxHealth, playerStats.curHealth / playerStats.maxHealth, Time.deltaTime *.4f);
-		shieldBar.fillAmount = playerStats.curShield / playerStats.maxShield;
+		float displacement1 = moveTowards ((initShield /2 * playerStats.maxShield), (playerStats.curShield/ 2 * playerStats.maxShield), Time.deltaTime * .4f );
+		float displacement2 = moveTowards (initHealth / 2 * playerStats.maxHealth, playerStats.curHealth / 2 * playerStats.maxHealth, Time.deltaTime *.4f);
+		shieldBar.fillAmount = playerStats.curShield / 2 * playerStats.maxShield;
 		impactBar.fillAmount = displacement1;
-		healthBar.fillAmount = playerStats.curHealth / playerStats.maxHealth;
+		healthBar.fillAmount = playerStats.curHealth / 2 * playerStats.maxHealth;
 		damageBar.fillAmount = displacement2;
-		
-		//shieldBar.fillAmount = Mathf.MoveTowards ((playerStats.curShield / playerStats.maxShield), 0, Time.smoothDeltaTime * .5f);
+
 		initShield = displacement1 * playerStats.maxShield;
 		initHealth = displacement2 * playerStats.maxHealth;
-		// = playerStats.curHealth;
-		//initShield = playerStats.curShield;
 	}
 
 	float moveTowards(float current, float goal, float difference) {

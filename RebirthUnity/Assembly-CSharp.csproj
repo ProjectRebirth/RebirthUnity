@@ -56,13 +56,14 @@
      <Compile Include="Assets\Scripts\Controllers\ObjectSpawnController.cs" />
      <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\ArcherMechanics.cs" />
-     <Compile Include="Assets\Scripts\GameMechanics\ArrowMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\BatMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\BulletMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\GraysonMechanics.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\LegLogic.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\SpriteMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\TribeMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\Weapon.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\ArrowMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\AxeMechanics.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\ActionTrigger.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\AmmoPickupTrigger.cs" />

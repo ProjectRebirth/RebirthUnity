@@ -1,0 +1,396 @@
+fileFormatVersion: 2
+guid: 4399ba0d72a27fc4d8699ae13764ee3c
+timeCreated: 1434611530
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Idle_00
+    21300002: Idle_01
+    21300004: Attack_00
+    21300006: Attack_01
+    21300008: Attack_02
+    21300010: Attack_03
+    21300012: Attack_04
+    21300014: Attack_05
+    21300016: Attack_06
+    21300018: Attack_07
+    21300020: Attack_08
+    21300022: Attack_09
+    21300024: Attack_10
+    21300026: Ranged Elite Tribe Animation_13
+    21300028: Walk_00
+    21300030: Walk_01
+    21300032: Walk_02
+    21300034: Walk_03
+    21300036: Walk_04
+    21300038: Walk_05
+    21300040: Walk_06
+    21300042: Walk_07
+    21300044: Walk_08
+    21300046: Walk_09
+    21300048: Death_00
+    21300050: Death_01
+    21300052: Death_02
+    21300054: Death_03
+    21300056: Death_04
+    21300058: Death_05
+    21300060: Death_06
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Idle_00
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 452
+        width: 85
+        height: 102
+      alignment: 9
+      pivot: {x: .370000005, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_01
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 452
+        width: 85
+        height: 103
+      alignment: 9
+      pivot: {x: .370000005, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Attack_00
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 301
+        width: 88
+        height: 102
+      alignment: 9
+      pivot: {x: .356417477, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Attack_01
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 301
+        width: 83
+        height: 102
+      alignment: 9
+      pivot: {x: .379999995, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Attack_02
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 301
+        width: 83
+        height: 102
+      alignment: 9
+      pivot: {x: .379999995, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Attack_03
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 301
+        width: 83
+        height: 102
+      alignment: 9
+      pivot: {x: .379999995, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Attack_04
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 301
+        width: 86
+        height: 113
+      alignment: 9
+      pivot: {x: .405000001, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Attack_05
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 301
+        width: 83
+        height: 107
+      alignment: 9
+      pivot: {x: .379999995, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Attack_06
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 301
+        width: 92
+        height: 102
+      alignment: 9
+      pivot: {x: .344999999, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Attack_07
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 301
+        width: 98
+        height: 102
+      alignment: 9
+      pivot: {x: .327281088, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Attack_08
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 301
+        width: 98
+        height: 102
+      alignment: 9
+      pivot: {x: .324849039, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Attack_09
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 301
+        width: 88
+        height: 102
+      alignment: 9
+      pivot: {x: .365999997, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Attack_10
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 301
+        width: 84
+        height: 102
+      alignment: 9
+      pivot: {x: .381000012, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranged Elite Tribe Animation_13
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 358
+        width: 44
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_00
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 166
+        width: 85
+        height: 102
+      alignment: 9
+      pivot: {x: .376031667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_01
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 166
+        width: 81
+        height: 102
+      alignment: 9
+      pivot: {x: .397968441, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_02
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 165
+        width: 81
+        height: 103
+      alignment: 9
+      pivot: {x: .381388724, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_03
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 165
+        width: 82
+        height: 103
+      alignment: 9
+      pivot: {x: .410551488, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_04
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 166
+        width: 85
+        height: 102
+      alignment: 9
+      pivot: {x: .365093648, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_05
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 166
+        width: 92
+        height: 102
+      alignment: 9
+      pivot: {x: .363006592, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_06
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 166
+        width: 92
+        height: 102
+      alignment: 9
+      pivot: {x: .364129096, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_07
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 166
+        width: 92
+        height: 102
+      alignment: 9
+      pivot: {x: .34953174, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_08
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 166
+        width: 85
+        height: 100
+      alignment: 9
+      pivot: {x: .395477653, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_09
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 166
+        width: 85
+        height: 101
+      alignment: 9
+      pivot: {x: .389401436, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Death_00
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 41
+        width: 86
+        height: 102
+      alignment: 9
+      pivot: {x: .370000005, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Death_01
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 41
+        width: 92
+        height: 102
+      alignment: 9
+      pivot: {x: .409999996, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Death_02
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 41
+        width: 80
+        height: 85
+      alignment: 9
+      pivot: {x: .284339905, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Death_03
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 41
+        width: 92
+        height: 87
+      alignment: 9
+      pivot: {x: .258695841, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Death_04
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 41
+        width: 118
+        height: 74
+      alignment: 9
+      pivot: {x: .202542573, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Death_05
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 41
+        width: 130
+        height: 60
+      alignment: 9
+      pivot: {x: .183077306, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Death_06
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 41
+        width: 130
+        height: 29
+      alignment: 9
+      pivot: {x: .181538746, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
