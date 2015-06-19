@@ -1,6 +1,7 @@
 ﻿<Properties>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UIScripts\statsDisplay.cs">
     <Files>
@@ -15,6 +16,11 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameMechanics\SpriteMechanics.cs">
     <Files>
 >>>>>>> origin/master
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameMechanics\SpriteMechanics.cs">
+    <Files>
+>>>>>>> origin/master
       <File FileName="Assets\Scripts\GameMechanics\WeaponMeachanics\AxeMechanics.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameMechanics\SpriteMechanics.cs" Line="217" Column="1" />
       <File FileName="Assets\Scripts\GameMechanics\ArcherMechanics.cs" Line="1" Column="1" />
@@ -23,6 +29,9 @@
       <File FileName="Assets\Scripts\GameMechanics\BulletMechanics.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameMechanics\TribeMechanics.cs" Line="1" Column="1" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 =======
 >>>>>>> origin/master
