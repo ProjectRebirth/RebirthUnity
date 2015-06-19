@@ -11,13 +11,9 @@ public class GraysonMechanics : SpriteMechanics {
 	public float strafeSideSpeed;
 	public float strafeUpSpeed;
 	public float climbSpeed;
-	public float stamina;
 	public Transform torso;
 	public Transform legs;
 	public Weapon currentWeapon;
-	public float maxShield;
-	public float maxStamina;
-
 
 	private bool canStrafe;
 	private bool isStrafing;
@@ -28,11 +24,7 @@ public class GraysonMechanics : SpriteMechanics {
 	private bool isLookingUp;
 	private int canClimb;
 	private bool isClimbing;
-	private float curStamina;
 
-
-	
-	
 	protected override void Start() {
 		base.Start ();
 	}
@@ -295,20 +287,7 @@ public class GraysonMechanics : SpriteMechanics {
 	public bool getIsClimbing() {
 		return isClimbing;
 	}
-
-	public float getMaxStamina() {
-		return maxStamina;
-	}
-
-	public float getCurStamina() {
-		return maxStamina;
-	}
-
-	public float getMaxShield () {
-		return maxShield;
-	}
-
-
+	
 	/**
 	 * Built in Unity mnChecks if a collider has interacted with a trigger.
 	 * 
