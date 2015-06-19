@@ -164,6 +164,7 @@ public class SpriteMechanics : MonoBehaviour {
 
 	public void setInAir(bool inAir) {
 		this.inAir = inAir;
+		this.madeJump = false;
 	}
 
 	public void setHealth(float health) {

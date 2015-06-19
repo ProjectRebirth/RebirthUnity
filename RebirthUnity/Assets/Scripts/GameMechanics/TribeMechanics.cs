@@ -71,7 +71,7 @@ public class TribeMechanics : SpriteMechanics {
 	}
 	
 	void OnTriggerExit2D (Collider2D collider) {
-		
+
 	}
 	
 }
