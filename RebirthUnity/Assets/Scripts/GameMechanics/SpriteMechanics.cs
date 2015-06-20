@@ -88,7 +88,7 @@ public class SpriteMechanics : MonoBehaviour {
 	 * orientation horizontally
 	 */ 
 	private void checkFlipTexture(float horizontalInput) {
-		if (!madeJump && !Input.GetKey(KeyCode.F)) {
+		if (true) {//!madeJump && !Input.GetKey(KeyCode.F)
 			if (isRight && horizontalInput < 0) {
 				isRight = false;
 				transform.localScale = new Vector2 (-1, 1);

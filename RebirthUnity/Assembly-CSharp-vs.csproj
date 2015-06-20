@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\AxeMechanics.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\ActionTrigger.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\AmmoPickupTrigger.cs" />
+     <Compile Include="Assets\Scripts\TriggerScripts\SwitchScenesTrigger.cs" />
      <Compile Include="Assets\Scripts\UIScripts\playerStats.cs" />
      <Compile Include="Assets\Scripts\UIScripts\statsDisplay.cs" />
  <Reference Include="UnityEngine.UI">
