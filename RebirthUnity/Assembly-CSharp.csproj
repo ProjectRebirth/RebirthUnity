@@ -46,9 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AIScripts\BasicEnemyAI.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\MeleeStateMachine.cs" />
      <Compile Include="Assets\Scripts\AIScripts\State.cs" />
      <Compile Include="Assets\Scripts\AIScripts\StateMachine.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\States\MeleeStates\MeleeIdle.cs" />
      <Compile Include="Assets\Scripts\AnimationTree\GraysonSpriteAnimation.cs" />
      <Compile Include="Assets\Scripts\AnimationTree\MeleeEnemyAnimations.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />

@@ -5,7 +5,10 @@ public class NPCController : MonoBehaviour {
 	public TribeMechanics npc;
 
 	
-	// Update is called once per frame
+	/**
+	 * This is where all the inputs will be checked in the game.
+	 * The controller classes will typically be where inputs from outside users are checked
+	 */ 
 	void FixedUpdate () {
 		float horiztonalInput = Input.GetAxis ("Horizontal");
 		float verticalInput = Input.GetAxis ("Vertical");
