@@ -1,12 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/**
+ * ALL STATEMACHINES WILL GO INTO THE BRAIN COMPONENT OF ANY SPRITE.
+ * IF THERE IS NO BRAIN COMPONENT, PLEASE ADD ONE AND THEN ADD A STATEMACHINE SCRIPT TO THAT
+ */ 
 public abstract class StateMachine : MonoBehaviour {
 	//public State[] validStates;
 	public State currentState;
 
 
-	void Start() {
+	protected virtual void Start() {
 		beginIdleState ();
 	}
 

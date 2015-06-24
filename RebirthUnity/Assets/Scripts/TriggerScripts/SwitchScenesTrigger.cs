@@ -13,7 +13,6 @@ public class SwitchScenesTrigger : ActionTrigger {
 
 
 	void Update() {
-		print (getTriggerEntered ());
 
 		if (getTriggerEntered()) {
 			if (grayson.getIsLookingUp()) {
