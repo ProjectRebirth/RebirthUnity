@@ -30,10 +30,15 @@ public class MeleeIdle : State {
 
 	public override void handleExitCollider (Collider2D collider)
 	{
-	
+		if (collider.tag == meleeStateMachine.hostileTag) {
+			meleeStateMachine.setTarget(collider.transform);
+			meleeStateMachine.changeState (new MeleeAggro(meleeStateMachine));
+		}
 	}
 
 	public override void handleEnterCollider (Collider2D collider) {
+		if (collider.tag  == meleeStateMachine.hostileTag) {
 
+		}
 	}
 }

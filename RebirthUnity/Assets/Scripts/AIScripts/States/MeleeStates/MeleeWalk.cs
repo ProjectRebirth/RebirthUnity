@@ -35,23 +35,28 @@ public class MeleeWalk : State {
 			if (mechanics.transform.position.x > destination) {
 				meleeStateMachine.changeState (new MeleeIdle (meleeStateMachine));
 			} else {
-				mechanics.moveHorizontal (1);
+				mechanics.moveHorizontal (.5f);
 			}
 
 		} else {
 			if (mechanics.transform.position.x < destination) {
 				meleeStateMachine.changeState (new MeleeIdle(meleeStateMachine));
 			} else {
-				mechanics.moveHorizontal(-1);
+				mechanics.moveHorizontal(-.5f);
 			}
 		}
 	}
 
 	public override void handleEnterCollider(Collider2D collider) {
-
+		if (collider.tag == meleeStateMachine.hostileTag) {
+			meleeStateMachine.setTarget (collider.transform);
+			meleeStateMachine.changeState (new MeleeAggro(meleeStateMachine));
+		}
 	}
 
 	public override void handleExitCollider(Collider2D collider) {
+		if (collider.tag == meleeStateMachine.hostileTag) {
 
+		}
 	}
 }

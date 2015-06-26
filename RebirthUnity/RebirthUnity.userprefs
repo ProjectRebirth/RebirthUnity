@@ -1,13 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AIScripts\States\MeleeStates\MeleeWalk.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AIScripts\States\MeleeStates\MeleeAggro.cs">
     <Files>
-      <File FileName="Assets\Scripts\AIScripts\States\MeleeStates\MeleeWalk.cs" Line="24" Column="79" />
-      <File FileName="Assets\Scripts\AIScripts\States\MeleeStates\MeleeIdle.cs" Line="37" Column="1" />
+      <File FileName="Assets\Scripts\AIScripts\States\MeleeStates\MeleeAggro.cs" Line="18" Column="53" />
+      <File FileName="Assets\Scripts\AIScripts\States\MeleeStates\MeleeWalk.cs" Line="38" Column="34" />
+      <File FileName="Assets\Scripts\AIScripts\States\MeleeStates\MeleeIdle.cs" Line="40" Column="52" />
       <File FileName="Assets\Scripts\AIScripts\State.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\AIScripts\MeleeStateMachine.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\AIScripts\MeleeStateMachine.cs" Line="9" Column="29" />
       <File FileName="Assets\Scripts\AIScripts\StateMachine.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\TriggerScripts\SwitchScenesTrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Controllers\NPCController.cs" Line="15" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
