@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 15ff98d33615b0a4cb61e14fbc2e5812
+timeCreated: 1435466140
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TigerWalk_07
+    21300002: TigerWalk_06
+    21300004: TigerWalk_05
+    21300006: TigerWalk_04
+    21300008: TigerWalk_03
+    21300010: TigerWalk_02
+    21300012: TigerWalk_01
+    21300014: TigerWalk_00
+    21300016: TigerAttack_01
+    21300018: Tiger animation_9
+    21300020: TigerDeath_01
+    21300022: TigerDeath_00
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: TigerWalk_07
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 173
+        width: 82
+        height: 46
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TigerWalk_06
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 174
+        width: 85
+        height: 46
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TigerWalk_05
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 174
+        width: 84
+        height: 46
+      alignment: 9
+      pivot: {x: .545518398, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TigerWalk_04
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 175
+        width: 82
+        height: 46
+      alignment: 9
+      pivot: {x: .542389631, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TigerWalk_03
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 175
+        width: 80
+        height: 43
+      alignment: 9
+      pivot: {x: .539104462, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TigerWalk_02
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 175
+        width: 81
+        height: 37
+      alignment: 9
+      pivot: {x: .557932138, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TigerWalk_01
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 175
+        width: 78
+        height: 34
+      alignment: 9
+      pivot: {x: .542334914, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TigerWalk_00
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 175
+        width: 78
+        height: 30
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TigerAttack_01
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 87
+        width: 84
+        height: 46
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tiger animation_9
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 87
+        width: 84
+        height: 46
+      alignment: 9
+      pivot: {x: .550476074, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TigerDeath_01
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 35
+        width: 77
+        height: 17
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TigerDeath_00
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 35
+        width: 78
+        height: 30
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
