@@ -9,6 +9,7 @@ public class BulletMechanics : MonoBehaviour {
 	private Vector3 origin;
 	public string enemyTag;
 	public float damage;
+	public Animator bulletAnimator;
 
 	/**
 	 * Bullets are triggers. Use O
@@ -16,6 +17,8 @@ public class BulletMechanics : MonoBehaviour {
 	void Start() {
 		origin = transform.localPosition;
 		//unitVector = new Vector2(1, 0);
+
+		bulletAnimator.enabled = false;
 	}
 	
 
@@ -23,12 +26,18 @@ public class BulletMechanics : MonoBehaviour {
 	*The bulllet will update its location here
 	*/
 	protected virtual void Update() {
-		checkOutOfRange ();
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
-		rigid.velocity = speed * unitVector;
+		checkOutOfRange ();
 
+		if (!bulletAnimator.enabled) {
+			rigid.velocity = speed * unitVector;
+		} else {
+			rigid.velocity = new Vector2();
+		}
 
-
+		if (bulletAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1){
+			Destroy(this.gameObject);
+		}
 	}
 
 	protected void checkOutOfRange() {
@@ -73,10 +82,10 @@ public class BulletMechanics : MonoBehaviour {
 	 * Use this method to do something when a bullet enters an area
 	 */ 
 	void OnTriggerEnter2D(Collider2D collider) {
-		if (collider.tag == enemyTag) {
+		if (collider.tag != "Grayson") {
 			SpriteMechanics sprite = collider.GetComponent<SpriteMechanics>();
 			sprite.setHealth (0);
-			Destroy(this.gameObject);
+			bulletAnimator.enabled = true;
 		}
 	}
 
