@@ -5,17 +5,16 @@ public class playerStats : MonoBehaviour {
 	
 	public float curShield;
 	public float maxShield;
+
+	public float curShield2;
+	public float maxShield2;
 	
 	public float curHealth;
 	public float maxHealth;
 	
 	public float curEnergy;
 	public float maxEnergy;
-	
-	public int currentAmmo;
-	public int maxAmmo;
-	
-	
+
 	// Use this for initialization
 	void Start () {
 	}

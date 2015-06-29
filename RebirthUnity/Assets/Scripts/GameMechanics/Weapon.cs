@@ -13,8 +13,8 @@ public class Weapon : MonoBehaviour {
 	public float refreshRate;
 	private float refreshTimer;
 	private bool waitingReload;
-	public int maxAmmoCarried;
 
+	public int maxAmmoCarried;
 	private int ammoCarried;
 
 	/**
@@ -89,7 +89,9 @@ public class Weapon : MonoBehaviour {
 	public int getCurrentAmmo(){
 		return currentAmmo;
 	}
-
+	public int getMaxAmmo(){
+		return maxAmmo;
+	}
 
 	/**
 	 * updates the cooldown timer for the gun
