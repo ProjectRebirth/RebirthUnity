@@ -1,0 +1,462 @@
+fileFormatVersion: 2
+guid: acafdfb2fdb5b0d4997eaf0363942666
+timeCreated: 1435707757
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Transition_08
+    21300002: Transition_07
+    21300004: Transition_06
+    21300006: Transition_05
+    21300008: Transition_04
+    21300010: Transition_03
+    21300012: Transition_02
+    21300014: Transition_01
+    21300016: Transition_00
+    21300018: walk_08
+    21300020: walk_07
+    21300022: walk_06
+    21300024: walk_05
+    21300026: walk_04
+    21300028: walk_03
+    21300030: walk_02
+    21300032: walk_01
+    21300034: walk_00
+    21300036: Spearman Animations_18
+    21300038: Spearman Animations_19
+    21300040: death_05
+    21300042: death_04
+    21300044: death_03
+    21300046: death_02
+    21300048: death_01
+    21300050: death_00
+    21300052: Idle_01
+    21300054: Idle_00
+    21300056: Spearman Animations_28
+    21300058: Spearman Animations_29
+    21300060: shield
+    21300062: Spearman Animations_31
+    21300064: Spearman Animations_32
+    21300066: Spearman Animations_33
+    21300068: Spearman Animations_34
+    21300070: Spearman Animations_35
+    21300072: Spearman Animations_36
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Transition_08
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 781
+        width: 101
+        height: 59
+      alignment: 9
+      pivot: {x: .183943033, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Transition_07
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 783
+        width: 100
+        height: 59
+      alignment: 9
+      pivot: {x: .153967902, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Transition_06
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 781
+        width: 103
+        height: 61
+      alignment: 9
+      pivot: {x: .175698295, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Transition_05
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 778
+        width: 99
+        height: 64
+      alignment: 9
+      pivot: {x: .172696203, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Transition_04
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 776
+        width: 99
+        height: 64
+      alignment: 9
+      pivot: {x: .190879747, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Transition_03
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 773
+        width: 93
+        height: 64
+      alignment: 9
+      pivot: {x: .194070801, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Transition_02
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 769
+        width: 76
+        height: 83
+      alignment: 9
+      pivot: {x: .240827054, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Transition_01
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 771
+        width: 54
+        height: 95
+      alignment: 9
+      pivot: {x: .348015666, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Transition_00
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 773
+        width: 35
+        height: 98
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_08
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 695
+        width: 100
+        height: 59
+      alignment: 9
+      pivot: {x: .173925474, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_07
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 689
+        width: 99
+        height: 64
+      alignment: 9
+      pivot: {x: .18550618, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_06
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 698
+        width: 104
+        height: 61
+      alignment: 9
+      pivot: {x: .21478565, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_05
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 698
+        width: 106
+        height: 60
+      alignment: 9
+      pivot: {x: .206274644, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_04
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 705
+        width: 110
+        height: 58
+      alignment: 9
+      pivot: {x: .249467328, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_03
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 705
+        width: 114
+        height: 61
+      alignment: 9
+      pivot: {x: .265639991, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_02
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 692
+        width: 110
+        height: 64
+      alignment: 9
+      pivot: {x: .228156075, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_01
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 701
+        width: 105
+        height: 60
+      alignment: 9
+      pivot: {x: .190447122, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_00
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 697
+        width: 101
+        height: 59
+      alignment: 9
+      pivot: {x: .16414468, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spearman Animations_18
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 598
+        width: 106
+        height: 59
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spearman Animations_19
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 597
+        width: 101
+        height: 59
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_05
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 518
+        width: 78
+        height: 15
+      alignment: 9
+      pivot: {x: .444949418, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_04
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 517
+        width: 71
+        height: 33
+      alignment: 9
+      pivot: {x: .466401428, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_03
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 518
+        width: 54
+        height: 44
+      alignment: 9
+      pivot: {x: .63685441, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_02
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 518
+        width: 45
+        height: 50
+      alignment: 9
+      pivot: {x: .738869905, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_01
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 516
+        width: 45
+        height: 55
+      alignment: 9
+      pivot: {x: .694083631, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_00
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 519
+        width: 117
+        height: 59
+      alignment: 9
+      pivot: {x: .304769933, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_01
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 397
+        width: 35
+        height: 98
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_00
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 399
+        width: 35
+        height: 98
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spearman Animations_28
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 300
+        width: 101
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spearman Animations_29
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 301
+        width: 101
+        height: 59
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shield
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 210
+        width: 24
+        height: 41
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spearman Animations_31
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 206
+        width: 29
+        height: 46
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spearman Animations_32
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 202
+        width: 43
+        height: 49
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spearman Animations_33
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 208
+        width: 49
+        height: 42
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spearman Animations_34
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 210
+        width: 49
+        height: 34
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spearman Animations_35
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 217
+        width: 43
+        height: 22
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spearman Animations_36
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 43
+        width: 43
+        height: 22
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
