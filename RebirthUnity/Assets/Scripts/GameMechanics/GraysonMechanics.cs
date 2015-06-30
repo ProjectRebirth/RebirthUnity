@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-
-
 /*
  * This script is used for all of Grayson's mechanics
  */ 
@@ -170,9 +168,6 @@ public class GraysonMechanics : SpriteMechanics {
 			canReload = false;
 		}
 	}
-
-
-
 
 	public void strafeLogic() {
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();

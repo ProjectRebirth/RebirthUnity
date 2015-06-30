@@ -6,13 +6,11 @@ public class SpriteMechanics : MonoBehaviour {
 	private bool inAir;
 	private bool madeJump;
 	private bool isRunning;
-	public float health;
-	public float maxHealth;
-	public float speed;//The speed that Grayson will be moving from side to side
+	public float speed;//The speed that the sprite will be moving from side to side
 	public float horiztonalMomentum;//The higher the number, the faster the sprite will come to a stop
-	public float curHealth;
-	public float curShield;
 	private bool isHit;
+
+	public SpriteStats spriteStats;
 
 	protected virtual void Update() {
 		checkIsHit ();
@@ -104,20 +102,13 @@ public class SpriteMechanics : MonoBehaviour {
 
 
 	/***************Getters Go Here************/
+
+	//Returns the speed of the player
 	public float getSpeed() {
 		return speed;
 	}
 
-	public float getHealth() {
-		return health;
-	}
-
-	//Retuns the max Health that the player can have
-	public float getMaxHealth() {
-		return maxHealth;
-	}
-
-	//Retuns the direction that the player is facing
+	//Returns the direction that the player is facing
 	public bool getIsRight() {
 		return isRight;
 	}
@@ -138,16 +129,11 @@ public class SpriteMechanics : MonoBehaviour {
 		return isRunning;
 	}
 
-	public float getCurHealth() {
-		return curHealth;
+	public bool getIsHit() {
+		return isHit;
 	}
 
-	public float getCurShield (){
-		return curShield;
-	}
-
-
-
+	
 
 	/******Setters Go Here***************/
 	public void setIsRunning(bool isRunning) {
@@ -169,42 +155,20 @@ public class SpriteMechanics : MonoBehaviour {
 		}
 	}
 
-	public void setHealth(float health) {
-		if (health < 0) {
-			this.health = 0;
-		}
-		if (this.health > maxHealth) {
-			this.health = maxHealth;
-		}
-		this.health = health;
-	}
-
 	public void setIsHit(bool isHit) {
 		this.isHit = isHit;
 	}
 
 	protected virtual void isDeadCleanup() {
-		if (getIsDead ()) {
+		if (spriteStats.getIsDead()) {
 			Collider2D collider = GetComponent<Collider2D> ();
 			Rigidbody2D rigid = GetComponent<Rigidbody2D>();
 			rigid.velocity = new Vector2();
 			rigid.gravityScale = 0;
 			Destroy (collider);
 		}
-
-
 	}
 	
-	public bool getIsHit() {
-		return isHit;
-	}
-
-	public bool getIsDead() {
-		return health <= 0;
-	}
-
-
-
 
 	/**
 	 * If the player is moving vertically then the player is considered in the air.

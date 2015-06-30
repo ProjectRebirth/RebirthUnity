@@ -1,30 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class playerStats : MonoBehaviour {
-	
+public class GraysonStats : SpriteStats {
+
 	public float curShield;
 	public float maxShield;
 
-	public float curShield2;
-	public float maxShield2;
-	
-	public float curHealth;
-	public float maxHealth;
-	
 	public float curEnergy;
 	public float maxEnergy;
 
 	// Use this for initialization
 	void Start () {
+	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
 	
-	public void damagePlayer(float damageAmount){
+	}
+
+	void initStats(){
+		curHealth = 100;
+		maxHealth = 100;
+		curShield = 50;
+		maxShield = 50;
+		curEnergy = 1;
+		maxEnergy = 1;
+
+	}
+	public void takeDamage(float damageAmount){
 		if(curShield > 0){
 			if(curShield < damageAmount){
 				float remainder = 0f;
@@ -40,13 +44,6 @@ public class playerStats : MonoBehaviour {
 			}else{
 				curHealth -= damageAmount;
 			}
-		}
-	}
-	public void healPlayer(float healAmount){
-		if ((curHealth + healAmount) >= maxHealth) {
-			curHealth = maxHealth;
-		} else {
-			curHealth += healAmount;
 		}
 	}
 }

@@ -38,7 +38,7 @@ public class BatMechanics : TribeMechanics {
 
 	protected override void isDeadCleanup() {
 		Animator animator = getAnimator ();
-		if (getIsDead ()) {
+		if (spriteStats.getIsDead()) {
 			Rigidbody2D rigid = GetComponent<Rigidbody2D>();
 			rigid.gravityScale = 1;
 			AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
@@ -59,7 +59,7 @@ public class BatMechanics : TribeMechanics {
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
 		float x = rigid.velocity.x;
 		float y = verticalInput * verticalSpeed;
-		if (!getIsDead ()) {
+		if (!spriteStats.getIsDead()) {
 			rigid.velocity = new Vector2 (x, y);
 		}
 	}

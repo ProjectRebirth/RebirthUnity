@@ -2,8 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class statsDisplay : MonoBehaviour {
-	public playerStats playerStats;
+public class StatDisplay : MonoBehaviour {
+	public GraysonStats graysonStats;
 	public Weapon weapStats;
 	
 	public Image healthBar;
@@ -16,8 +16,7 @@ public class statsDisplay : MonoBehaviour {
 	public Image ammoRow2;
 	public Image ammoRow3;
 	public Image ammoRow4;
-
-
+	
 	public Image energyBar;
 	
 	private float initHealth;
@@ -28,8 +27,8 @@ public class statsDisplay : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		initHealth = playerStats.curHealth;
-		initShield = playerStats.curShield;
+		initHealth = graysonStats.curHealth;
+		initShield = graysonStats.curShield;
 
 		currentAmmo = weapStats.getCurrentAmmo ();
 		maxClipAmmo = weapStats.getMaxAmmo ();
@@ -37,7 +36,22 @@ public class statsDisplay : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		updateHPShield ();
+		//updateHPShield ();
+		if (Input.GetKeyDown (KeyCode.O)) {
+			graysonStats.takeDamage(11f);
+		}
+		float displacement1 = moveTowards ((initShield  * graysonStats.maxShield), (graysonStats.curShield * graysonStats.maxShield), Time.deltaTime * .4f );
+		float displacement2 = moveTowards (initHealth  * graysonStats.maxHealth, graysonStats.curHealth  * graysonStats.maxHealth, Time.deltaTime *.4f);
+		
+		shieldBar.fillAmount = (graysonStats.curShield  * graysonStats.maxShield);
+		impactBar.fillAmount = displacement1;
+		
+		healthBar.fillAmount = (graysonStats.curHealth * graysonStats.maxHealth);
+		damageBar.fillAmount = displacement2;
+		
+		initShield = displacement1 * graysonStats.maxShield;
+		initHealth = displacement2 * graysonStats.maxHealth;
+
 	}
 
 	float moveTowards(float current, float goal, float difference) {
@@ -63,19 +77,7 @@ public class statsDisplay : MonoBehaviour {
 		
 	}
 	void updateHPShield(){
-		if (Input.GetKeyDown (KeyCode.O)) {
-			playerStats.damagePlayer(11f);
-		}
 
-		float displacement1 = moveTowards ((initShield  * playerStats.maxShield), (playerStats.curShield * playerStats.maxShield), Time.deltaTime * .4f );
-		float displacement2 = moveTowards (initHealth  * playerStats.maxHealth, playerStats.curHealth  * playerStats.maxHealth, Time.deltaTime *.4f);
-		shieldBar.fillAmount = (playerStats.curShield  * playerStats.maxShield);
-		impactBar.fillAmount = displacement1;
-		healthBar.fillAmount = (playerStats.curHealth * playerStats.maxHealth);
-		damageBar.fillAmount = displacement2;
-		
-		initShield = displacement1 * playerStats.maxShield;
-		initHealth = displacement2 * playerStats.maxHealth;
 	}
 
 }

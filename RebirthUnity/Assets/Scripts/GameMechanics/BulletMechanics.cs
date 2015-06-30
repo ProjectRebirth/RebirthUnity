@@ -1,4 +1,4 @@
-﻿﻿using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class BulletMechanics : MonoBehaviour {
@@ -83,8 +83,8 @@ public class BulletMechanics : MonoBehaviour {
 	 */ 
 	void OnTriggerEnter2D(Collider2D collider) {
 		if (collider.tag != "Grayson") {
-			SpriteMechanics sprite = collider.GetComponent<SpriteMechanics>();
-			sprite.setHealth (0);
+			SpriteStats sprite = collider.GetComponent<SpriteStats>();
+			sprite.setCurHealth (0);
 			bulletAnimator.enabled = true;
 		}
 	}
