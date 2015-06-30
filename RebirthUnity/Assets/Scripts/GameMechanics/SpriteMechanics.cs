@@ -20,8 +20,6 @@ public class SpriteMechanics : MonoBehaviour {
 
 	}
 
-
-
 	protected virtual void Start() {
 		if (!isRight) {//This if statement flips the texture of the sprite upon creation if the 
 			//designer so chooses to start a character in the left position

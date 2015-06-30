@@ -15,7 +15,7 @@ public class SpriteStats : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		checkIsDead ();
 	}
 	
 
@@ -32,6 +32,14 @@ public class SpriteStats : MonoBehaviour {
 			curHealth = 0;
 		}else {
 			curHealth -= decAmt;
+		}
+	}
+
+	public void checkIsDead(){
+		if (curHealth == 0) {
+			isDead = true;
+		} else {
+			isDead = false;
 		}
 	}
 
