@@ -72,8 +72,9 @@
      <Compile Include="Assets\Scripts\TriggerScripts\AmmoPickupTrigger.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\SwitchScenesTrigger.cs" />
      <Compile Include="Assets\Scripts\UIScripts\StatDisplay.cs" />
+     <Compile Include="Assets\Scripts\World\BaseStats.cs" />
      <Compile Include="Assets\Scripts\World\GraysonStats.cs" />
-     <Compile Include="Assets\Scripts\World\SpriteStats.cs" />
+     <Compile Include="Assets\Scripts\World\WorldManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

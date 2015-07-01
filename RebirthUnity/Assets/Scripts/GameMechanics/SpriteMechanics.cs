@@ -10,7 +10,7 @@ public class SpriteMechanics : MonoBehaviour {
 	public float horiztonalMomentum;//The higher the number, the faster the sprite will come to a stop
 	private bool isHit;
 
-	public SpriteStats spriteStats;
+	public BaseStats baseStats;
 
 	protected virtual void Update() {
 		checkIsHit ();
@@ -158,7 +158,7 @@ public class SpriteMechanics : MonoBehaviour {
 	}
 
 	protected virtual void isDeadCleanup() {
-		if (spriteStats.getIsDead()) {
+		if (baseStats.getIsDead()) {
 			Collider2D collider = GetComponent<Collider2D> ();
 			Rigidbody2D rigid = GetComponent<Rigidbody2D>();
 			rigid.velocity = new Vector2();

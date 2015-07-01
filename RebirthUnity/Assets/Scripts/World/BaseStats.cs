@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SpriteStats : MonoBehaviour {
+public class BaseStats : MonoBehaviour {
 	
 
 	public float curHealth;
@@ -51,7 +51,7 @@ public class SpriteStats : MonoBehaviour {
 	public float getCurHealth(){
 		return curHealth;
 	}
-	public float getmaxHealth(){
+	public float getMaxHealth(){
 		return maxHealth;
 	}
 

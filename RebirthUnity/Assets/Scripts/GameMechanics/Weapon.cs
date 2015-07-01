@@ -9,7 +9,7 @@ public class Weapon : MonoBehaviour {
 	public GraysonMechanics grayson;
 	public Vector3 upLocalPosition;
 	public int maxAmmo;
-	private int currentAmmo;
+	public int currentAmmo;
 	public float refreshRate;
 	private float refreshTimer;
 	private bool waitingReload;
@@ -23,11 +23,8 @@ public class Weapon : MonoBehaviour {
 	 */ 
 	void Start() {
 		currentAmmo = (int)Random.Range(0, maxAmmo);
-		ammoCarried = 0; //This will change later on
+		ammoCarried = 5; //This will change later on
 	}
-
-
-
 
 
 	/**

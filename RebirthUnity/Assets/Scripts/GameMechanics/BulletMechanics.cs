@@ -83,7 +83,7 @@ public class BulletMechanics : MonoBehaviour {
 	 */ 
 	void OnTriggerEnter2D(Collider2D collider) {
 		if (collider.tag != "Grayson") {
-			SpriteStats sprite = collider.GetComponent<SpriteStats>();
+			BaseStats sprite = collider.GetComponent<BaseStats>();
 			sprite.setCurHealth (0);
 			bulletAnimator.enabled = true;
 		}

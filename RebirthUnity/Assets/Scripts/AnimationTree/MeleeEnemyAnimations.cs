@@ -6,14 +6,14 @@ public class MeleeEnemyAnimations : MonoBehaviour {
 	public Animator animator;
 	private bool deathAnimationStarted;
 	public string deathAnimationName;
-	public SpriteStats spriteStats;
+	public BaseStats baseStats;
 	
 	void Update() {
 		checkIsDead ();
 		animator.SetBool ("isRunning", meleeMechanics.getIsRunning ());//animator.SetBool ("isAttacking", meleeMechanics.getIsAttacking ());
 		animator.SetBool ("isAttacking", meleeMechanics.getCanAttack ());
 		animator.SetBool ("inAir", meleeMechanics.getInAir ());
-		animator.SetBool ("isDead", spriteStats.getIsDead());
+		animator.SetBool ("isDead", baseStats.getIsDead());
 
 	}
 
