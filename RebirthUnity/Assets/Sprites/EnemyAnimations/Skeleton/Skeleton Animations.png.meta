@@ -1,0 +1,671 @@
+fileFormatVersion: 2
+guid: 0d9e84d42af791540a5b568b3ef3b952
+timeCreated: 1435797498
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: walk_11
+    21300002: walk_10
+    21300004: walk_09
+    21300006: walk_08
+    21300008: walk_06
+    21300010: walk_05
+    21300012: walk_04
+    21300014: walk_03
+    21300016: walk_02
+    21300018: walk_01
+    21300020: walk_00
+    21300022: walk_07
+    21300024: idle_01
+    21300026: idle_00
+    21300028: Skeleton Animations_14
+    21300030: Skeleton Animations_15
+    21300032: Skeleton Animations_16
+    21300034: Skeleton Animations_17
+    21300036: Skeleton Animations_18
+    21300038: Skeleton Animations_19
+    21300040: Skeleton Animations_20
+    21300042: Skeleton Animations_21
+    21300044: Skeleton Animations_22
+    21300046: Skeleton Animations_23
+    21300048: Skeleton Animations_24
+    21300050: Skeleton Animations_25
+    21300052: Skeleton Animations_26
+    21300054: Skeleton Animations_27
+    21300056: Skeleton Animations_28
+    21300058: Skeleton Animations_29
+    21300060: death_09
+    21300062: death_08
+    21300064: death_07
+    21300066: death_06
+    21300068: death_05
+    21300070: death_04
+    21300072: death_03
+    21300074: death_02
+    21300076: death_01
+    21300078: death_00
+    21300080: Skeleton Animations_40
+    21300082: blast_07
+    21300084: blast_06
+    21300086: blast_05
+    21300088: blast_04
+    21300090: blast_03
+    21300092: blast_02
+    21300094: blast_01
+    21300096: blast_00
+    21300098: uppercut_06
+    21300100: uppercut_05
+    21300102: uppercut_04
+    21300104: uppercut_03
+    21300106: uppercut_02
+    21300108: uppercut_01
+    21300110: uppercut_00
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: walk_11
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1066
+        width: 144
+        height: 85
+      alignment: 9
+      pivot: {x: .251527786, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_10
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1064
+        width: 140
+        height: 85
+      alignment: 9
+      pivot: {x: .250107914, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_09
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1061
+        width: 144
+        height: 88
+      alignment: 9
+      pivot: {x: .260307521, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_08
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1062
+        width: 155
+        height: 90
+      alignment: 9
+      pivot: {x: .27731815, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_06
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1053
+        width: 167
+        height: 89
+      alignment: 9
+      pivot: {x: .298687428, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_05
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1052
+        width: 171
+        height: 87
+      alignment: 9
+      pivot: {x: .334853142, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_04
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1058
+        width: 168
+        height: 88
+      alignment: 9
+      pivot: {x: .334572196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_03
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 1059
+        width: 166
+        height: 88
+      alignment: 9
+      pivot: {x: .31637758, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_02
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1064
+        width: 157
+        height: 88
+      alignment: 9
+      pivot: {x: .285865337, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_01
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 1067
+        width: 148
+        height: 88
+      alignment: 9
+      pivot: {x: .272843659, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_00
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 1068
+        width: 144
+        height: 85
+      alignment: 9
+      pivot: {x: .282097697, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_07
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 907
+        width: 159
+        height: 89
+      alignment: 9
+      pivot: {x: .288558483, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: idle_01
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 905
+        width: 144
+        height: 84
+      alignment: 9
+      pivot: {x: .272787303, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: idle_00
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 903
+        width: 144
+        height: 85
+      alignment: 9
+      pivot: {x: .279279083, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_14
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 826
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_15
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 826
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_16
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 826
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_17
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 826
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_18
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 826
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_19
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 826
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_20
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 827
+        width: 9
+        height: 10
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_21
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 828
+        width: 9
+        height: 9
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_22
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 828
+        width: 9
+        height: 9
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_23
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 828
+        width: 9
+        height: 8
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_24
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 828
+        width: 9
+        height: 8
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_25
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 828
+        width: 9
+        height: 8
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_26
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 828
+        width: 9
+        height: 8
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_27
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 828
+        width: 9
+        height: 8
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_28
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 828
+        width: 20
+        height: 8
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_29
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 773
+        width: 144
+        height: 85
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_09
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 688
+        width: 207
+        height: 32
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_08
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 679
+        width: 202
+        height: 38
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_07
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 678
+        width: 200
+        height: 45
+      alignment: 9
+      pivot: {x: .480618894, y: .0301486552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_06
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 677
+        width: 197
+        height: 50
+      alignment: 9
+      pivot: {x: .470485628, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_05
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 683
+        width: 191
+        height: 60
+      alignment: 9
+      pivot: {x: .455352932, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_04
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 677
+        width: 182
+        height: 68
+      alignment: 9
+      pivot: {x: .428652585, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_03
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 667
+        width: 171
+        height: 79
+      alignment: 9
+      pivot: {x: .384394407, y: .014719516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_02
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 668
+        width: 158
+        height: 84
+      alignment: 9
+      pivot: {x: .334403127, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_01
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 666
+        width: 145
+        height: 86
+      alignment: 9
+      pivot: {x: .271438062, y: .0270428322}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_00
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 662
+        width: 144
+        height: 85
+      alignment: 9
+      pivot: {x: .271196991, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Skeleton Animations_40
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 488
+        width: 33
+        height: 20
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_07
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 472
+        width: 164
+        height: 64
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_06
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 471
+        width: 164
+        height: 64
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_05
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 469
+        width: 165
+        height: 64
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_04
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 469
+        width: 164
+        height: 64
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_03
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 469
+        width: 167
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_02
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 462
+        width: 167
+        height: 80
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_01
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 465
+        width: 159
+        height: 85
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blast_00
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 460
+        width: 144
+        height: 85
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uppercut_06
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 234
+        width: 159
+        height: 85
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uppercut_05
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 245
+        width: 167
+        height: 80
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uppercut_04
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 245
+        width: 147
+        height: 77
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uppercut_03
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 256
+        width: 161
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uppercut_02
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 250
+        width: 106
+        height: 150
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uppercut_01
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 249
+        width: 147
+        height: 119
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uppercut_00
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 249
+        width: 144
+        height: 85
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
