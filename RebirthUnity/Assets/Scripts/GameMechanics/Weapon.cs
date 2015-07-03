@@ -40,8 +40,9 @@ public class Weapon : MonoBehaviour {
 				Vector3 bulletPosition = upLocalPosition + grayson.transform.localPosition;
 				bulletPosition = Weapon.defineSpread (bulletPosition, 1);
 				
-				obj = (BulletMechanics)Instantiate (ammo, bulletPosition, new Quaternion ());
-			}else {
+				obj = (BulletMechanics)Instantiate (ammo, bulletPosition, new Quaternion());
+				obj.transform.Rotate(0, 0, 90);
+			} else {
 				// Prepare bullet's position
 				Vector3 bulletPosition = transform.position;
 				bulletPosition = Weapon.defineSpread (bulletPosition, 2);
