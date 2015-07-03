@@ -72,13 +72,12 @@ public class Weapon : MonoBehaviour {
 		return currentAmmo <= 0;
 	}
 
+	/**
+	 * 
+	 */ 
 	public void reloadWeapon() {
-		if (ammoCarried > maxAmmo) {
-			currentAmmo = maxAmmo;
-			ammoCarried-=maxAmmo;
-		} else {
-			currentAmmo = ammoCarried;
-			ammoCarried-=ammoCarried;
+		if (currentAmmo < maxAmmo) {
+
 		}
 	}
 
