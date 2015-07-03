@@ -1,15 +1,15 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Weapon : MonoBehaviour {
 
 	protected static float DEFAULT_ACCURACY = .05f;
 
-	public BulletMechanics ammo;
+	public BulletMechanics ammo;//The ammo that will be 
 	public GraysonMechanics grayson;
 	public Vector3 upLocalPosition;
-	public int maxAmmo;
-	public int currentAmmo;
+	public int maxAmmo;//The max size of a magazine clip in the gun
+	public int currentAmmo;//The current amount of ammo in the magazine
 	public float refreshRate;
 	private float refreshTimer;
 	private bool waitingReload;
@@ -40,9 +40,8 @@ public class Weapon : MonoBehaviour {
 				Vector3 bulletPosition = upLocalPosition + grayson.transform.localPosition;
 				bulletPosition = Weapon.defineSpread (bulletPosition, 1);
 				
-				obj = (BulletMechanics)Instantiate (ammo, bulletPosition, new Quaternion());
-				obj.transform.Rotate(0, 0, 90);
-			} else {
+				obj = (BulletMechanics)Instantiate (ammo, bulletPosition, new Quaternion ());
+			}else {
 				// Prepare bullet's position
 				Vector3 bulletPosition = transform.position;
 				bulletPosition = Weapon.defineSpread (bulletPosition, 2);
@@ -73,11 +72,17 @@ public class Weapon : MonoBehaviour {
 	}
 
 	/**
-	 * 
+	 * This only refers to resupplying the gun with more ammunition.
+	 * Reload animation is activated somewhere else.
 	 */ 
 	public void reloadWeapon() {
-		if (currentAmmo < maxAmmo) {
-
+		int ammoNeeded = maxAmmo - currentAmmo;
+		if (ammoNeeded <= ammoCarried) {
+			currentAmmo += ammoNeeded;
+			ammoCarried -= ammoNeeded;
+		} else if (ammoNeeded > ammoCarried) {
+			currentAmmo += ammoCarried;
+			ammoCarried = 0;
 		}
 	}
 

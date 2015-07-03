@@ -25,7 +25,6 @@ public class ShieldRotation : MonoBehaviour {
 
 	private void adjustShieldLayer() {
 		SpriteRenderer render = GetComponent<SpriteRenderer> ();
-		print (mechanics.getIsRight ());
 		if (mechanics.isRight) {
 			render.sortingOrder = 3;
 		} else {

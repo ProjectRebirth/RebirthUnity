@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\GameMechanics\BulletMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\EnemyMechanics\ArcherMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\EnemyMechanics\BatMechanics.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\EnemyMechanics\SkeletonMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\EnemyMechanics\SpearmanMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\EnemyMechanics\TribeMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\GraysonMechanics.cs" />
