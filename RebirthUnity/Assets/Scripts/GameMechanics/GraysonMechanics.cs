@@ -26,7 +26,7 @@ public class GraysonMechanics : SpriteMechanics {
 	protected override void Start() {
 		base.Start ();
 	}
-
+	
 
 	void gravityLogic() {
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
@@ -67,7 +67,9 @@ public class GraysonMechanics : SpriteMechanics {
 		rigid.velocity = vec;
 	}
 	
-
+	/**
+	 * 
+	 */ 
 	private bool checkCanClimb() {
 		return canClimb > 0 && !isStrafing && !isReloading;
 	}
@@ -169,6 +171,9 @@ public class GraysonMechanics : SpriteMechanics {
 		}
 	}
 
+	/**
+	 * Controls the direction and speed of strafe
+	 */ 
 	public void strafeLogic() {
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
 		Vector2 vec = rigid.velocity;
@@ -185,6 +190,9 @@ public class GraysonMechanics : SpriteMechanics {
 		rigid.velocity = vec;
 	}
 
+	/**
+	 * 
+	 */ 
 	public Weapon getCurrentWeapon() {
 		return currentWeapon;
 	}
@@ -296,8 +304,6 @@ public class GraysonMechanics : SpriteMechanics {
 
 	/**
 	 * Built in Unity function. Checks when a collider has exited a trigger object
-	 * 
-	 * 
 	 */ 
 	void OnTriggerExit2D(Collider2D collider) {
 		if (collider.tag == "Climbable") {

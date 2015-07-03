@@ -45,6 +45,9 @@ public class SpriteMechanics : MonoBehaviour {
 		}
 	}
 
+	/**
+	 * 
+	 */ 
 	public void moveHorizontal(float horizontalInput) {
 		checkFlipTexture (horizontalInput);
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();

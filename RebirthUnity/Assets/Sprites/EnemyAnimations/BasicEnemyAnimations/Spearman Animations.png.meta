@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: acafdfb2fdb5b0d4997eaf0363942666
-timeCreated: 1435707757
+timeCreated: 1435879437
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -39,7 +39,7 @@ TextureImporter:
     21300064: Spearman Animations_32
     21300066: Spearman Animations_33
     21300068: Spearman Animations_34
-    21300070: Spearman Animations_35
+    21300070: Shield
     21300072: Spearman Animations_36
   serializedVersion: 2
   mipmaps:
@@ -274,7 +274,7 @@ TextureImporter:
         width: 106
         height: 59
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Spearman Animations_19
       rect:
@@ -284,7 +284,7 @@ TextureImporter:
         width: 101
         height: 59
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: death_05
       rect:
@@ -374,7 +374,7 @@ TextureImporter:
         width: 101
         height: 60
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Spearman Animations_29
       rect:
@@ -384,7 +384,7 @@ TextureImporter:
         width: 101
         height: 59
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: shield
       rect:
@@ -404,7 +404,7 @@ TextureImporter:
         width: 29
         height: 46
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Spearman Animations_32
       rect:
@@ -414,7 +414,7 @@ TextureImporter:
         width: 43
         height: 49
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Spearman Animations_33
       rect:
@@ -424,7 +424,7 @@ TextureImporter:
         width: 49
         height: 42
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Spearman Animations_34
       rect:
@@ -434,17 +434,17 @@ TextureImporter:
         width: 49
         height: 34
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spearman Animations_35
+    - name: Shield
       rect:
         serializedVersion: 2
         x: 1519
         y: 217
         width: 43
         height: 22
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Spearman Animations_36
       rect:
@@ -454,7 +454,7 @@ TextureImporter:
         width: 43
         height: 22
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

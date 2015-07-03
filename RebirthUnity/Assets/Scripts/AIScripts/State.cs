@@ -19,6 +19,8 @@ public abstract class State {
 
 	public abstract void exitState();
 
+	//public abstract string stateName ();
+
 	public void setStateMachine(StateMachine stateMachine) {
 		this.stateMachine = stateMachine;
 	}

@@ -10,6 +10,7 @@ public class BulletMechanics : MonoBehaviour {
 	public string enemyTag;
 	public float damage;
 	public Animator bulletAnimator;
+	public string[] collideWith;//Objects that the bullet can collide with
 	
 	/**
 	 * Bullets are triggers. Use O
@@ -82,9 +83,11 @@ public class BulletMechanics : MonoBehaviour {
 	 * Use this method to do something when a bullet enters an area
 	 */ 
 	void OnTriggerEnter2D(Collider2D collider) {
-		if (collider.tag != "Grayson") {
+		if (checkCollide(collider.tag)) {
 			BaseStats sprite = collider.GetComponent<BaseStats>();
-			sprite.setCurHealth (0);
+			if (collider.tag == "Sprite"){
+				sprite.setCurHealth (0);
+			}
 			bulletAnimator.enabled = true;
 		}
 	}
@@ -97,7 +100,15 @@ public class BulletMechanics : MonoBehaviour {
 		
 	}
 	
-	
+	public bool checkCollide(string checkTag) {
+		foreach (string check in collideWith) {
+			if (check == checkTag) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 	/**
 	 * This is supposed to destoy the bullet after it collides with another boject,
 	 * but something bad happens when this is uncommented and there are no bullets on

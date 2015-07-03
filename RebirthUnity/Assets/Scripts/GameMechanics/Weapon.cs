@@ -57,10 +57,16 @@ public class Weapon : MonoBehaviour {
 		}
 	}
 
+	/**
+	 * 
+	 */ 
 	public bool hasSpareAmmo() {
 		return ammoCarried > 0;
 	}
 
+	/**
+	 * Checks that the ammo in the magazine is zero
+	 */ 
 	public bool isMagazineEmpty() {
 		return currentAmmo <= 0;
 	}
@@ -86,6 +92,8 @@ public class Weapon : MonoBehaviour {
 	public int getCurrentAmmo(){
 		return currentAmmo;
 	}
+
+
 	public int getMaxAmmo(){
 		return maxAmmo;
 	}
@@ -99,6 +107,9 @@ public class Weapon : MonoBehaviour {
 		checkReloading ();
 	}
 
+	/**
+	 * 
+	 */ 
 	void checkReloading() {
 		if (grayson.getIsReloading ()) {
 			waitingReload = true;
@@ -110,6 +121,7 @@ public class Weapon : MonoBehaviour {
 			waitingReload = false;
 		}
 	}
+
 
 	void refreshTime(float deltaTime) {
 		refreshTimer-=deltaTime;
@@ -127,7 +139,7 @@ public class Weapon : MonoBehaviour {
 	 *  @param int axis defines the axis on which spread needs to be defined
 	 * 
 	 *  @return position position is returned with variance added
-	*/
+	 */
 	protected static Vector3 defineSpread(Vector3 position, int axis)
 	{
 		switch(axis){

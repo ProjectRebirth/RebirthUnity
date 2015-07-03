@@ -58,13 +58,14 @@
      <Compile Include="Assets\Scripts\Controllers\NPCController.cs" />
      <Compile Include="Assets\Scripts\Controllers\ObjectSpawnController.cs" />
      <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\GameMechanics\ArcherMechanics.cs" />
-     <Compile Include="Assets\Scripts\GameMechanics\BatMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\BulletMechanics.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\EnemyMechanics\ArcherMechanics.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\EnemyMechanics\BatMechanics.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\EnemyMechanics\SpearmanMechanics.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\EnemyMechanics\TribeMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\GraysonMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\LegLogic.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\SpriteMechanics.cs" />
-     <Compile Include="Assets\Scripts\GameMechanics\TribeMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\Weapon.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\ArrowMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\AxeMechanics.cs" />
@@ -75,6 +76,7 @@
      <Compile Include="Assets\Scripts\World\BaseStats.cs" />
      <Compile Include="Assets\Scripts\World\GraysonStats.cs" />
      <Compile Include="Assets\Scripts\World\WorldManager.cs" />
+     <Compile Include="Assets\ShieldRotation.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
