@@ -5,15 +5,30 @@ public class ShieldRotation : MonoBehaviour {
 	public SpearmanMechanics mechanics;
 
 	void Update() {
-		Vector3 currentRotation = transform.eulerAngles;
-		float x = currentRotation.x;
-		float y = currentRotation.y;
-		float zAngle = currentRotation.z;
+		adjustShieldLayer ();
+		adjustShieldRotation ();
+	}
 
+	private void adjustShieldRotation() {
+		float newZAngle = 0;
 		if (mechanics.getIsDefending ()) {
-			float newZAngle = Mathf.MoveTowards (zAngle, 90, Time.deltaTime);
+			newZAngle = 90;
 		} else {
-			float newZAngle = Mathf.MoveTowards(zAngle, 0, Time.deltaTime);
+			newZAngle = 0;
+		}
+		Quaternion goalAngle = Quaternion.Euler (0, 0, newZAngle);
+		Quaternion initAngle = transform.rotation;
+		Quaternion finalAngle = Quaternion.Slerp (initAngle, goalAngle, Time.deltaTime);
+
+		transform.rotation = finalAngle;
+	}
+
+	private void adjustShieldLayer() {
+		SpriteRenderer render = GetComponent<SpriteRenderer> ();
+		if (mechanics.isRight) {
+			render.sortingOrder = 3;
+		} else {
+			render.sortingOrder = 5;
 		}
 	}
 }

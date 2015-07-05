@@ -1,15 +1,15 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Weapon : MonoBehaviour {
 
 	protected static float DEFAULT_ACCURACY = .05f;
 
-	public BulletMechanics ammo;
+	public BulletMechanics ammo;//The ammo that will be 
 	public GraysonMechanics grayson;
 	public Vector3 upLocalPosition;
-	public int maxAmmo;
-	public int currentAmmo;
+	public int maxAmmo;//The max size of a magazine clip in the gun
+	public int currentAmmo;//The current amount of ammo in the magazine
 	public float refreshRate;
 	private float refreshTimer;
 	private bool waitingReload;
@@ -71,13 +71,18 @@ public class Weapon : MonoBehaviour {
 		return currentAmmo <= 0;
 	}
 
+	/**
+	 * This only refers to resupplying the gun with more ammunition.
+	 * Reload animation is activated somewhere else.
+	 */ 
 	public void reloadWeapon() {
-		if (ammoCarried > maxAmmo) {
-			currentAmmo = maxAmmo;
-			ammoCarried-=maxAmmo;
-		} else {
-			currentAmmo = ammoCarried;
-			ammoCarried-=ammoCarried;
+		int ammoNeeded = maxAmmo - currentAmmo;
+		if (ammoNeeded <= ammoCarried) {
+			currentAmmo += ammoNeeded;
+			ammoCarried -= ammoNeeded;
+		} else if (ammoNeeded > ammoCarried) {
+			currentAmmo += ammoCarried;
+			ammoCarried = 0;
 		}
 	}
 
