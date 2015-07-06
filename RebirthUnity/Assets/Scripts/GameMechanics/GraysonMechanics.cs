@@ -8,6 +8,8 @@ public class GraysonMechanics : SpriteMechanics {
 	public float jumpSpeed;//The height of that Grayson will jump
 	public float strafeSideSpeed;
 	public float strafeUpSpeed;
+	public float strafeCD;
+	private float cooldownTimer;
 	public float climbSpeed;
 	public Transform torso;
 	public Transform legs;
@@ -22,6 +24,7 @@ public class GraysonMechanics : SpriteMechanics {
 	private bool isLookingUp;
 	private int canClimb;
 	private bool isClimbing;
+
 
 	protected override void Start() {
 		base.Start ();
@@ -39,7 +42,10 @@ public class GraysonMechanics : SpriteMechanics {
 
 
 	protected override void Update() {
-
+		cooldownTimer -= Time.deltaTime;
+		if (cooldownTimer < 0) {
+			cooldownTimer = 0;
+		}
 		strafeLogic ();
 		base.Update ();
 		isStrafing = checkIsStrafing ();
@@ -101,6 +107,7 @@ public class GraysonMechanics : SpriteMechanics {
 	 * is possible at this moment
 	 */ 
 	public void strafe(bool strafeKey) {
+		cooldownTimer = strafeCD;
 		if (checkCanStrafe ()) {
 			canStrafe = strafeKey;
 		} else
@@ -153,7 +160,7 @@ public class GraysonMechanics : SpriteMechanics {
 	
 
 	public bool checkCanStrafe() {
-		return !isStrafing && !isClimbing;
+		return !isStrafing && cooldownTimer <= 0;
 	}
 
 	/**

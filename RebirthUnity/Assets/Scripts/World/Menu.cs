@@ -40,6 +40,7 @@ public class Menu : MonoBehaviour {
 		// show credits scene or GUI
 		GM.SetGameState(GameState.CREDITS);
 		Debug.Log(GM.gameState);
+		Application.LoadLevel ("Credits");
 	}
 	
 	public void StartGame(){
@@ -53,7 +54,7 @@ public class Menu : MonoBehaviour {
 		// show Help scene or GUI
 		GM.SetGameState(GameState.INSTRUCT);
 		Debug.Log(GM.gameState);
-		Application.LoadLevel ("");
+		Application.LoadLevel ("Instructions");
 	}
 	
 	public void Quit(){

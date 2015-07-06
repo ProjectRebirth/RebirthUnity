@@ -11,9 +11,7 @@ public class Game: MonoBehaviour {
 		// add a callback for when the game state changes
 		GM.OnStateChange += HandleOnStateChange;
 		Debug.Log("Current game state when Awakes: " + GM.gameState);
-		if (Input.GetKeyDown (KeyCode.P)){
-			GM.SetGameState(GameState.PAUSED);
-		}
+
 	}
 	
 	void Start(){
@@ -21,6 +19,13 @@ public class Game: MonoBehaviour {
 		// You define all the game states on SimpleGameManager.cs class
 		GM.SetGameState(GameState.GAME);
 	}
+	void Update(){
+		if (Input.GetKeyDown (KeyCode.P)){
+			GM.SetGameState(GameState.PAUSED);
+
+		}
+	}
+
 	
 	public void HandleOnStateChange(){
 		Debug.Log("State change called!");

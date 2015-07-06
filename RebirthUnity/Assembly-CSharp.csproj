@@ -76,15 +76,15 @@
      <Compile Include="Assets\Scripts\GameMechanics\Weapon.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\ArrowMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\AxeMechanics.cs" />
+     <Compile Include="Assets\Scripts\StatScripts\BaseStats.cs" />
+     <Compile Include="Assets\Scripts\StatScripts\GraysonStats.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\ActionTrigger.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\AmmoPickupTrigger.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\SwitchScenesTrigger.cs" />
      <Compile Include="Assets\Scripts\UIScripts\StatDisplay.cs" />
-     <Compile Include="Assets\Scripts\World\BaseStats.cs" />
      <Compile Include="Assets\Scripts\World\Credits.cs" />
      <Compile Include="Assets\Scripts\World\Game.cs" />
      <Compile Include="Assets\Scripts\World\GameManager.cs" />
-     <Compile Include="Assets\Scripts\World\GraysonStats.cs" />
      <Compile Include="Assets\Scripts\World\Instructions.cs" />
      <Compile Include="Assets\Scripts\World\Intro.cs" />
      <Compile Include="Assets\Scripts\World\Menu.cs" />

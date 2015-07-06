@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour {
 			}
 			return GameManager.instance;
 		}
-		
 	}
 	
 	public void SetGameState(GameState state){

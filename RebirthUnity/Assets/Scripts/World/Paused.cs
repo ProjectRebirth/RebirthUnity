@@ -21,5 +21,6 @@ public class Paused: MonoBehaviour {
 	
 	public void HandleOnStateChange(){
 		Debug.Log("State change called!");
+		Application.LoadLevel("Paused");
 	}
 }
