@@ -47,11 +47,17 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AIScripts\MeleeStateMachine.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\SkeletonStateMachine.cs" />
      <Compile Include="Assets\Scripts\AIScripts\State.cs" />
      <Compile Include="Assets\Scripts\AIScripts\StateMachine.cs" />
      <Compile Include="Assets\Scripts\AIScripts\States\MeleeStates\MeleeAggro.cs" />
      <Compile Include="Assets\Scripts\AIScripts\States\MeleeStates\MeleeIdle.cs" />
      <Compile Include="Assets\Scripts\AIScripts\States\MeleeStates\MeleeWalk.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\States\SkeletonStates\SkeletonAttack.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\States\SkeletonStates\SkeletonBlast.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\States\SkeletonStates\SkeletonIdle.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\States\SkeletonStates\SkeletonInvincible.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\States\SkeletonStates\SkeletonWalk.cs" />
      <Compile Include="Assets\Scripts\AnimationTree\GraysonSpriteAnimation.cs" />
      <Compile Include="Assets\Scripts\AnimationTree\MeleeEnemyAnimations.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
@@ -75,8 +81,14 @@
      <Compile Include="Assets\Scripts\TriggerScripts\SwitchScenesTrigger.cs" />
      <Compile Include="Assets\Scripts\UIScripts\StatDisplay.cs" />
      <Compile Include="Assets\Scripts\World\BaseStats.cs" />
+     <Compile Include="Assets\Scripts\World\Credits.cs" />
+     <Compile Include="Assets\Scripts\World\Game.cs" />
+     <Compile Include="Assets\Scripts\World\GameManager.cs" />
      <Compile Include="Assets\Scripts\World\GraysonStats.cs" />
-     <Compile Include="Assets\Scripts\World\WorldManager.cs" />
+     <Compile Include="Assets\Scripts\World\Instructions.cs" />
+     <Compile Include="Assets\Scripts\World\Intro.cs" />
+     <Compile Include="Assets\Scripts\World\Menu.cs" />
+     <Compile Include="Assets\Scripts\World\Paused.cs" />
      <Compile Include="Assets\ShieldRotation.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
