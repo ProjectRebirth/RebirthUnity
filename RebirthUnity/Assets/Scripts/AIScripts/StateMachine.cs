@@ -5,6 +5,7 @@ using System.Collections;
 /**
  * ALL STATEMACHINES WILL GO INTO THE BRAIN COMPONENT OF ANY SPRITE.
  * IF THERE IS NO BRAIN COMPONENT, PLEASE ADD ONE AND THEN ADD A STATEMACHINE SCRIPT TO THAT
+ * INSTEAD OF ADDING IT TO THE MAIN SPRITE OBJECT
  */ 
 public abstract class StateMachine : MonoBehaviour {
 	//public State[] validStates;
@@ -12,17 +13,16 @@ public abstract class StateMachine : MonoBehaviour {
 
 
 	protected virtual void Start() {
-		beginIdleState ();
+		beginInitialState ();
 	}
 
-	public abstract void beginIdleState();
+	public abstract void beginInitialState();
 
 	/**
 	 * Currently this calls the update in the currentState of the StateMachine
 	 */ 
 	protected virtual void Update () {
 		currentState.updateState (Time.deltaTime);
-
 	}
 
 	/**
