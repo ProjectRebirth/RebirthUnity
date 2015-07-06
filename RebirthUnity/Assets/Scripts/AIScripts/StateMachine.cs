@@ -22,6 +22,7 @@ public abstract class StateMachine : MonoBehaviour {
 	 * Currently this calls the update in the currentState of the StateMachine
 	 */ 
 	protected virtual void Update () {
+
 		currentState.updateState (Time.deltaTime);
 	}
 

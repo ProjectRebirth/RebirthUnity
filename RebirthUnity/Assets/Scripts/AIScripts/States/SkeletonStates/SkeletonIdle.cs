@@ -5,6 +5,7 @@ public class SkeletonIdle : State {
 	private SkeletonStateMachine skeletonStateMachine;
 
 	public SkeletonIdle(StateMachine stateMachine) : base(stateMachine) {
+		skeletonStateMachine = (SkeletonStateMachine)stateMachine;
 
 	}
 

@@ -10,7 +10,7 @@ public class SkeletonStateMachine : StateMachine {
 	}
 
 	public override void beginInitialState() {
-
+		currentState = new SkeletonIdle (this);
 	}
 
 	public void setTarget(Transform target) {
