@@ -17,7 +17,10 @@ public class BaseStats : MonoBehaviour {
 	void Update () {
 		checkIsDead ();
 	}
-	
+
+	public void takeDamage(float damageTaken) {
+		curHealth -= damageTaken;
+	}
 
 	public void plusCurHealth(float incAmt){
 		if ((curHealth + incAmt) >= maxHealth) {
