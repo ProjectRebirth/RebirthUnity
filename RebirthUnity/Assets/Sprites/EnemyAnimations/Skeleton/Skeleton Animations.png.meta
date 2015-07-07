@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0d9e84d42af791540a5b568b3ef3b952
-timeCreated: 1435797498
+timeCreated: 1436311960
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -512,8 +512,8 @@ TextureImporter:
         y: 488
         width: 33
         height: 20
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: blast_07
       rect:

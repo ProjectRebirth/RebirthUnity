@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SkeletonMechanics : TribeMechanics {
 
-	private bool isInvincible;
+	public bool isInvincible;
 	private bool isFiring;
 	public float invincibleCoolDown;
 
