@@ -23,7 +23,7 @@ public class Weapon : MonoBehaviour {
 	 */ 
 	void Start() {
 		currentAmmo = (int)Random.Range(0, maxAmmo);
-		ammoCarried = 5; //This will change later on
+		ammoCarried = 150; //This will change later on
 	}
 
 

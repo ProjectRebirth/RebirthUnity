@@ -8,7 +8,7 @@ public class BulletMechanics : MonoBehaviour {
 	private Vector2 unitVector;
 	private Vector3 origin;
 	public string enemyTag;
-	public float damage;
+	public float rawDamage;
 	public Animator bulletAnimator;
 	public string[] collideWith;//Objects that the bullet can collide with
 	
@@ -21,7 +21,10 @@ public class BulletMechanics : MonoBehaviour {
 		
 		bulletAnimator.enabled = false;
 	}
-	
+
+	public void setWeapon(Weapon weapon) {
+		this.weapon = weapon;
+	}
 	
 	/**
 	*The bulllet will update its location here
@@ -86,7 +89,7 @@ public class BulletMechanics : MonoBehaviour {
 		if (checkCollide(collider.tag)) {
 			BaseStats sprite = collider.GetComponent<BaseStats>();
 			if (collider.tag == "Sprite"){
-				sprite.setCurHealth (0);
+				sprite.takeDamage (rawDamage);
 			}
 			bulletAnimator.enabled = true;
 		}
