@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\AIScripts\States\SkeletonStates\SkeletonWalk.cs" />
      <Compile Include="Assets\Scripts\AnimationTree\GraysonSpriteAnimation.cs" />
      <Compile Include="Assets\Scripts\AnimationTree\MeleeEnemyAnimations.cs" />
+     <Compile Include="Assets\Scripts\AnimationTree\SkeletonEnemyAnimations.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
      <Compile Include="Assets\Scripts\Controllers\NPCController.cs" />
      <Compile Include="Assets\Scripts\Controllers\ObjectSpawnController.cs" />
@@ -90,6 +91,7 @@
      <Compile Include="Assets\Scripts\World\Menu.cs" />
      <Compile Include="Assets\Scripts\World\Paused.cs" />
      <Compile Include="Assets\ShieldRotation.cs" />
+     <None Include="Assets\Scripts\StatScripts\Text.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
