@@ -22,7 +22,7 @@ public class StatDisplay : MonoBehaviour {
 	
 	public Image energyBar;
 	
-	private float initHealth;
+	public float initHealth;
 	private float initShield;
 
 	public int currentAmmo;
@@ -42,7 +42,6 @@ public class StatDisplay : MonoBehaviour {
 			initHealth = graysonStats.getCurHealth();
 			initShield = graysonStats.getCurShield ();
 		}
-
 
 	}
 /*

@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections;
 
 // Game States
-public enum GameState { INTRO, MAIN_MENU, PAUSED, GAME, CREDITS, INSTRUCT }
+public enum GameState { INTRO, MAIN_MENU, PAUSED, GAME, CREDITS, WEAP_SWAP }
 
 public delegate void OnStateChangeHandler();
 
@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour {
 	
 	public static GameManager Instance{
 		get {
-			if (GameManager.instance == null){
+			if (GameManager.instance == null ){
 				GameManager.instance = new GameManager();
 				DontDestroyOnLoad(GameManager.instance);
 			}
@@ -25,7 +25,6 @@ public class GameManager : MonoBehaviour {
 	
 	public void SetGameState(GameState state){
 		this.gameState = state;
-		OnStateChange();
 	}
 	
 	public void OnApplicationQuit(){

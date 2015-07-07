@@ -3,60 +3,54 @@ using System.Collections;
 
 public class Menu : MonoBehaviour {
 	GameManager GM;
-	public static string playerPrefab = "/Assets/Prefabs/MapV2";
+	public Font tech;
 
 	void Awake () {
 		GM = GameManager.Instance;
-		GM.OnStateChange += HandleOnStateChange;
 	}
-	
-	public void HandleOnStateChange ()
-	{
-		Debug.Log("OnStateChange!");
+
+	void Start(){
+		GM.SetGameState(GameState.MAIN_MENU);
 	}
-	
-	
+
 	public void OnGUI(){
 		//menu layout
-		GUI.BeginGroup (new Rect (Screen.width / 2 - 50, Screen.height / 2 - 50, 170, 800));
-		GUI.Box (new Rect (0, 0, 170, 200), "Menu");
-		if (GUI.Button (new Rect (10, 40, 150, 30), "Start")){
-			StartGame();
+		GUI.BeginGroup (new Rect (Screen.width / 2 - 145 , Screen.height / 2 - 150, 340, 800));
+		GUI.backgroundColor = Color.white;
+		GUI.skin.font = tech;
+		GUI.skin.label.
+		if (GUI.Button (new Rect (0, 0, 290, 60), "New Game")){
+			NewGame();
 		}
-		if (GUI.Button (new Rect (10, 80, 150, 30), "Instructions")){
-			ShowInstructions();
+		if (GUI.Button (new Rect (0,80, 290, 60), "Load Game")){
+			LoadGame();
 		}
-		if (GUI.Button (new Rect (10, 120, 150, 30), "Credits")){
+		if (GUI.Button (new Rect (0,160, 290, 60), "Credits")){
 			ShowCredits();
 		}
-		if (GUI.Button (new Rect (10, 160, 150, 30), "Quit")){
+		if (GUI.Button (new Rect (0,240 , 290, 60), "Quit")){
 			Quit();
 		}
 		GUI.EndGroup();
 	}
 	
 	
-	public void ShowCredits(){
-		// show credits scene or GUI
-		GM.SetGameState(GameState.CREDITS);
-		Debug.Log(GM.gameState);
-		Application.LoadLevel ("Credits");
-	}
+
 	
-	public void StartGame(){
-		//start game scene
+	public void NewGame(){
 		GM.SetGameState(GameState.GAME);
-		Debug.Log(GM.gameState);
 		Application.LoadLevel ("Level1");
 	}
 	
-	public void ShowInstructions(){
-		// show Help scene or GUI
-		GM.SetGameState(GameState.INSTRUCT);
-		Debug.Log(GM.gameState);
-		Application.LoadLevel ("Instructions");
+	public void LoadGame(){
+		//GM.SetGameState(GameState.CREDITS);
+		//Application.LoadLevel ("");
 	}
-	
+	public void ShowCredits(){
+		GM.SetGameState(GameState.CREDITS);
+		Application.LoadLevel ("Credits");
+	}
+
 	public void Quit(){
 		Debug.Log("Quit!");
 		Application.Quit();

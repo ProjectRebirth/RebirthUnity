@@ -85,10 +85,10 @@
      <Compile Include="Assets\Scripts\World\Credits.cs" />
      <Compile Include="Assets\Scripts\World\Game.cs" />
      <Compile Include="Assets\Scripts\World\GameManager.cs" />
-     <Compile Include="Assets\Scripts\World\Instructions.cs" />
      <Compile Include="Assets\Scripts\World\Intro.cs" />
      <Compile Include="Assets\Scripts\World\Menu.cs" />
      <Compile Include="Assets\Scripts\World\Paused.cs" />
+     <Compile Include="Assets\Scripts\World\WeapSwap.cs" />
      <Compile Include="Assets\ShieldRotation.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
