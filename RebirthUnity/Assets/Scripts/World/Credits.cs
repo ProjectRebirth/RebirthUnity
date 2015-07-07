@@ -18,8 +18,20 @@ public class Credits: MonoBehaviour {
 		// You define all the game states on SimpleGameManager.cs class
 		GM.SetGameState(GameState.CREDITS);
 	}
+	void Update(){
+		if (Input.GetKeyDown (KeyCode.V)) {
+			returnToGame();
+		}
+	}
 	
 	public void HandleOnStateChange(){
 		Debug.Log("State change called!");
 	}
+	public void returnToGame(){
+		//start game scene
+		GM.SetGameState(GameState.GAME);
+		Debug.Log(GM.gameState);
+		Application.LoadLevel ("Level1");
+	}
+
 }

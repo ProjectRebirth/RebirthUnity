@@ -6,7 +6,9 @@ public class Intro : MonoBehaviour {
 	GameManager GM;
 	
 	void Awake () {
+		// call the instance 
 		GM = GameManager.Instance;
+		// add a callback for when the game state changes
 		GM.OnStateChange += HandleOnStateChange;
 		Debug.Log("Current game state when Awakes: " + GM.gameState);
 	}
