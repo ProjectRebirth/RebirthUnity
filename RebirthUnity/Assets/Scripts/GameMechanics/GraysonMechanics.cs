@@ -277,6 +277,12 @@ public class GraysonMechanics : SpriteMechanics {
 	public bool getIsReloading() {
 		return isReloading;
 	}
+	public float getCooldownTimer(){
+		return cooldownTimer;
+	}
+	public float getStrafeCD(){
+		return strafeCD;
+	}
 
 
 

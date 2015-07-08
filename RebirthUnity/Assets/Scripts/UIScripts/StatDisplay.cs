@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class StatDisplay : MonoBehaviour {
 	public GraysonStats graysonStats;
 	public Weapon weapStats;
+	public GraysonMechanics cooldownMech;
 	
 	public Image healthBar;
 	public Image damageBar;
@@ -37,6 +38,7 @@ public class StatDisplay : MonoBehaviour {
 	void Update () {
 		updateAmmo ();
 		updateHPShield ();
+		updateEnergy ();
 		if (Input.GetKeyDown (KeyCode.O)) {
 			graysonStats.takeDamage(11f);
 			initHealth = graysonStats.getCurHealth();
@@ -129,5 +131,7 @@ public class StatDisplay : MonoBehaviour {
 		healthBar.fillAmount = hpFrac / 2f;
 		damageBar.fillAmount = hpDiff / 2f;
 	}
-
+	void updateEnergy(){
+		energyBar.fillAmount = ((cooldownMech.getCooldownTimer() * - 1f) + cooldownMech.getStrafeCD())/cooldownMech.getStrafeCD();
+	}
 }
