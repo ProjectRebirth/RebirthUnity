@@ -9,7 +9,7 @@ public class GraysonMechanics : SpriteMechanics {
 	public float strafeSideSpeed;
 	public float strafeUpSpeed;
 	public float strafeCD;
-	private float cooldownTimer;
+	public float cooldownTimer;
 	public float climbSpeed;
 	public Transform torso;
 	public Transform legs;
@@ -107,7 +107,6 @@ public class GraysonMechanics : SpriteMechanics {
 	 * is possible at this moment
 	 */ 
 	public void strafe(bool strafeKey) {
-		cooldownTimer = strafeCD;
 		if (checkCanStrafe ()) {
 			canStrafe = strafeKey;
 		} else
@@ -160,7 +159,7 @@ public class GraysonMechanics : SpriteMechanics {
 	
 
 	public bool checkCanStrafe() {
-		return !isStrafing && cooldownTimer <= 0;
+		return !isStrafing && cooldownTimer == 0;
 	}
 
 	/**
@@ -170,8 +169,6 @@ public class GraysonMechanics : SpriteMechanics {
 	public void reloadWeapon(bool reloadButton) {
 		if (checkCanReload ()) {
 			canReload = reloadButton;
-
-
 			//print (reloadButton);
 		} else {
 			canReload = false;
@@ -185,6 +182,7 @@ public class GraysonMechanics : SpriteMechanics {
 		Rigidbody2D rigid = GetComponent<Rigidbody2D> ();
 		Vector2 vec = rigid.velocity;
 		if (canStrafe) {
+			cooldownTimer = strafeCD;
 			vec.y = strafeUpSpeed;
 			if (strafeSideSpeed > 0 && !isRight) strafeSideSpeed *= -1;
 			else if(strafeSideSpeed < 0 && isRight) strafeSideSpeed *= -1;
@@ -317,6 +315,4 @@ public class GraysonMechanics : SpriteMechanics {
 			canClimb -=1 ; 
 		}
 	}
-
-
 }
