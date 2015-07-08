@@ -19,8 +19,8 @@ public class Game: MonoBehaviour {
 	void Update(){
 		if (Input.GetKeyDown (KeyCode.P)) {
 			pFlag = !pFlag;
+			GUI.enabled = pFlag;
 			if(pFlag){
-				GUI.enabled = pFlag;
 				PauseGame();
 			}else{
 				ResumeGame ();
@@ -29,10 +29,18 @@ public class Game: MonoBehaviour {
 	}
 	public void OnGUI(){
 		GUI.enabled = pFlag;
+		/*
+		if (pFlag) {
+			GUI.color.a = 0;
+		} else {
+			GUI.color.a = 1;
+		}
+		*/
 		GUI.BeginGroup (new Rect (Screen.width / 2 - 145 , Screen.height / 2 - 150, 340, 800));
 		GUI.backgroundColor = Color.white;
 		GUI.skin.font = tech;
 		if (GUI.Button (new Rect (0, 0, 290, 60), "Resume")){
+			pFlag = !pFlag;
 			ResumeGame();
 		}
 		if (GUI.Button (new Rect (0,80, 290, 60), "Option")){
@@ -47,6 +55,5 @@ public class Game: MonoBehaviour {
 	}
 	public void ResumeGame(){
 		Time.timeScale  = 1;
-		pFlag = !pFlag;
 	}
 }

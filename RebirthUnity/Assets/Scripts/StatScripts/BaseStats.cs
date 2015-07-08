@@ -18,7 +18,7 @@ public class BaseStats : MonoBehaviour {
 		checkIsDead ();
 	}
 
-	public void takeDamage(float damageTaken) {
+	public virtual void takeDamage(float damageTaken) {
 		curHealth -= damageTaken;
 	}
 

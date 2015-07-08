@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class ShieldRotation : MonoBehaviour {
-	public SpearmanMechanics mechanics;
+	public SpearmanStats spearmanStats;
+	public TribeMechanics mechanics;
+	public float rotationSpeed;
 
 	void Update() {
 		adjustShieldLayer ();
@@ -11,14 +13,14 @@ public class ShieldRotation : MonoBehaviour {
 
 	private void adjustShieldRotation() {
 		float newZAngle = 0;
-		if (mechanics.getIsDefending ()) {
+		if (spearmanStats.getIsDefending ()) {
 			newZAngle = 90;
 		} else {
 			newZAngle = 0;
 		}
 		Quaternion goalAngle = Quaternion.Euler (0, 0, newZAngle);
 		Quaternion initAngle = transform.rotation;
-		Quaternion finalAngle = Quaternion.Slerp (initAngle, goalAngle, Time.deltaTime);
+		Quaternion finalAngle = Quaternion.Slerp (initAngle, goalAngle, rotationSpeed * Time.deltaTime);
 
 		transform.rotation = finalAngle;
 	}
