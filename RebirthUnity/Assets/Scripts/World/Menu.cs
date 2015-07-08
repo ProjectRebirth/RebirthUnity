@@ -18,7 +18,6 @@ public class Menu : MonoBehaviour {
 		GUI.BeginGroup (new Rect (Screen.width / 2 - 145 , Screen.height / 2 - 150, 340, 800));
 		GUI.backgroundColor = Color.white;
 		GUI.skin.font = tech;
-		GUI.skin.label.
 		if (GUI.Button (new Rect (0, 0, 290, 60), "New Game")){
 			NewGame();
 		}
