@@ -9,7 +9,7 @@ public class NPCController : MonoBehaviour {
 	 * This is where all the inputs will be checked in the game.
 	 * The controller classes will typically be where inputs from outside users are checked
 	 */ 
-	void FixedUpdate () {
+	protected virtual void FixedUpdate () {
 		float horiztonalInput = Input.GetAxis ("Horizontal");
 		float verticalInput = Input.GetAxis ("Vertical");
 		bool isAttacking = Input.GetKey (KeyCode.B);

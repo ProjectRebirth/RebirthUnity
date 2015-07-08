@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class SpearmanMechanics : TribeMechanics {
-	public SpearmanStats spearmanStats;
 
 	protected override void Update() {
 		base.Update ();
@@ -10,13 +9,23 @@ public class SpearmanMechanics : TribeMechanics {
 	}
 
 	public void defend(bool defendDown) {
+		SpearmanStats spearmanStats = (SpearmanStats)baseStats;
 		if (checkCanDefend()) {
+
 			spearmanStats.setIsDefending(defendDown);
 		}
 	}
 
 	private bool checkCanDefend() {
-		return getIsRunning ();
+		return !getIsRunning ();
 	}
 
+	protected override void isDeadCleanup() {
+		base.isDeadCleanup ();
+		if (baseStats.getIsDead ()) {
+			foreach (Transform child in transform) {
+				Destroy (child.gameObject);
+			}
+		}
+	}
 }

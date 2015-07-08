@@ -21,4 +21,5 @@ public class SpearmanStats : BaseStats {
 		this.isDefending = isDefending;
 	}
 
+
 }
