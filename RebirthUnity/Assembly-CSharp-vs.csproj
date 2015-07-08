@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\Controllers\NPCController.cs" />
      <Compile Include="Assets\Scripts\Controllers\ObjectSpawnController.cs" />
      <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\SpearNPCController.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\BulletMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\EnemyMechanics\ArcherMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\EnemyMechanics\BatMechanics.cs" />
@@ -79,6 +80,7 @@
      <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\AxeMechanics.cs" />
      <Compile Include="Assets\Scripts\StatScripts\BaseStats.cs" />
      <Compile Include="Assets\Scripts\StatScripts\GraysonStats.cs" />
+     <Compile Include="Assets\Scripts\StatScripts\SpearmanStats.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\ActionTrigger.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\AmmoPickupTrigger.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\SwitchScenesTrigger.cs" />
@@ -91,7 +93,6 @@
      <Compile Include="Assets\Scripts\World\Paused.cs" />
      <Compile Include="Assets\Scripts\World\WeapSwap.cs" />
      <Compile Include="Assets\ShieldRotation.cs" />
-     <None Include="Assets\Scripts\StatScripts\Text.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
