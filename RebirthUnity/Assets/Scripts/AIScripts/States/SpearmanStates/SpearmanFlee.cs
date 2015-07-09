@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class SpearmanFlee : State {
-	SpearmanStateMachine spearStateMachine;
+	private SpearmanStateMachine spearStateMachine;
+	private Vector3 avoidLocation;
 
 	public SpearmanFlee(StateMachine stateMachine) : base (stateMachine) {
 		spearStateMachine = (SpearmanStateMachine)spearStateMachine;
@@ -29,7 +30,7 @@ public class SpearmanFlee : State {
 	}
 
 	private float getDeltaX() {
-		float goalX = 
+		return 0f;
 	}
 
 }
