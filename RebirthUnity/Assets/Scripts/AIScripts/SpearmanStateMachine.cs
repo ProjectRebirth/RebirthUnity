@@ -5,12 +5,17 @@ public class SpearmanStateMachine : StateMachine {
 	private Collider2D target;
 	public SpearmanMechanics spearmanMechanics;
 	public SpearmanStats spearmanStats;
+	public string enemyTag;
 
 	public override void beginInitialState() {
-
+		currentState = new SpearmanIdle (this);
 	}
 
 	public Collider2D getTarget() {
 		return target;
+	}
+
+	public void setTarget(Collider2D collider) {
+		this.target = collider;
 	}
 }
