@@ -25,11 +25,14 @@ public class SpearmanCharge : State {
 	}
 
 	public override void updateState(float deltaTime) {
+		spearmanMechanics.defend (false);
 		float deltaX = getDeltaX ();
 		if (deltaX > 1) {
 			spearmanMechanics.moveHorizontal (-1);
 		} else if (deltaX < -1) {
-			spearmanMechanics.moveHorizontal(1); 
+			spearmanMechanics.moveHorizontal (1); 
+		} else {
+			spearStateMachine.changeState(new SpearmanDefend(spearStateMachine));
 		}
 	}
 

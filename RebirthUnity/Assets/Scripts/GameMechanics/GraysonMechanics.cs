@@ -257,6 +257,10 @@ public class GraysonMechanics : SpriteMechanics {
 		return false;
 	}
 
+	public bool getIsFiring() {
+		return isFiring;
+	}
+
 	//Returns the variable that contains information about whether the player is looking up
 	public bool getIsLookingUp() {
 		return isLookingUp;

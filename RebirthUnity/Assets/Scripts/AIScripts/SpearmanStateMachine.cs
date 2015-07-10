@@ -6,6 +6,7 @@ public class SpearmanStateMachine : StateMachine {
 	public SpearmanMechanics spearmanMechanics;
 	public SpearmanStats spearmanStats;
 	public string enemyTag;
+	public float delayDefend;
 
 	public override void beginInitialState() {
 		currentState = new SpearmanIdle (this);

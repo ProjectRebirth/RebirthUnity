@@ -2,10 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\..\Desktop\RebirthUnity\RebirthUnity\Assets\Scripts\AIScripts\States\SpearmanStates\SpearmanCharge.cs">
     <Files>
-      <File FileName="Assets\Scripts\GameMechanics\EnemyMechanics\SkeletonMechanics.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\AnimationTree\MeleeEnemyAnimations.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\World\Game.cs" Line="1" Column="1" />
-      <File FileName="..\..\..\..\Desktop\RebirthUnity\RebirthUnity\Assets\Scripts\AIScripts\States\SpearmanStates\SpearmanCharge.cs" Line="1" Column="1" />
+      <File FileName="..\..\..\..\Desktop\RebirthUnity\RebirthUnity\Assets\Scripts\AIScripts\States\SpearmanStates\SpearmanDefend.cs" Line="27" Column="74" />
+      <File FileName="..\..\..\..\Desktop\RebirthUnity\RebirthUnity\Assets\Scripts\AIScripts\States\SpearmanStates\SpearmanCharge.cs" Line="34" Column="4" />
+      <File FileName="..\..\..\..\Desktop\RebirthUnity\RebirthUnity\Assets\Scripts\AIScripts\States\SpearmanStates\SpearmanFlee.cs" Line="1" Column="1" />
+      <File FileName="..\..\..\..\Desktop\RebirthUnity\RebirthUnity\Assets\Scripts\AIScripts\States\SpearmanStates\SpearmanIdle.cs" Line="26" Column="4" />
+      <File FileName="..\..\..\..\Desktop\RebirthUnity\RebirthUnity\Assets\Scripts\GameMechanics\EnemyMechanics\SkeletonMechanics.cs" Line="7" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

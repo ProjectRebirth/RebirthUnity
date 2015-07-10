@@ -10,9 +10,10 @@ public class SpearmanMechanics : TribeMechanics {
 
 	public void defend(bool defendDown) {
 		SpearmanStats spearmanStats = (SpearmanStats)baseStats;
-		if (checkCanDefend()) {
-
-			spearmanStats.setIsDefending(defendDown);
+		if (checkCanDefend ()) {
+			spearmanStats.setIsDefending (defendDown);
+		} else {
+			spearmanStats.setIsDefending(false);
 		}
 	}
 
