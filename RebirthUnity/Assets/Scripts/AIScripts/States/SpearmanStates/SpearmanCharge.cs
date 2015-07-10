@@ -4,7 +4,9 @@ using System.Collections;
 public class SpearmanCharge : State {
 
 	private SpearmanStateMachine spearStateMachine;
+	private SpearmanMechanics spearmanMechanics;
 	private Vector3 chargeLocation;
+	private GraysonMechanics targetEnemy;
 	private float minChargeDistance;//This is the minimum distance the spearman should stay away from a character
 
 	public SpearmanCharge(StateMachine stateMachine) : base(stateMachine) {
@@ -12,12 +14,10 @@ public class SpearmanCharge : State {
 	}
 
 	public override void enterState() {
-		Collider2D target = spearStateMachine.getTarget ();
-		chargeLocation = target.transform.position;
-		float deltaX = getDeltaX ();
-		if (Mathf.Abs (deltaX) < minChargeDistance) {
-			spearStateMachine.changeState (new SpearmanFlee(spearStateMachine));
-		}
+		targetEnemy = spearStateMachine.getTarget ().GetComponent<GraysonMechanics> ();
+		chargeLocation = targetEnemy.transform.position;
+		spearmanMechanics = spearStateMachine.spearmanMechanics;
+
 	}
 
 	public override void exitState() {
@@ -26,6 +26,11 @@ public class SpearmanCharge : State {
 
 	public override void updateState(float deltaTime) {
 		float deltaX = getDeltaX ();
+		if (deltaX > 1) {
+			spearmanMechanics.moveHorizontal (-1);
+		} else if (deltaX < -1) {
+			spearmanMechanics.moveHorizontal(1); 
+		}
 	}
 
 	public override void handleEnterCollider(Collider2D collider) {

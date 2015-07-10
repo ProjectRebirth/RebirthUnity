@@ -20,7 +20,10 @@ public class SpearmanIdle : State {
 	}
 
 	public override void handleEnterCollider(Collider2D collider) {
-
+		if (collider.tag == spearStateMachine.enemyTag) {
+			spearStateMachine.setTarget (collider);
+			spearStateMachine.changeState (new SpearmanDefend (spearStateMachine));
+		}
 	}
 
 	public override void handleExitCollider(Collider2D collider) {
