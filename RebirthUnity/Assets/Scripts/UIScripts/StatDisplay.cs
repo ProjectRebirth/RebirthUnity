@@ -24,7 +24,7 @@ public class StatDisplay : MonoBehaviour {
 	public Image energyBar;
 	
 	public float initHealth;
-	private float initShield;
+	public float initShield;
 
 	public int currentAmmo;
 	
@@ -41,32 +41,9 @@ public class StatDisplay : MonoBehaviour {
 		updateEnergy ();
 		if (Input.GetKeyDown (KeyCode.O)) {
 			graysonStats.takeDamage(11f);
-			initHealth = graysonStats.getCurHealth();
-			initShield = graysonStats.getCurShield ();
 		}
 
 	}
-/*
-	float moveTowards(float current, float goal, float difference) {
-		if (current < goal) {
-			float newTime = current + difference;
-			if (newTime > goal) {
-				return goal;
-			} else {
-				return newTime;
-			}
-		} else if (current > goal) {
-			float newTime = current - difference;
-			if (newTime < goal) {
-				return goal;
-			} else {
-				return newTime;
-			}
-		} else {
-			return goal;
-		}
-	}
-*/
 
 	void updateAmmo(){
 		
@@ -105,19 +82,37 @@ public class StatDisplay : MonoBehaviour {
 		float s2Frac = (graysonStats.getCurShield () - (graysonStats.getMaxShield ()/2f)) / (graysonStats.getMaxShield ()/2) ;
 		float s1Frac = (graysonStats.getCurShield () / (graysonStats.getMaxShield ()/2f) );
 	    float hpFrac = (graysonStats.getCurHealth () / graysonStats.getMaxHealth ());
+		float initS2Frac = ((initShield - (graysonStats.getMaxShield ()/2f)) / (graysonStats.getMaxShield ()/2));
+		float initS1Frac = (initShield / (graysonStats.getMaxShield () / 2));
+		float initHPFrac = initHealth / (graysonStats.getMaxHealth ());
 
-		float shield2Diff = Mathf.MoveTowards (((initShield - (graysonStats.getMaxShield ()/2f)) / (graysonStats.getMaxShield ()/2)), s2Frac / 2f, Time.deltaTime );
-		float shield1Diff = Mathf.MoveTowards ((initShield  / (graysonStats.getMaxShield ()/2)), s1Frac / 2f, Time.deltaTime );
-		float hpDiff = Mathf.MoveTowards (initHealth  / (graysonStats.getMaxHealth()), hpFrac / 2f, Time.deltaTime );
+		if (initShield > graysonStats.getCurShield ()) {
+			initShield -= Time.deltaTime *12f;
+		} else {
+			initShield = graysonStats.getCurShield ();
+			
+		}
+
+		if (initHealth> graysonStats.getCurHealth ()) {
+			initHealth -= Time.deltaTime *30f;
+		} else {
+			initHealth = graysonStats.getCurHealth ();
+		}
+		//float shield2Diff = Mathf.MoveTowards (((initShield - (graysonStats.getMaxShield ()/2f)) / (graysonStats.getMaxShield ()/2)), s2Frac / 2f, Time.deltaTime );
+		//float shield1Diff = Mathf.MoveTowards ((initShield  / (graysonStats.getMaxShield ()/2)), s1Frac / 2f, Time.deltaTime );
+		//float hpDiff = Mathf.MoveTowards (initHealth  / (graysonStats.getMaxHealth()), hpFrac / 2f, Time.deltaTime );
 		
 		if (graysonStats.getCurShield () > 50) {
 			impactBar.fillAmount = .5f;
-			impactBar2.fillAmount = shield2Diff / 2f;
+			//impactBar2.fillAmount = shield2Diff / 2f;
+			impactBar2.fillAmount = initS2Frac / 2f;
 			shieldBar.fillAmount = .5f;
 			shieldBar2.fillAmount = s2Frac / 2f;
 
 		} else if (graysonStats.getCurShield () <= 50 && graysonStats.getCurShield () > 0) {
-			impactBar.fillAmount = shield1Diff / 2f;
+
+			//impactBar.fillAmount = shield1Diff / 2f;
+			impactBar.fillAmount = initS1Frac/ 2f;
 			impactBar2.fillAmount = 0;
 			shieldBar.fillAmount = s1Frac / 2f;
 			shieldBar2.fillAmount = 0;
@@ -129,8 +124,10 @@ public class StatDisplay : MonoBehaviour {
 		}
 
 		healthBar.fillAmount = hpFrac / 2f;
-		damageBar.fillAmount = hpDiff / 2f;
+		damageBar.fillAmount = initHPFrac / 2f;
+		//damageBar.fillAmount = hpDiff / 2f;
 	}
+
 	void updateEnergy(){
 		energyBar.fillAmount = ((cooldownMech.getCooldownTimer() * - 1f) + cooldownMech.getStrafeCD())/cooldownMech.getStrafeCD();
 	}
