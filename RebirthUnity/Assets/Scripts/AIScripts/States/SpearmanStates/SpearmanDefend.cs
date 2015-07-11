@@ -30,8 +30,10 @@ public class SpearmanDefend : State {
 
 		}
 		if (targetEnemy.getIsReloading ()) {
-			spearMechanics.defend (false);
-			spearStateMachine.changeState (new SpearmanCharge(spearStateMachine));
+			float randomCharge = Random.value;
+			if (randomCharge > .5f) {
+				spearStateMachine.changeState (new SpearmanCharge(spearStateMachine));
+			}
 		}
 		if (delayDefendCounter <= 0) {
 			delayDefendCounter = 0f;

@@ -7,6 +7,7 @@ public class SpearmanStateMachine : StateMachine {
 	public SpearmanStats spearmanStats;
 	public string enemyTag;
 	public float delayDefend;
+	public float delayCharge;//The amount of time the spearman will wait before charging at the player
 
 	public override void beginInitialState() {
 		currentState = new SpearmanIdle (this);
