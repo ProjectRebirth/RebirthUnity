@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AIScripts\MeleeStateMachine.cs" />
      <Compile Include="Assets\Scripts\AIScripts\SkeletonStateMachine.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\SpearmanStateMachine.cs" />
      <Compile Include="Assets\Scripts\AIScripts\State.cs" />
      <Compile Include="Assets\Scripts\AIScripts\StateMachine.cs" />
      <Compile Include="Assets\Scripts\AIScripts\States\MeleeStates\MeleeAggro.cs" />
@@ -58,7 +59,12 @@
      <Compile Include="Assets\Scripts\AIScripts\States\SkeletonStates\SkeletonIdle.cs" />
      <Compile Include="Assets\Scripts\AIScripts\States\SkeletonStates\SkeletonInvincible.cs" />
      <Compile Include="Assets\Scripts\AIScripts\States\SkeletonStates\SkeletonWalk.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\States\SpearmanStates\SpearmanCharge.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\States\SpearmanStates\SpearmanDefend.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\States\SpearmanStates\SpearmanFlee.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\States\SpearmanStates\SpearmanIdle.cs" />
      <Compile Include="Assets\Scripts\AnimationTree\GraysonSpriteAnimation.cs" />
+     <Compile Include="Assets\Scripts\AnimationTree\Insignia\SkeletonInsignia.cs" />
      <Compile Include="Assets\Scripts\AnimationTree\MeleeEnemyAnimations.cs" />
      <Compile Include="Assets\Scripts\AnimationTree\SkeletonEnemyAnimations.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
@@ -77,9 +83,15 @@
      <Compile Include="Assets\Scripts\GameMechanics\SpriteMechanics.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\Weapon.cs" />
      <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\ArrowMechanics.cs" />
-     <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\AxeMechanics.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\EnemyWeapons\AxeMechanics.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\EnemyWeapons\SkeletonWepon.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\EnemyWeapons\SpearMechanics.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\MeleeWeapon.cs" />
+     <Compile Include="Assets\Scripts\GameMechanics\WeaponMeachanics\Spear.cs" />
+     <Compile Include="Assets\Scripts\ShieldRotation.cs" />
      <Compile Include="Assets\Scripts\StatScripts\BaseStats.cs" />
      <Compile Include="Assets\Scripts\StatScripts\GraysonStats.cs" />
+     <Compile Include="Assets\Scripts\StatScripts\SkeletonStats.cs" />
      <Compile Include="Assets\Scripts\StatScripts\SpearmanStats.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\ActionTrigger.cs" />
      <Compile Include="Assets\Scripts\TriggerScripts\AmmoPickupTrigger.cs" />
@@ -92,7 +104,6 @@
      <Compile Include="Assets\Scripts\World\Menu.cs" />
      <Compile Include="Assets\Scripts\World\Paused.cs" />
      <Compile Include="Assets\Scripts\World\WeapSwap.cs" />
-     <Compile Include="Assets\ShieldRotation.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
