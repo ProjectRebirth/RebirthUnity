@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: 65fcda13a337e4240aa42b9f3c295b58
+timeCreated: 1436602826
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: break_00
+    21300002: break_01
+    21300004: break_02
+    21300006: break_03
+    21300008: smash_00
+    21300010: smash_01
+    21300012: smash_02
+    21300014: smash_03
+    21300016: smash_04
+    21300018: smash_05
+    21300020: walk_00
+    21300022: walk_01
+    21300024: walk_02
+    21300026: walk_03
+    21300028: walk_04
+    21300030: walk_05
+    21300032: walk_06
+    21300034: walk_07
+    21300036: walk_08
+    21300038: idle_00
+    21300040: idle_01
+    21300042: idle_02
+    21300044: BossAnimations_26
+    21300046: BossAnimations_27
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: break_00
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1643
+        width: 311
+        height: 271
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: break_01
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1646
+        width: 311
+        height: 271
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: break_02
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1651
+        width: 584
+        height: 271
+      alignment: 9
+      pivot: {x: .479999989, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: break_03
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 1665
+        width: 661
+        height: 271
+      alignment: 9
+      pivot: {x: .493299991, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smash_00
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1284
+        width: 311
+        height: 271
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smash_01
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1284
+        width: 288
+        height: 271
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smash_02
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1287
+        width: 288
+        height: 259
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smash_03
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 1280
+        width: 288
+        height: 247
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smash_04
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 1280
+        width: 288
+        height: 247
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smash_05
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 1284
+        width: 288
+        height: 239
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_00
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 843
+        width: 311
+        height: 271
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_01
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 849
+        width: 311
+        height: 274
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_02
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 846
+        width: 311
+        height: 279
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_03
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 852
+        width: 311
+        height: 275
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_04
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 861
+        width: 311
+        height: 271
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_05
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 850
+        width: 311
+        height: 280
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_06
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 858
+        width: 311
+        height: 277
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_07
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 866
+        width: 311
+        height: 275
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_08
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 867
+        width: 311
+        height: 268
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: idle_00
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 528
+        width: 311
+        height: 271
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: idle_01
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 525
+        width: 311
+        height: 271
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: idle_02
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 523
+        width: 311
+        height: 268
+      alignment: 9
+      pivot: {x: .414999992, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BossAnimations_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 1333
+        height: 236
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BossAnimations_27
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 52
+        width: 311
+        height: 271
+      alignment: 9
+      pivot: {x: .414999992, y: -.002052631}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
