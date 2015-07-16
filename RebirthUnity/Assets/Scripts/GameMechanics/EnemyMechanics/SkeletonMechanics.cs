@@ -22,10 +22,15 @@ public class SkeletonMechanics : TribeMechanics {
 
 
 	protected override void OnTriggerEnter2D (Collider2D collider) {
-		//base.OnTriggerEnter2D (collider);
+		//base.OnCollisionEnter2D (collider);
+
+		print (collider.tag);
 		if (collider.tag == "Projectile") {
+
 			BulletMechanics bMechanics = collider.GetComponent<BulletMechanics>();
 			if (skeletonStats.getIsInvincible()) {
+				print ("Skeleton Mech Print");
+				bMechanics.changeEnemyTag("Grayson");
 				bMechanics.cancelDestroyBullet();
 				reflectProjectile(bMechanics);
 			}

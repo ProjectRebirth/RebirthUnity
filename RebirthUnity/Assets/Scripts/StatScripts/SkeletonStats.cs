@@ -9,7 +9,9 @@ public class SkeletonStats : BaseStats {
 	private bool isFiring;
 
 	public override void takeDamage (float rawDamage) {
-		base.takeDamage (rawDamage);
+		if (!getIsInvincible ()) {
+			base.takeDamage (rawDamage);
+		}
 	}
 
 	protected override void Update() {

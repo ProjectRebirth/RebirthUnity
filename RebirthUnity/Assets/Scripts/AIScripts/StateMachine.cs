@@ -42,6 +42,7 @@ public abstract class StateMachine : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D (Collider2D collider) {
+		print ("in StateMachine");
 		currentState.handleEnterCollider (collider);
 
 	}

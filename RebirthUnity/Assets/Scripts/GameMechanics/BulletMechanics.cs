@@ -107,13 +107,7 @@ public class BulletMechanics : MonoBehaviour {
 		return unitVector;
 	}
 	
-	/**
-	 * Use this to carry out a task when the bullet exits an
-	 * area.
-	 */ 
-	void OntriggerExit2D (Collider2D collider) {
-		
-	}
+
 	
 	public bool checkCollide(string checkTag) {
 		foreach (string check in collideWith) {
@@ -137,11 +131,6 @@ public class BulletMechanics : MonoBehaviour {
 	 * but something bad happens when this is uncommented and there are no bullets on
 	 * screen.
 	 */
-	
-	void OnCollisionEnter2D(Collision2D collider) {
-		//Destroy (gameObject);
-		
-		
-	}
+
 	
 }
