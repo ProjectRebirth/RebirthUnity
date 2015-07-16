@@ -112,6 +112,14 @@ public class BulletMechanics : MonoBehaviour {
 		return false;
 	}
 
+	public GameObject getOwner() {
+		return weapon.getOwner ();
+	}
+
+	public string getOwnerTag() {
+		return weapon.getOwner ().tag;
+	}
+
 	/**
 	 * This is supposed to destoy the bullet after it collides with another boject,
 	 * but something bad happens when this is uncommented and there are no bullets on

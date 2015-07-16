@@ -2,13 +2,14 @@
 using System.Collections;
 
 public class SkeletonStats : BaseStats {
-	public bool isInvincible;
+	private bool isInvincible;
 	public float chanceReflect;
 	public float invincibleCoolDown;
 	private float invincibleCoolDownTimer;
+	private bool isFiring;
 
 	public override void takeDamage (float rawDamage) {
-
+		base.takeDamage (rawDamage);
 	}
 
 	protected override void Update() {
@@ -25,5 +26,22 @@ public class SkeletonStats : BaseStats {
 
 	public bool canActivateInvincible() {
 		return invincibleCoolDownTimer <= 0f;
+	}
+
+	public bool getIsInvincible() {
+		return isInvincible;
+	}
+
+	public void setIsInvincible(bool isInvinicible) {
+		this.isInvincible = isInvincible;
+	}
+
+	public void setIsFiring(bool isFiring) {
+		this.isFiring = isFiring;
+	}
+
+
+	public bool getIsFiring() {
+		return isFiring;
 	}
 }
