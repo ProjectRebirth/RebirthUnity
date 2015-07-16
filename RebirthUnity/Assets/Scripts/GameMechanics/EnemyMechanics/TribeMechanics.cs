@@ -91,7 +91,7 @@ public class TribeMechanics : SpriteMechanics {
 	/**
 	 * This is where the knockback logic will be for the game
 	 */ 
-	void OnTriggerEnter2D (Collider2D collider) {
+	protected virtual void OnTriggerEnter2D (Collider2D collider) {
 		
 		if (collider.tag == "Grayson") {
 			//GraysonMechanics grayson = collider.GetComponent<GraysonMechanics>();

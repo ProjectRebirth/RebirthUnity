@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class SkeletonStats : BaseStats {
-	private bool isInvincible;
+	public bool isInvincible;
 	public float chanceReflect;
 	public float invincibleCoolDown;
 	private float invincibleCoolDownTimer;

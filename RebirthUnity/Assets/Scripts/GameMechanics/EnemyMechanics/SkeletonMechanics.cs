@@ -7,6 +7,7 @@ public class SkeletonMechanics : TribeMechanics {
 	protected override void Start() {
 		base.Start ();
 		skeletonStats = (SkeletonStats)baseStats;
+		skeletonStats.setIsInvincible (true);
 	}
 
 	public bool getIsInvincible() {
@@ -20,5 +21,21 @@ public class SkeletonMechanics : TribeMechanics {
 	}
 
 
+	protected override void OnTriggerEnter2D (Collider2D collider) {
+		//base.OnTriggerEnter2D (collider);
+		if (collider.tag == "Projectile") {
+			BulletMechanics bMechanics = collider.GetComponent<BulletMechanics>();
+			if (skeletonStats.getIsInvincible()) {
+				bMechanics.cancelDestroyBullet();
+				reflectProjectile(bMechanics);
+			}
+		}
+	}
 
+	private void reflectProjectile(BulletMechanics bMechanics) {
+		Vector2 currentDirection = bMechanics.getDirection ();
+		float x = -currentDirection.x + Random.Range (-.1f, .1f);
+		float y = -currentDirection.y + Random.Range (-.1f, .1f);
+		bMechanics.setDirection (new Vector2(x, y));
+	}
 }
