@@ -81,6 +81,14 @@ public class BulletMechanics : MonoBehaviour {
 		
 		
 	}
+
+	public void cancelDestroyBullet() {
+		bulletAnimator.enabled = false;
+	}
+
+	public void changeEnemyTag(string enemyTag) {
+		this.enemyTag = enemyTag;
+	}
 	
 	/**
 	 * Use this method to do something when a bullet enters an area
@@ -88,11 +96,15 @@ public class BulletMechanics : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D collider) {
 		if (checkCollide(collider.tag)) {
 			BaseStats sprite = collider.GetComponent<BaseStats>();
-			if (collider.tag == "Sprite"){
+			if (collider.tag == enemyTag){
 				sprite.takeDamage (rawDamage);
 			}
 			bulletAnimator.enabled = true;
 		}
+	}
+
+	public Vector2 getDirection() {
+		return unitVector;
 	}
 	
 	/**
@@ -110,6 +122,14 @@ public class BulletMechanics : MonoBehaviour {
 			}
 		}
 		return false;
+	}
+
+	public GameObject getOwner() {
+		return weapon.getOwner ();
+	}
+
+	public string getOwnerTag() {
+		return weapon.getOwner ().tag;
 	}
 
 	/**

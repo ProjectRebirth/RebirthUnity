@@ -49,7 +49,7 @@ public class Weapon : MonoBehaviour {
 				obj = (BulletMechanics)Instantiate (ammo, bulletPosition, new Quaternion ());
 			}
 
-
+			obj.setWeapon(this);
 			obj.setDirection (dir);
 			refreshTimer = refreshRate;
 			currentAmmo--;
@@ -84,6 +84,18 @@ public class Weapon : MonoBehaviour {
 			currentAmmo += ammoCarried;
 			ammoCarried = 0;
 		}
+	}
+	/// <summary>
+	/// THIS NEEDS TO BE UPDATED LATER. POSSIBLE ADD AN IMTERFACE FOR SPRITES THAT SHOOT AND REPLACE GAMEOBJECT WITH 
+	/// THAT INTERFACE.
+	/// </summary>
+	/// <param name="owner">Owner.</param>
+	public void setOwner(GameObject owner) {
+
+	}
+
+	public GameObject getOwner() {
+		return grayson.gameObject;
 	}
 
 	public bool getWeaponIsFull() {

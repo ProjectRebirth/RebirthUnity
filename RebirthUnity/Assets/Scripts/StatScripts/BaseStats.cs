@@ -10,11 +10,11 @@ public class BaseStats : MonoBehaviour {
 	public bool isDead;
 
 	// Use this for initialization
-	void Start () {
+	protected virtual void Start () {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	protected virtual void Update () {
 		checkIsDead ();
 	}
 
